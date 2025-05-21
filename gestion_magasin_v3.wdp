@@ -1,0 +1,509 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : gestion_magasin_v3
+ major_version : 30
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Exécutable Windows 64 bits
+    identifier : 0x4814a2e20006c217
+    internal_properties : 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
+    configuration_id : 252264954009862692
+    type : 1
+    generation_name : gestion_magasin_v3.exe
+    version : {}
+    language : 1
+    64bits : true
+    code_elements :
+     type_code : 159
+     p_codes : []
+ elements :
+  identifier : 0x4814a2e20005c217
+  elements :
+   -
+     name : FEN_Fiche_people
+     identifier : 0x4816bfae01163c86
+     internal_properties : HgAAAB4AAAD9X+uncE3l6I4UZq44alm6IrCS8K/O9b28HvRLlVskL5qYsv8NXefUCohDfKdD/Od4
+     physical_name : .\FEN_Fiche_people.wdw
+     type : 2
+   -
+     name : MDLC_Ruban
+     identifier : 0x481739230154af43
+     internal_properties : HgAAAB4AAACC+Pouncpifd5Fsw2AFjxKxknFFb98O4Ous+HN2yriJuow19iPcsFQp50H8bEvyz2Hjw==
+     physical_name : .\MDLC_Ruban.wdt
+     type : 20
+   -
+     name : FEN_Onglet
+     identifier : 0x48173923015caf63
+     internal_properties : HgAAAB4AAACzj+s/DHkxakn04lhj+fEXawQ2tp2Yyhe2uRwkk5X5z2WbiqW0FW7/Fgz2wkK+ui6Wng==
+     physical_name : .\FEN_Onglet.wdw
+     type : 2
+   -
+     name : COL_Notification
+     identifier : 0x481739230164af72
+     internal_properties : HgAAAB4AAAC/m5eLOGVNXm24hvzXlUVSTQhEFL4FQI6OW4j7fYiChoqWPmEAwRIjSvDq1l6SbmKqqg==
+     physical_name : .\COL_Notification.wdg
+     type : 7
+   -
+     name : FEN_Ajout_stock
+     identifier : 0x4817524c075df837
+     internal_properties : HgAAAB4AAACd+fWpFkPr9Efe2adVvvrnH3haGqHMjDK1XNJ4P+kt89knMsaUq6HdMBaAeDioUECIiA==
+     physical_name : .\FEN_Ajout_stock.wdw
+     type : 2
+   -
+     name : FEN_Fiche_items
+     identifier : 0x481739cb0303407d
+     internal_properties : HgAAAB4AAABIxrBsWwAoMzCLrQOwi5+icGcvx/B7wSxD79Kvaq7mOsoEmRf7ACs6XcM9u3t1DYNN1Q==
+     physical_name : .\FEN_Fiche_items.wdw
+     type : 2
+   -
+     name : FEN_Popup_Combo_Selection_Multiple
+     identifier : 0x48174042062f801d
+     internal_properties : HgAAAB4AAAAIBnAsm8Boc3DL1G4pJY8KLL0ro4bUPUNG4Idz0S9ta1WdnORarHb6HQP9+7s1zcMNFQ==
+     physical_name : .\FEN_Popup_Combo_Selection_Multiple.wdw
+     type : 2
+   -
+     name : FEN_StocK_location
+     identifier : 0x48173a9c039b6dd8
+     internal_properties : HgAAAB4AAAA0EhwYp5yUl6T/4iRGEb533K8rg0g7rumrEUnxgJh8bECeemNLsGz+ETehH+cZ4dchIQ==
+     physical_name : .\FEN_StocK_location.wdw
+     type : 2
+   -
+     name : FEN_connexion
+     identifier : 0x48178e0c00b12143
+     internal_properties : HgAAAB4AAACX4c1ZWifHhBVOjs6GoLHkbt2IZEL1ap0Z3ShKbcFK3NX1V7og7lLdnuolUn2dGoGS
+     physical_name : .\FEN_connexion.wdw
+     type : 2
+   -
+     name : WIN_ajout_utilisateur
+     identifier : 0x48178f580122300f
+     internal_properties : HgAAAB4AAAB716PnxIGpsrEMYI3fI9xldRJI6OPuU62uY/eYc5UBL8lbkh4FxES33kS+Ovr2gnZe5g==
+     physical_name : .\WIN_ajout_utilisateur.wdw
+     type : 2
+   -
+     name : FEN_Fiche_supplier
+     identifier : 0x481904210195a6b7
+     internal_properties : HgAAAB4AAABHw6/zMG1FZnXCxbodjOCzW9qC2vtoynFK5BftPPyeaoKy60tf4u8FEgjyzlaKdmpS0g==
+     physical_name : .\FEN_Fiche_supplier.wdw
+     type : 2
+   -
+     name : FI_stocl_location_vf
+     identifier : 0x48261d5801ee8da7
+     internal_properties : HgAAAB4AAADWvD5iQT52edpQSWzM3FoKKk3pyfbwuXxKDBsCEuauUvYkR8Yr3opjo5kD/YV7B/nDQw==
+     physical_name : .\FI_stocl_location_vf.wdw
+     type : 8
+   -
+     name : FEN_Responsable
+     identifier : 0x481cf32205009b47
+     internal_properties : HgAAAB4AAAACeHquHUri/V6qh24HBv5IiOXHnz5uXs+8UaQPHxn7BePfZCfYNO7VJx2HcTGvS70HDw==
+     physical_name : .\FEN_Responsable.wdw
+     type : 2
+   -
+     name : WIN_modifier_utilisateur
+     identifier : 0x481b56af01218184
+     internal_properties : HgAAAB4AAAD6UCJmRQIqNTaR0CXy7VozOGV3717G25KgxD/zKx33eZ+j3RQY4S48X8U/uXl3A/XfZw==
+     physical_name : .\WIN_modifier_utilisateur.wdw
+     type : 2
+   -
+     name : REQ_Insert_Receiving_Item
+     identifier : 0x481be043029793b5
+     internal_properties : HgAAAB4AAABNyaX5xrP7JDeSr56EdJXRJ3YeRufeXQ9S6hGXlASOkrKyAZICwIMRYMYwiAj4gHBY2A==
+     physical_name : .\REQ_Insert_Receiving_Item.WDR
+     type : 5
+   -
+     name : FEN_Magasinier
+     identifier : 0x481cf349056a35b2
+     internal_properties : HgAAAB4AAAArJxN3tPG54uEB7gRfJw2s36gqmjG5SEZ0I361xyH168EftXD7wkesznRuSsoG8uYuNg==
+     physical_name : .\FEN_Magasinier.wdw
+     type : 2
+   -
+     name : FEN_Fiche_people
+     identifier : 0x4816bfae01163c86
+     internal_properties : HgAAAB4AAAD9X+uncE3l6I4UZq44alm6IrCS8K/O9b28HvRLlVskL5qYsv8NXefUCohDfKdD/Od4
+     physical_name : .\FEN_Fiche_people.wdw
+     type : 2
+   -
+     name : MDLC_Ruban
+     identifier : 0x481739230154af43
+     internal_properties : HgAAAB4AAACC+Pouncpifd5Fsw2AFjxKxknFFb98O4Ous+HN2yriJuow19iPcsFQp50H8bEvyz2Hjw==
+     physical_name : .\MDLC_Ruban.wdt
+     type : 20
+   -
+     name : FEN_Onglet
+     identifier : 0x48173923015caf63
+     internal_properties : HgAAAB4AAACzj+s/DHkxakn04lhj+fEXawQ2tp2Yyhe2uRwkk5X5z2WbiqW0FW7/Fgz2wkK+ui6Wng==
+     physical_name : .\FEN_Onglet.wdw
+     type : 2
+   -
+     name : COL_Notification
+     identifier : 0x481739230164af72
+     internal_properties : HgAAAB4AAAC/m5eLOGVNXm24hvzXlUVSTQhEFL4FQI6OW4j7fYiChoqWPmEAwRIjSvDq1l6SbmKqqg==
+     physical_name : .\COL_Notification.wdg
+     type : 7
+   -
+     name : FEN_Ajout_stock
+     identifier : 0x4817524c075df837
+     internal_properties : HgAAAB4AAACd+fWpFkPr9Efe2adVvvrnH3haGqHMjDK1XNJ4P+kt89knMsaUq6HdMBaAeDioUECIiA==
+     physical_name : .\FEN_Ajout_stock.wdw
+     type : 2
+   -
+     name : FEN_Fiche_items
+     identifier : 0x481739cb0303407d
+     internal_properties : HgAAAB4AAABIxrBsWwAoMzCLrQOwi5+icGcvx/B7wSxD79Kvaq7mOsoEmRf7ACs6XcM9u3t1DYNN1Q==
+     physical_name : .\FEN_Fiche_items.wdw
+     type : 2
+   -
+     name : FEN_Popup_Combo_Selection_Multiple
+     identifier : 0x48174042062f801d
+     internal_properties : HgAAAB4AAAAIBnAsm8Boc3DL1G4pJY8KLL0ro4bUPUNG4Idz0S9ta1WdnORarHb6HQP9+7s1zcMNFQ==
+     physical_name : .\FEN_Popup_Combo_Selection_Multiple.wdw
+     type : 2
+   -
+     name : FEN_StocK_location
+     identifier : 0x48173a9c039b6dd8
+     internal_properties : HgAAAB4AAAA0EhwYp5yUl6T/4iRGEb533K8rg0g7rumrEUnxgJh8bECeemNLsGz+ETehH+cZ4dchIQ==
+     physical_name : .\FEN_StocK_location.wdw
+     type : 2
+   -
+     name : FEN_connexion
+     identifier : 0x48178e0c00b12143
+     internal_properties : HgAAAB4AAACX4c1ZWifHhBVOjs6GoLHkbt2IZEL1ap0Z3ShKbcFK3NX1V7og7lLdnuolUn2dGoGS
+     physical_name : .\FEN_connexion.wdw
+     type : 2
+   -
+     name : WIN_ajout_utilisateur
+     identifier : 0x48178f580122300f
+     internal_properties : HgAAAB4AAAB716PnxIGpsrEMYI3fI9xldRJI6OPuU62uY/eYc5UBL8lbkh4FxES33kS+Ovr2gnZe5g==
+     physical_name : .\WIN_ajout_utilisateur.wdw
+     type : 2
+   -
+     name : FEN_Fiche_supplier
+     identifier : 0x481904210195a6b7
+     internal_properties : HgAAAB4AAABHw6/zMG1FZnXCxbodjOCzW9qC2vtoynFK5BftPPyeaoKy60tf4u8FEgjyzlaKdmpS0g==
+     physical_name : .\FEN_Fiche_supplier.wdw
+     type : 2
+   -
+     name : REQ_sales_payments
+     identifier : 0x481e27c201752a4d
+     internal_properties : HgAAAB4AAAC4luA8C7D4IyBCURBaqQmGuOs3LxTWaRFW3e8weDDsdHBunxtZ4BJ5jbMtiwvFvTOdpQ==
+     physical_name : .\REQ_sales_payments.WDR
+     type : 5
+   -
+     name : REQ_select_max_id_sales
+     identifier : 0x481e22040154bbfd
+     internal_properties : HgAAAB4AAABwaQMSe+FmVi7OAx5LsEEwaHxzmA7ej4ZTVWUhkNTZ7gwGJE37eAXG/49M7Qn9Bw==
+     physical_name : .\REQ_select_max_id_sales.WDR
+     type : 5
+   -
+     name : REQ_select_max_id_receivings
+     identifier : 0x481e30a20183d404
+     internal_properties : HgAAAB4AAAAPC2e7iDV9rr0fM3kBHj6s/d64OAc5+la20Y+ZEYePUbcF/Vc5gCLC2kC6Bo5CPrIaGg==
+     physical_name : .\REQ_select_max_id_receivings.WDR
+     type : 5
+   -
+     name : REQ_Ajout_Items_Quantites
+     identifier : 0x481e660200795287
+     internal_properties : HgAAAB4AAADjX9vP/KkBGjlLpT1Q3BYx2YbMLJcByviidpPfoxV5/wEDoiBa5jx+hrwmkhLOqh7mbg==
+     physical_name : .\REQ_Ajout_Items_Quantites.WDR
+     type : 5
+   -
+     name : REQ_Ajout_receivings
+     identifier : 0x481e6a89007e0385
+     internal_properties : HgAAAB4AAACimJqOPWpCXX6M6h25CmhEXgNdjaRWJX2yMhAbcSf1M8FNeAt2io8/R/3n0VGPa12nrw==
+     physical_name : .\REQ_Ajout_receivings.WDR
+     type : 5
+   -
+     name : REQ_Ajout_Articles
+     identifier : 0x481f5da603a2ae35
+     internal_properties : HgAAAB4AAABaMAIGpeLK1ZY1/yDKTNX2EGM/51yPCVdCrtRJcAiUfHhW/y9i4dVgv2VfWdkX49U/xw==
+     physical_name : .\REQ_Ajout_Articles.WDR
+     type : 5
+   -
+     name : FEN_Ajout_Articles_
+     identifier : 0x481f574d018fe0a8
+     internal_properties : HgAAAB4AAABDP7vv3ImhuhlsILqHcPZMDVhUFDF8qkRWzbSjmJD6DuLe5AyAQRwXZtzGMvLuin5Gzg==
+     physical_name : .\FEN_Ajout_Articles_.wdw
+     type : 2
+   -
+     name : WIN_modifier_utilisateur
+     identifier : 0x481b56af01218184
+     internal_properties : HgAAAB4AAABGzK7yMW5GaUrFFBmGoS4PnDlbgzIhHs1Seg0WDznTVfsHuchUrfIAEwnzzVWLd2lT0w==
+     physical_name : .\WIN_modifier_utilisateur.wdw
+     type : 2
+   -
+     name : REQ_UPDATE_item_quantities_cd
+     identifier : 0x481e70c000ab4c61
+     internal_properties : HgAAAB4AAAC9nytnsA2lJgsksUk2fOkooyb2uLJP/Dmft9i0tx8qkW/LpdAG50BXPEiDPGeDPKe4
+     physical_name : .\REQ_UPDATE_item_quantities_cd.WDR
+     type : 5
+   -
+     name : REQ_Insert_Receiving_Item
+     identifier : 0x481be043029793b5
+     internal_properties : HgAAAB4AAABNyaX5xrP7JDeSr56EdJXRJ3YeRufeXQ9S6hGXlASOkrKyAZICwIMRYMYwiAj4gHBY2A==
+     physical_name : .\REQ_Insert_Receiving_Item.WDR
+     type : 5
+   -
+     name : REQ_Ajout_sales_items
+     identifier : 0x481e210b014ff0dc
+     internal_properties : HgAAAB4AAACD//svnMlhetkrQIJvkJguXxzqcs1Xhni2kVTNQUdX4dvVCVf5AOteppwG8rIuyj6Gjg==
+     physical_name : .\REQ_Ajout_sales_items.WDR
+     type : 5
+   -
+     name : FEN_Affiche_Article
+     identifier : 0x481f6137044e9bc2
+     internal_properties : HgAAAB4AAACno4+TEE3lhlX4RrgyL6eU+7gGXnk8dpRO6z8inZv7Bf/x87iHveqj8iiSbjaqVkqysg==
+     physical_name : .\FEN_Affiche_Article.wdw
+     type : 2
+   -
+     name : REQ_Insert_Payment_Type2
+     identifier : 0x48235c2a00fbfa35
+     internal_properties : HgAAAB4AAAA3Ex8DoJ2VlqX8GR/UwiiFQxL68tNiKDGOe4GbuPAaLp4WHV2TdWX3AjiiHuYa5toiIg==
+     physical_name : .\REQ_Insert_Payment_Type2.WDR
+     type : 5
+   -
+     name : REQ_select_article
+     identifier : 0x481f61500453fdd7
+     internal_properties : HgAAAB4AAACB8z9rtBHGUJpI+0uQmFGFDc8oQqjVE6H6UNDs/19CFAZFL5IGhXBbL90vSGuPKJOE
+     physical_name : .\REQ_select_article.WDR
+     type : 5
+   -
+     name : FEN_Fiche_customers
+     identifier : 0x481d1e6a02155d07
+     internal_properties : HgAAAB4AAAC5leElgv+3uBto/XWU2hkNRcKYGLP8xMGKeMheQ6VxX1mrGrNTt9MfZNrEPMQ8xDScpA==
+     physical_name : .\FEN_Fiche_customers.wdw
+     type : 2
+   -
+     name : FEN_fen_ventes_
+     identifier : 0x481d12b401029b77
+     internal_properties : HgAAAB4AAADVsT1hXjtzrL/MxRvfK2VDD7yKAq3O/D5WrcYUCR//2WONhJd4SSvzCD64AIBwCPjAQA==
+     physical_name : .\FEN_fen_ventes_.wdw
+     type : 2
+   -
+     name : FEN_liste_entre_stock_
+     identifier : 0x481e73f6011fd3f6
+     internal_properties : HgAAAB4AAABk4kxoVwwkx5Q2caAGX/an3oHNLSoMur6iFtXmppL6foKIkrFtlNK9wWdRr3dpEYdx8Q==
+     physical_name : .\FEN_liste_entre_stock_.wdw
+     type : 2
+   -
+     name : REQ_ajout_sale_insert
+     identifier : 0x481e1fde014a5636
+     internal_properties : HgAAAB4AAADeRDbq2YauQQJg81ogvHc9+PtHT2SGoeNyIr8YkBgE3GiWQAY3iiQTa9HLNf3zjwHLSw==
+     physical_name : .\REQ_ajout_sale_insert.WDR
+     type : 5
+   -
+     name : FEN_SuperAdmin
+     identifier : 0x481e4561019ae259
+     internal_properties : HgAAAB4AAACkooyoF0zkh1T2A8uCJpOQSi0JKZYIGLGOu0v6kmauEvbkceG0VZz9ASeRbzepUUexsQ==
+     physical_name : .\FEN_SuperAdmin.wdw
+     type : 2
+   -
+     name : REQ_select_prices
+     identifier : 0x481e2323015c1dd1
+     internal_properties : HgAAAB4AAACX4c1ZWic/XIBaCuu8KGUkoI2wUISzHHk3X+DY6UWi4C8L5WCMT4dsHuIlUn2dGoGS
+     physical_name : .\REQ_select_prices.WDR
+     type : 5
+   -
+     name : FEN_listes_stocks
+     identifier : 0x481f8b2003100aae
+     internal_properties : HgAAAB4AAADAvjhkQzhwq4gbh2jkHPehqMV3/17Z2UF2hbXeU9U/kadbF/Mom7XK1Uu1A4N9BfvFTQ==
+     physical_name : .\FEN_listes_stocks.wdw
+     type : 2
+   -
+     name : FEN_affiche_article_2_test
+     identifier : 0x4822231e038fb10c
+     internal_properties : HgAAAB4AAAC4luA8C7D4IyB2RfQ0e8A1ZgU9pR4UYeFOh0PgoJiETOQeMv+PtLp9jbMtiwvFvTOdpQ==
+     physical_name : .\FEN_affiche_article_2_test.wdw
+     type : 2
+   -
+     name : REQ_receiving_payment_status
+     identifier : 0x48235d5c00fda74a
+     internal_properties : HgAAAB4AAAA7F2OnBEHp8vFYlgFSWm36ASJM7GuCVMRC7kvK9YMLLdN5N+AaLm6DnoR+ejq2QrYeJg==
+     physical_name : .\REQ_receiving_payment_status.WDR
+     type : 5
+   -
+     name : REQ_select_articles
+     identifier : 0x4823647401675db6
+     internal_properties : HgAAAB4AAAB/2VWxAr9kkjjkCYEqFseT96FmgOJj6BlHb/xUD7dKDAKF70ZSsdRdLfvN6tU1gmn6
+     physical_name : .\REQ_select_articles.WDR
+     type : 5
+   -
+     name : FI_popup
+     identifier : 0x4824a36002de2043
+     internal_properties : HgAAAB4AAAANCWW5BnM7ZHfbpOVOVXpbM1AOliFp7IZOp9SPtVPDbYeZhKwn25XaIAbwyEi4QLAYGA==
+     physical_name : .\FI_popup.wdw
+     type : 8
+   -
+     name : FEN_Dashboard
+     identifier : 0x4824ab9107e41ff9
+     internal_properties : HgAAAB4AAACjn5uPPGlBWnmxLsSBQeNjYSBo8Ek57JtD7+XO+i7kZORsjwDlYr88Rvzm0lKOal6mrg==
+     physical_name : .\FEN_Dashboard.wdw
+     type : 2
+   -
+     name : FI_TDB_Widget_Info
+     identifier : 0x4824aba3085868aa
+     internal_properties : HgAAAB4AAABSqIqeLRoSze4i31/rFoENDK/bgz0FNJOWEUzGEewo8AzCiOB7lW5tt21XoWGfW023vw==
+     physical_name : .\FI_TDB_Widget_Info.wdw
+     type : 8
+   -
+     name : FI_TDB_Widget_Valeur
+     identifier : 0x4824aba408636908
+     internal_properties : HgAAAB4AAAC2nJ6CIR4WGTp+61TH/aztzo/FbdVtHT6K8OermJV/sUPTFcSeqnp5g7kjnWWbZ1mjow==
+     physical_name : .\FI_TDB_Widget_Valeur.wdw
+     type : 8
+   -
+     name : FEN_Fen_popup_
+     identifier : 0x4824b0c7091279d0
+     internal_properties : HgAAAB4AAACloY2RLkvj/E/DeXhHm9tYTWwEbGXFCde/8M6avnoQ4BDAEme4UXYCGA6IcDCgWEiwsA==
+     physical_name : .\FEN_Fen_popup_.wdw
+     type : 2
+   -
+     name : FEN_stock_location_VF
+     identifier : 0x482535e1010669c1
+     internal_properties : HgAAAB4AAABt6UVZZtNbBNd8YARNVRGLtcJ4KJMEqO9K5IquG+0ph7FTDO0a74KDgKYQ6KhYIJB4+A==
+     physical_name : .\FEN_stock_location_VF.wdw
+     type : 2
+   -
+     name : REQ_select_seuil_critique
+     identifier : 0x48260e0300fba828
+     internal_properties : HgAAAB4AAACB8z9rtBHGBCD+33JdMIdyZnMG3MfvCTkzI+8lsxGSCKtH0ULvGXTZo90vSGuPKJOE
+     physical_name : .\REQ_select_seuil_critique.WDR
+     type : 5
+   -
+     name : FI_liste_Entrés_Stock
+     identifier : 0x4826224f0290f454
+     internal_properties : HgAAAB4AAAC/m5eLOGVNXm23hfZuxxIQQRBIgDlbeiRK7Ha09iLwKNBQxq7XK/Q6SvDq1l6SbmKqqg==
+     physical_name : .\FI_liste_Entrés_Stock.wdw
+     type : 8
+   -
+     name : REQ_SELECT_rec
+     identifier : 0x48264eef013e2a2e
+     internal_properties : HgAAAB4AAAArJxN3tPG54uELRWL5GeJ807wuPnUfiM+i1hc3T3kloxHfUVnmG9S+znRuSsoG8uYuNg==
+     physical_name : .\REQ_SELECT_rec.WDR
+     type : 5
+   -
+     name : REQ_voir_permissions
+     identifier : 0x482df73f0215be54
+     internal_properties : HgAAAB4AAACA/vgkg/iw68hpJ7uzplqKttv15dzDzR+2lb407dsxN91h9sdepIuglYt1Q8M9xTuFjQ==
+     physical_name : .\REQ_voir_permissions.tkR
+     type : 5
+   -
+     name : REQ_REQ_Ajouter_Permission_Role
+     identifier : 0x482df73f0218be64
+     internal_properties : HgAAAB4AAAAbd8PH5KEJEtGCTCgAUM5qVyByspmZmAO2kUtlr8lNQ7kXb1/JMR41fqQemhrWohb+Bg==
+     physical_name : .\REQ_REQ_Ajouter_Permission_Role.bkR
+     type : 5
+   -
+     name : REQ_role_permossion
+     identifier : 0x482df73f021bbe83
+     internal_properties : HgAAAB4AAAAhHRkNuufP4ONQ3t5muXi/Q3w+jsURMK5yolZ1C22hV+0DoqxzTzDHzHJsVNwU7NwkLA==
+     physical_name : .\REQ_role_permossion.bkR
+     type : 5
+   -
+     name : REQ_SansNom_gestion_magasin_v31
+     identifier : 0x482df73f021ebea2
+     internal_properties : HgAAAB4AAACU8vw4h/y0twS1QycPTcuWCmuxKRQo9bGKlND7q+0vObMjcF7COCc8cdfBP8c5wTeBgQ==
+     physical_name : .\REQ_SansNom_gestion_magasin_v31.bkR
+     type : 5
+   -
+     name : REQ_select_seuil_critique2
+     identifier : 0x482df73f0221bec2
+     internal_properties : HgAAAB4AAABg3lhEY9hQCyiJR1uTFPs19IVDy+YgUqOKdCvnQVfFIy3V+TX+xKtAdasV46NdJZtl7Q==
+     physical_name : .\REQ_select_seuil_critique2.WDR
+     type : 5
+   -
+     name : REQ_selection_entr_stock
+     identifier : 0x482df73f0224bee1
+     internal_properties : HgAAAB4AAACrp5P3NHE5YmHSXFiQDP5vvdz0PJVpfNqihnhuvtqwYJCgEzv5wa5FTvTuykqGcmautg==
+     physical_name : .\REQ_selection_entr_stock.WDR
+     type : 5
+   -
+     name : REQ_SelectionArticl
+     identifier : 0x482df73f0227bf00
+     internal_properties : HgAAAB4AAABAPrjkw7jwKwipZ3vz+i8IPn31/dZ2MVSOt1CGrOwgMIByoxse5MtgVcs1gwP9hXtFzQ==
+     physical_name : .\REQ_SelectionArticl.WDR
+     type : 5
+   -
+     name : REQ_supprimer_permission
+     identifier : 0x482df740022abf1f
+     internal_properties : HgAAAB4AAAB41qD8S3A4Y2DRX1ybFYKhGr3pSQbIphxSqvtu1rLiDirADDP1zbNITfPty0uFfXNd5Q==
+     physical_name : .\REQ_supprimer_permission.WDR
+     type : 5
+   -
+     name : REQ_Supprimer_Utilisateur_Complet
+     identifier : 0x482df740022dbf2f
+     internal_properties : HgAAAB4AAADlYc3R7oujvA+sakviD+81STqk9EPTMq9ORxOXsdfHMY9tgE/u1LxTWM7IMPDgmAjwcA==
+     physical_name : .\REQ_Supprimer_Utilisateur_Complet.WDR
+     type : 5
+   -
+     name : REQ_SUpprimerItemsY
+     identifier : 0x482df7400230bf4e
+     internal_properties : HgAAAB4AAAAnIw8TkM1lBtW2QC0UbCFb81I6IhPKLNeCfpkrELhSlna+Z2jEPiI5cqgS7rYq1soyMg==
+     physical_name : .\REQ_SUpprimerItemsY.WDR
+     type : 5
+   -
+     name : REQ_Tabel_Article
+     identifier : 0x482df7400233bf6e
+     internal_properties : HgAAAB4AAAAyCGq+jfqy7c5rJYa9+JxtALH/twIvk6O20QXSSS9lm61F1epbp4mel413QcE/O60XHw==
+     physical_name : .\REQ_Tabel_Article.WDR
+     type : 5
+   -
+     name : REQ_update_itmsY
+     identifier : 0x482df7400236bf8d
+     internal_properties : HgAAAB4AAADfuzfr2IWtvg2+uAU8eiX9qyqSistIy0CCvk2dvNw+qgLSSWbcJgohatDKNv7yjgLKSg==
+     physical_name : .\REQ_update_itmsY.WDR
+     type : 5
+  other_elements : []
+  array_of_analysis :
+   -
+     analysis : .\gestion_magasin_v3.ana\gestion_magasin_v3.wda
+  uml_model : ..\..\Modèle gestion_magasin_v3.pdf
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ data_directory : <RepExeOuRepDonneesCommun>
+ common_generation_directory : true
+ user_groupware_executable :
+  internal_properties : HgAAAB4AAADCxDply4lZduY5iJcZcRAdFnI6dCgR9v+gMChE/j2bunylrNPTx1KgBhX4IP2upmyQXqwFfqPm6QVFnbvVq3I4DsFCNPA4i3sqSitKtDC7v5eT
+  connections_history : true
+ user_groupware_site :
+  internal_properties : HgAAAB4AAADCxDply4lZduY5iJcZcRAdFnI6dCgR9v+gMChE/j2bunylrNPTx1KgBhX4IP2upmyQXqwFfqPm6QVFnbvVq3I4DsFCNPA4i3sqSitKtDC7v5eT
+  connections_history : true
+ languages :
+  - fr-FR
+ url_rewriting :
+  internal_properties : HgAAAB4AAADkPzcUdUUS7wCiun+MCjqYH70RJdzkSv/nRvXZ3ENdikMa6bcHtsAH
+ rad_options :
+  internal_properties : HgAAAB4AAABflR2i8EcXLPYoMcOVlglhr/Ryihb2dHIqXg2ScQegJn0e2Uws+QiGMFi2PwiX6Id7Hga/jHL7cVvzruzM6Q5rzZUNYSKaG73GLwytSdIlTezHs5CeOQ==
+ code_elements :
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      // Procédure globale pour générer une référence unique
+      PROCÉDURE GLOBALE GénérerReferenceReceiving() : chaîne
+      sDateHeure est une chaîne = DateVersChaîne(DateSys(), "AAAAMMJJ") + "-" + HeureVersChaîne(HeureSys(), "HHMMSS")
+      RENVOYER "REC-" + sDateHeure
+     type : 196608
+   -
+     type : 196627
+     enabled : false
+ code_parameters :
+  internal_properties : HgAAAB4AAADXPUOq6bQdTI/fs1mC0I6nimWl2G84EsAbne5i32IM05uoRA==
+rad :
+ internal_properties : HgAAAB4AAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : HgAAAB4AAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : HgAAAB4AAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

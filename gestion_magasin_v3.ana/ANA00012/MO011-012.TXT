@@ -1,0 +1,3 @@
+//MO011-012.TXT ANA00011 TO ANA00012
+receiving_items		NFI		nouveau fichier de données
+receiving_items		FIC-	receiving_items	Fichier de données supprimé receiving_items

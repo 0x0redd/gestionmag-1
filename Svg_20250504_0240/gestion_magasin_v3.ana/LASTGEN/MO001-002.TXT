@@ -1,0 +1,24 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+customers		FCNX+	Connexion	
+users		FCNX+	Connexion	
+inventories		FCNX+	Connexion	
+permissions		FCNX+	Connexion	
+roles		FCNX+	Connexion	
+receivings		FCNX+	Connexion	
+people		FCNX+	Connexion	
+receivings_items		FCNX+	Connexion	
+role_has_permissions		FCNX+	Connexion	
+payment_type		FCNX+	Connexion	
+sales		FCNX+	Connexion	
+sales_items		FCNX+	Connexion	
+item_quantities		FCNX+	Connexion	
+items		FCNX+	Connexion	
+sales_payments		FCNX+	Connexion	
+stock_location		FCNX+	Connexion	
+supplier		FCNX+	Connexion	
+item_kits		FCNX+	Connexion	
+transfers		FCNX+	Connexion	
+role_user		NFI		nouveau fichier de données
+role_user_ibfk_1		NWL	users (id) et role_user (user_id)	Nouvelle liaison entre les fichiers de données users (id) et role_user (user_id)
+role_user_ibfk_2		NWL	roles (id) et role_user (role_id)	Nouvelle liaison entre les fichiers de données roles (id) et role_user (role_id)
+Connexion		CNX+		

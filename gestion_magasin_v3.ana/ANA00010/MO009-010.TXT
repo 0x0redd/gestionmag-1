@@ -1,0 +1,5 @@
+//MO009-010.TXT ANA00009 TO ANA00010
+receiving_items		NFI		nouveau fichier de données
+receiving_items		FIC-	receiving_items	Fichier de données supprimé receiving_items
+receiving_items_ibfk_2		DEL	items (id) et receiving_items (item_id)	Liaison supprimée entre les fichiers de données items (id) et receiving_items (item_id)
+receiving_items_ibfk_1		DEL	receivings (id) et receiving_items (receiving_id)	Liaison supprimée entre les fichiers de données receivings (id) et receiving_items (receiving_id)

@@ -1,0 +1,10 @@
+//MO013-014.TXT ANA00013 TO ANA00014
+sales		NFI		nouveau fichier de données
+sales		FIC-	sales	Fichier de données supprimé sales
+sales_ibfk_2		NWL	stock_location (id) et sales (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et sales (location_id)
+sales_ibfk_1		NWL	customers (id) et sales (customer_id)	Nouvelle liaison entre les fichiers de données customers (id) et sales (customer_id)
+sales_items_sale_id_foreign		DEL	sales (id) et sales_items (sale_id)	Liaison supprimée entre les fichiers de données sales (id) et sales_items (sale_id)
+sales_customer_id_foreign		DEL	customers (id) et sales (customer_id)	Liaison supprimée entre les fichiers de données customers (id) et sales (customer_id)
+sales_payments_sale_id_foreign		DEL	sales (id) et sales_payments (sale_id)	Liaison supprimée entre les fichiers de données sales (id) et sales_payments (sale_id)
+sales_user_id_foreign		DEL	users (id) et sales (user_id)	Liaison supprimée entre les fichiers de données users (id) et sales (user_id)
+sales_location_id_foreign		DEL	stock_location (id) et sales (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et sales (location_id)

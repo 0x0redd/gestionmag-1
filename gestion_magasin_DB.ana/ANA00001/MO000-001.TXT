@@ -1,0 +1,47 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+customers		NFI		nouveau fichier de données
+inventories		NFI		nouveau fichier de données
+item_kits		NFI		nouveau fichier de données
+item_quantities		NFI		nouveau fichier de données
+items		NFI		nouveau fichier de données
+payment_type		NFI		nouveau fichier de données
+people		NFI		nouveau fichier de données
+permissions		NFI		nouveau fichier de données
+receivings		NFI		nouveau fichier de données
+receivings_items		NFI		nouveau fichier de données
+role_has_permissions		NFI		nouveau fichier de données
+roles		NFI		nouveau fichier de données
+sales		NFI		nouveau fichier de données
+sales_items		NFI		nouveau fichier de données
+sales_payments		NFI		nouveau fichier de données
+stock_location		NFI		nouveau fichier de données
+supplier		NFI		nouveau fichier de données
+transfers		NFI		nouveau fichier de données
+users		NFI		nouveau fichier de données
+customers_person_id_foreign		NWL	people (id) et customers (person_id)	Nouvelle liaison entre les fichiers de données people (id) et customers (person_id)
+customers_user_id_foreign		NWL	users (id) et customers (user_id)	Nouvelle liaison entre les fichiers de données users (id) et customers (user_id)
+inventories_trans_items_foreign		NWL	items (id) et inventories (trans_items)	Nouvelle liaison entre les fichiers de données items (id) et inventories (trans_items)
+inventories_trans_location_foreign		NWL	stock_location (id) et inventories (trans_location)	Nouvelle liaison entre les fichiers de données stock_location (id) et inventories (trans_location)
+inventories_trans_user_id_foreign		NWL	users (id) et inventories (trans_user_id)	Nouvelle liaison entre les fichiers de données users (id) et inventories (trans_user_id)
+item_quantities_item_id_foreign		NWL	items (id) et item_quantities (item_id)	Nouvelle liaison entre les fichiers de données items (id) et item_quantities (item_id)
+item_quantities_location_id_foreign		NWL	stock_location (id) et item_quantities (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et item_quantities (location_id)
+payment_type_receivings_id_foreign		NWL	receivings (id) et payment_type (receivings_id)	Nouvelle liaison entre les fichiers de données receivings (id) et payment_type (receivings_id)
+receivings_supplier_id_foreign		NWL	supplier (id) et receivings (supplier_id)	Nouvelle liaison entre les fichiers de données supplier (id) et receivings (supplier_id)
+receivings_user_id_foreign		NWL	users (id) et receivings (user_id)	Nouvelle liaison entre les fichiers de données users (id) et receivings (user_id)
+receivings_items_item_id_foreign		NWL	items (id) et receivings_items (item_id)	Nouvelle liaison entre les fichiers de données items (id) et receivings_items (item_id)
+receivings_items_item_location_foreign		NWL	stock_location (id) et receivings_items (item_location)	Nouvelle liaison entre les fichiers de données stock_location (id) et receivings_items (item_location)
+receivings_items_receiving_id_foreign		NWL	receivings (id) et receivings_items (receiving_id)	Nouvelle liaison entre les fichiers de données receivings (id) et receivings_items (receiving_id)
+role_has_permissions_permission_id_foreign		NWL	permissions (id) et role_has_permissions (permission_id)	Nouvelle liaison entre les fichiers de données permissions (id) et role_has_permissions (permission_id)
+role_has_permissions_role_id_foreign		NWL	roles (id) et role_has_permissions (role_id)	Nouvelle liaison entre les fichiers de données roles (id) et role_has_permissions (role_id)
+sales_customer_id_foreign		NWL	customers (id) et sales (customer_id)	Nouvelle liaison entre les fichiers de données customers (id) et sales (customer_id)
+sales_location_id_foreign		NWL	stock_location (id) et sales (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et sales (location_id)
+sales_user_id_foreign		NWL	users (id) et sales (user_id)	Nouvelle liaison entre les fichiers de données users (id) et sales (user_id)
+sales_items_item_id_foreign		NWL	items (id) et sales_items (item_id)	Nouvelle liaison entre les fichiers de données items (id) et sales_items (item_id)
+sales_items_item_location_foreign		NWL	stock_location (id) et sales_items (item_location)	Nouvelle liaison entre les fichiers de données stock_location (id) et sales_items (item_location)
+sales_items_sale_id_foreign		NWL	sales (id) et sales_items (sale_id)	Nouvelle liaison entre les fichiers de données sales (id) et sales_items (sale_id)
+sales_payments_sale_id_foreign		NWL	sales (id) et sales_payments (sale_id)	Nouvelle liaison entre les fichiers de données sales (id) et sales_payments (sale_id)
+sales_payments_user_id_foreign		NWL	users (id) et sales_payments (user_id)	Nouvelle liaison entre les fichiers de données users (id) et sales_payments (user_id)
+supplier_person_id_foreign		NWL	people (id) et supplier (person_id)	Nouvelle liaison entre les fichiers de données people (id) et supplier (person_id)
+users_person_id_foreign		NWL	people (id) et users (person_id)	Nouvelle liaison entre les fichiers de données people (id) et users (person_id)
+Connexion		CNX+		
+Connexion1_pos		CNX+		

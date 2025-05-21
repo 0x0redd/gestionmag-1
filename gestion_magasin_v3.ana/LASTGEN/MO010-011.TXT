@@ -1,0 +1,4 @@
+//MO010-011.TXT ANA00010 TO ANA00011
+payment_type		NFI		nouveau fichier de données
+payment_type		FIC-	payment_type	Fichier de données supprimé payment_type
+payment_type_receivings_id_foreign		DEL	receivings (id) et payment_type (receivings_id)	Liaison supprimée entre les fichiers de données receivings (id) et payment_type (receivings_id)

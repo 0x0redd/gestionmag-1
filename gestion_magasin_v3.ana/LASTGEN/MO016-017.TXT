@@ -1,0 +1,4 @@
+//MO016-017.TXT ANA00016 TO ANA00017
+sales		NFI		nouveau fichier de données
+sales		FIC-	sales	Fichier de données supprimé sales
+fk_location_id2		NWL	stock_location (id) et sales (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et sales (location_id)

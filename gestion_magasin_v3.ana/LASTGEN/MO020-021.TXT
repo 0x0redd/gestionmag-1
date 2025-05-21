@@ -1,0 +1,68 @@
+//MO020-021.TXT ANA00020 TO ANA00021
+customers		NFI		nouveau fichier de données
+users		NFI		nouveau fichier de données
+inventories		NFI		nouveau fichier de données
+permissions		NFI		nouveau fichier de données
+roles		NFI		nouveau fichier de données
+receivings		NFI		nouveau fichier de données
+people		NFI		nouveau fichier de données
+role_has_permissions		NFI		nouveau fichier de données
+payment_type		NFI		nouveau fichier de données
+sales		NFI		nouveau fichier de données
+sales_items		NFI		nouveau fichier de données
+item_quantities		NFI		nouveau fichier de données
+items		NFI		nouveau fichier de données
+sales_payments		NFI		nouveau fichier de données
+stock_location		NFI		nouveau fichier de données
+supplier		NFI		nouveau fichier de données
+item_kits		NFI		nouveau fichier de données
+transfers		NFI		nouveau fichier de données
+role_user		NFI		nouveau fichier de données
+receiving_items		NFI		nouveau fichier de données
+customers		FIC-	customers	Fichier de données supprimé customers
+users		FIC-	users	Fichier de données supprimé users
+inventories		FIC-	inventories	Fichier de données supprimé inventories
+permissions		FIC-	permissions	Fichier de données supprimé permissions
+roles		FIC-	roles	Fichier de données supprimé roles
+receivings		FIC-	receivings	Fichier de données supprimé receivings
+people		FIC-	people	Fichier de données supprimé people
+role_has_permissions		FIC-	role_has_permissions	Fichier de données supprimé role_has_permissions
+payment_type		FIC-	payment_type	Fichier de données supprimé payment_type
+sales		FIC-	sales	Fichier de données supprimé sales
+sales_items		FIC-	sales_items	Fichier de données supprimé sales_items
+item_quantities		FIC-	item_quantities	Fichier de données supprimé item_quantities
+items		FIC-	items	Fichier de données supprimé items
+sales_payments		FIC-	sales_payments	Fichier de données supprimé sales_payments
+stock_location		FIC-	stock_location	Fichier de données supprimé stock_location
+supplier		FIC-	supplier	Fichier de données supprimé supplier
+item_kits		FIC-	item_kits	Fichier de données supprimé item_kits
+transfers		FIC-	transfers	Fichier de données supprimé transfers
+role_user		FIC-	role_user	Fichier de données supprimé role_user
+receiving_items		FIC-	receiving_items	Fichier de données supprimé receiving_items
+customers_ibfk_1		NWL	people (id) et customers (person_id)	Nouvelle liaison entre les fichiers de données people (id) et customers (person_id)
+item_quantities_ibfk_1		NWL	items (id) et item_quantities (item_id)	Nouvelle liaison entre les fichiers de données items (id) et item_quantities (item_id)
+item_quantities_ibfk_2		NWL	stock_location (id) et item_quantities (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et item_quantities (location_id)
+role_has_permissions_ibfk_2		NWL	roles (id) et role_has_permissions (role_id)	Nouvelle liaison entre les fichiers de données roles (id) et role_has_permissions (role_id)
+role_has_permissions_ibfk_1		NWL	permissions (id) et role_has_permissions (permission_id)	Nouvelle liaison entre les fichiers de données permissions (id) et role_has_permissions (permission_id)
+fk_supplier_id		NWL	supplier (id) et receivings (supplier_id)	Nouvelle liaison entre les fichiers de données supplier (id) et receivings (supplier_id)
+fk_receiving_id		NWL	receivings (id) et receiving_items (receivings_id)	Nouvelle liaison entre les fichiers de données receivings (id) et receiving_items (receivings_id)
+fk_receiving_items		NWL	receiving_items (id) et payment_type (receivings_id)	Nouvelle liaison entre les fichiers de données receiving_items (id) et payment_type (receivings_id)
+role_user_ibfk_1		NWL	users (id) et role_user (user_id)	Nouvelle liaison entre les fichiers de données users (id) et role_user (user_id)
+role_user_ibfk_2		NWL	roles (id) et role_user (role_id)	Nouvelle liaison entre les fichiers de données roles (id) et role_user (role_id)
+fk_location_id2		NWL	stock_location (id) et sales (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et sales (location_id)
+sales_items_ibfk_2		NWL	items (id) et sales_items (item_id)	Nouvelle liaison entre les fichiers de données items (id) et sales_items (item_id)
+supplier_ibfk_1		NWL	people (id) et supplier (person_id)	Nouvelle liaison entre les fichiers de données people (id) et supplier (person_id)
+users_ibfk_1		NWL	people (id) et users (person_id)	Nouvelle liaison entre les fichiers de données people (id) et users (person_id)
+customers_user_id_foreign		DEL	users (id) et customers (user_id)	Liaison supprimée entre les fichiers de données users (id) et customers (user_id)
+inventories_trans_user_id_foreign		DEL	users (id) et inventories (trans_user_id)	Liaison supprimée entre les fichiers de données users (id) et inventories (trans_user_id)
+customers_person_id_foreign		DEL	people (id) et customers (person_id)	Liaison supprimée entre les fichiers de données people (id) et customers (person_id)
+role_has_permissions_role_id_foreign		DEL	roles (id) et role_has_permissions (role_id)	Liaison supprimée entre les fichiers de données roles (id) et role_has_permissions (role_id)
+sales_items_item_location_foreign		DEL	stock_location (id) et sales_items (item_location)	Liaison supprimée entre les fichiers de données stock_location (id) et sales_items (item_location)
+supplier_person_id_foreign		DEL	people (id) et supplier (person_id)	Liaison supprimée entre les fichiers de données people (id) et supplier (person_id)
+users_person_id_foreign		DEL	people (id) et users (person_id)	Liaison supprimée entre les fichiers de données people (id) et users (person_id)
+inventories_trans_location_foreign		DEL	stock_location (id) et inventories (trans_location)	Liaison supprimée entre les fichiers de données stock_location (id) et inventories (trans_location)
+role_has_permissions_permission_id_foreign		DEL	permissions (id) et role_has_permissions (permission_id)	Liaison supprimée entre les fichiers de données permissions (id) et role_has_permissions (permission_id)
+fk_location_id		DEL	stock_location (id) et item_quantities (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et item_quantities (location_id)
+role_user_ibfk_1		DEL	users (id) et role_user (user_id)	Liaison supprimée entre les fichiers de données users (id) et role_user (user_id)
+role_user_ibfk_2		DEL	roles (id) et role_user (role_id)	Liaison supprimée entre les fichiers de données roles (id) et role_user (role_id)
+fk_location_id2		DEL	stock_location (id) et sales (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et sales (location_id)

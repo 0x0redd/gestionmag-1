@@ -1,0 +1,5 @@
+//MO015-016.TXT ANA00015 TO ANA00016
+sales		NFI		nouveau fichier de données
+sales		FIC-	sales	Fichier de données supprimé sales
+sales_ibfk_2		DEL	stock_location (id) et sales (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et sales (location_id)
+sales_ibfk_1		DEL	customers (id) et sales (customer_id)	Liaison supprimée entre les fichiers de données customers (id) et sales (customer_id)

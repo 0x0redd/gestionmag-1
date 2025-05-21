@@ -1,0 +1,6 @@
+//MO006-007.TXT ANA00006 TO ANA00007
+item_quantities		NFI		nouveau fichier de données
+item_quantities		FIC-	item_quantities	Fichier de données supprimé item_quantities
+fk_location_id		NWL	stock_location (id) et item_quantities (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et item_quantities (location_id)
+item_quantities_item_id_foreign		DEL	items (id) et item_quantities (item_id)	Liaison supprimée entre les fichiers de données items (id) et item_quantities (item_id)
+item_quantities_location_id_foreign		DEL	stock_location (id) et item_quantities (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et item_quantities (location_id)

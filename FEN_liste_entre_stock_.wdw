@@ -1,0 +1,53 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_liste_entre_stock_
+ major_version : 30
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_liste_entre_stock_
+ identifier : 0x281e73f60547d3f6
+ internal_properties : HgAAAB4AAAB3k6vRrWj+jQlFKBAc/HZSzSaxmgK4alXGH6wKrWzDAWu9pCiBqJd0A7GdUv5WaxrZI/OAx+HCpXaeDwH4GhtXUCKZeKxdx07+OzfuSKEE0Gh5wxFS/PCk7TSn6erBmv1UYNk1PYLSXab6mh7B2XAjmEqMm8/nexmQd4NntVAWGumme/s5sAFLoDJDMFkseC9+YYyBxO7N1aw8U7q74IEeYHUwJD3/PXdIyf7FKkCPbOHiyieWFEtmdZoAu5HbBGixmqLTE52SQ4uAtMJoKjR8T82mVwiY9U8BRhqR+dK5MmHR8bEyZydb3E6tbTgLD3aaPo60iw9QCSfeSgXhk5MN3MSgm65pW2is756pAhip+GIR1Cx5lNpeybXRPleSHG3y2FTGRT9McoDs9k9hGFOwzPnPCJlPrb0VQlMgVDwHaeFOzj1NHu4EM7r0Q2X+1lLGd9M8sMUVyRseYKwPs4ikPpMTsDxxGtAWKqz5O4Hcy/0+4pCRcqWbzA2obSUsyOJtcN0VHNMaAKzCB6LsDun1y8wUNk1NTFohQBEn1olq8gvUN46i5mWQlIPjS3+hsoQJTKT8b+80fGTEUHHRP/iMx27OytCicgjjqXab3p9eUM+sQRKNI6KkCVFT3uJ/8LmSgfxXVYQPMjnIZdyD6+vds39VtCjDSlQ9xIa6CWhMbdSzOw58JJn9rIaZbIP4EgE3oFvOsP3GoxH0fJRIAlto1wARY7syv9VnZrEu
+ properties :
+  width : 1272
+  height : 768
+  widthClient : 1270
+  heightClient : 736
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : HgAAAB4AAABolUUTe/ChVGjvhClq1yuaCw5C9uOg/mgP4csm5PPaumQ+mzbPvzHPT0N1AA/zoUcEB/Q2aEPudoGlHf/1w8aNW1l2ke7K7YvjL+KXl6ui7n1LFpWs+vjf9qTjtm7du5s7KSAtr1vgdYe7nWSVoaX/0l2GvX796g11PoTG/4ookeCAuYEOEftCoD/kYqOjmrgiMqwhk/6INbMLdhsRErSC4R/nZR5SMzseiCJDwTb5da+jbyhuiVR9GSMtN9F4SgZ+M3Ci6N1x48qEAhvcPkP5n81bGWXdtSdHP3Mi59A=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : HgAAAB4AAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : HgAAAB4AAACoLZs0mW4lq5aP9aNErAlUOSHZ7X4ZrJFFT1JWjhhvitD/xL/r2Etbr+oKxbieVf7YoEoO7HUdc4CD59271o8AU+x7o881eemR/sfDJwMvJH35
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x181e73eb002ea92c
+  internal_properties : HgAAAB4AAAAEBvz4BdTt90ISSptwDJCphvKgZdUR2e2WGWtmgJlonsrIZP01S5+UbwYBB2sFt7MTEw==
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : HgAAAB4AAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

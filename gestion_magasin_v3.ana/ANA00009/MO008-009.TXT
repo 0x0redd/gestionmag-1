@@ -1,0 +1,8 @@
+//MO008-009.TXT ANA00008 TO ANA00009
+receiving_items		NFI		nouveau fichier de données
+receivings_items		FIC-	receivings_items	Fichier de données supprimé receivings_items
+receiving_items_ibfk_2		NWL	items (id) et receiving_items (item_id)	Nouvelle liaison entre les fichiers de données items (id) et receiving_items (item_id)
+receiving_items_ibfk_1		NWL	receivings (id) et receiving_items (receiving_id)	Nouvelle liaison entre les fichiers de données receivings (id) et receiving_items (receiving_id)
+receivings_items_receiving_id_foreign		DEL	receivings (id) et receivings_items (receiving_id)	Liaison supprimée entre les fichiers de données receivings (id) et receivings_items (receiving_id)
+receivings_items_item_id_foreign		DEL	items (id) et receivings_items (item_id)	Liaison supprimée entre les fichiers de données items (id) et receivings_items (item_id)
+receivings_items_item_location_foreign		DEL	stock_location (id) et receivings_items (item_location)	Liaison supprimée entre les fichiers de données stock_location (id) et receivings_items (item_location)

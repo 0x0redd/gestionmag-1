@@ -1,0 +1,105 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_affiche_article_2_test
+ major_version : 30
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_affiche_article_2_test
+ identifier : 0x2822231e0f69b0fc
+ internal_properties : HgAAAB4AAAC1ga6ZQ2t96DmW8LVRwchiCIM3MZst/sx9JjCh47jzHRYBP0zoTxoOFGW9dLe+DBmxnW1jn0nD4FJv5BFCzNMKn07f45GHlY0OfGSyOq0KLWAecS0CWePr8hfC1fskAL9XqCy3n1aFnENHXpey5nPjjl29lHhg3Vy4aeXNMaynSI60tXDzpz2U/LuQsof5of0N8lIRwmohDkWH7VUrIAz8lNtzSXJGW6BsDLbLYRGvQV87jn4WY63nkq8WVENVP0QN1wawbuQ8XjQc6NGV/fh6V9shDf5MB0Uuk2lwcdn/mxZNvHXpqLJR1T5GzmxPuhepSXuOeYxskYIJuTxRLuPqZV4TwWe/J3WdIIZSIFjKCIpsjWDmOxnf/dHmnD/qfoOGlVcOAXvhX63Guxe9HAlCgBxqtMMtTByc/qpAMIADjdNF3+NjwPuNOMbbz+WOljLsKtx2fnf2njrmmwhrF3DEdDzktl5PSQPVUBNtH32U89s54V7t1qIQ36sncd/SWKKPPyx3qk3twxF+bPheTGtT56ubevsngYdkGiynnGPUeMftouCYsJzzJd/+tY9BkK7x8wVu72/jbyWkzm3VW2AsBIJ2Lddk93Gy8MHHw3Czj9d6NQwgsQMgMLHnlS82iUaawr1uoTy+56tfiGqvWnqeXtVfr4cTZv5jLSYphnMpuomrdKFFwByaLLm9zc21OsyQg9xR25IYyIYF2Cbk+bi4uNJaQGjMGdNB8s0ADi37hoic
+ properties :
+  width : 1024
+  height : 768
+  widthClient : 1022
+  heightClient : 736
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : HgAAAB4AAABolUUTe/ChVGjvhClq1yuaCw5C9uOg/mgP4csm5PPaumQ+mzbPvzHPT0N1AA/zoUcEB/Q2aEPudoGlHf/1w8aNW1l2ke7K7YvjL+KXl6ui7n1LFpWs+vjf9qTjtm7du5s7KSAtr1vgdYe7nWSVoaX/0l2GvX796g11PoTG/4ookeCAuYEOEftCoD/kYqOjmrgiMqwhk/6INbMLdhsRErSC4R/nZR5SMzseiCJDwTb5da+jbyhuiVR9GSMtN9F4SgZ+M3Ci6N1x48qEAhvcPkP5n81bGWXdtSdHP3Mi59A=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : HgAAAB4AAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      // Exécution de la requête
+      SI HExécuteRequête(REQ_select_article) ALORS
+      	// Parcourir tous les enregistrements
+      	HLitPremier(REQ_select_article)
+      	TANTQUE PAS HEnDehors(REQ_select_article)
+      		// Générer un ID unique pour chaque contrôle
+      		nCompteur est un entier = nCompteur++
+      		sIDUnique	est une chaîne	= NumériqueVersChaîne(nCompteur)
+      		
+      		// --- CRÉATION DU CHAMP IMAGE ---
+      		// Déclaration correcte d'un champ Image
+      		ChampIMAGE	est un champ	<- ChampCrée("IMAGE", "IMG_" + sIDUnique, MaFenêtre)
+      		// Configuration du champ
+      		ChampIMAGE.X		= x
+      		ChampIMAGE.Y		= y
+      		ChampIMAGE.Largeur	= largeurImage
+      		ChampIMAGE.Hauteur	= hauteurImage
+      		
+      		// Gestion de l'image
+      		sImage est une chaîne = REQ_select_article.pictures
+      		SI sImage <> "" ET fFichierExiste(sImage) ALORS
+      			ChampIMAGE = sImage
+      		SINON
+      			// Image par défaut
+      			ChampIMAGE = fRepExe() + "\images\pas_image.jpg"
+      		FIN
+      		
+      		// --- CRÉATION DU CHAMP LIBELLÉ ---
+      		// Déclaration correcte d'un champ Libellé
+      		ChampLIB est un champ <- ChampCrée("LIBELLÉ", "LBL_" + sIDUnique, MaFenêtre)
+      		// Configuration du champ
+      		ChampLIB.X			= x
+      		ChampLIB.Y			= y + hauteurImage + 5
+      		ChampLIB.Largeur	= largeurImage
+      		ChampLIB.Hauteur	= 20
+      		ChampLIB.Alignement	= alCentre
+      		ChampLIB			= REQ_select_article.name
+      		
+      		// Gestion de la grille pour le prochain élément
+      		colActuelle++
+      		SI colActuelle >= colonneMax ALORS
+      			colActuelle	= 0
+      			x			= 10
+      			y += hauteurImage + 40
+      		SINON
+      			x += largeurImage + marge
+      		FIN
+      		
+      		HLitSuivant(REQ_select_article)
+      	FIN
+      SINON
+      	Erreur("Erreur de chargement : " + HErreurInfo())
+      FIN
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : HgAAAB4AAACoLZs0mW4lq5aP9aNErAlUOSHZ7X4ZrJFFT1JWjhhvitD/xL/r2Etbr+oKxbieVf7YoEoO7HUdc4CD59271o8AU+x7o881eemR/sfDJwMvJH35
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x18222312009a842f
+  internal_properties : HgAAAB4AAAAEBvz4BdTt90ISSptwDJCphvKgZdUR2e2WGWtmgJlonsrIZP01S5+UbwYBB2sFt7MTEw==
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : HgAAAB4AAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

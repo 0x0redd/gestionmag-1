@@ -1,0 +1,161 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_Onglet
+ major_version : 30
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_Onglet
+ identifier : 0x2817392204e8ac07
+ internal_properties : HgAAAB4AAADwTwsYI+j5EABMEAh0MWKoGy0tcqqIdmUfsBX9qUpLrjKc9vpXdt9AV1Sb6mHEZLgZxvFjGBatHmNWzkI7Ct9wrjLb3jiXv/KdsqLnNtvjwOBiY/2XXR/X/MlYMTLljwOKvKssZggBL0oUjjTLR6ka/GzgIeb7xD4XS4dwI8sizccQMOk/wu/G0clX405mtIx5xtVZOi6zWSkybChAJ2AEpzC6Z4q8KhfvjRnKy7eWYNvEjDPRJdfdRNaC26TgMYfIBR/Iytzc1SLIyw97rpLSo2SY25js8ozz7A8DXDGerR/14Kii2KSlEsDkZZ5rLwptR0a0hq90ooYw/utTN2A0aR3sgehl8PP2roA9pTu9KLaydVGUhorMymDwVoDCVkCNZdWA7wnf/JaGh8WjH2GZ3VetaqFbtWWv/BY9V4WDY4fO1yfB8LC5JsyS1VJnS/cs8XWaWAp4GlY2yYckhJGpCXhiPuYe/MaaHRZWEl6Fxkl/CCwS4qSefVImEgJbVjIUxMzU9QUXrzdsgDo1ZiAADKZPW9poCjRvpLqGJLjuFvbV4K4esu4T3vpAyi1Pfdb3bkHbF9P+wpbGBm5Lb/ven1FsW76OvLa+b32LkfEnsm78BQkq8CjR26CqIJLa5/yG2F5W2wJrrjrBs7V4qBWFtz9b/6nm9FpuicLp+7P9HTgomt4l6N16fmMsBhhQPnJkronpfiA9tjSTX1fwOgYW3g8/GTkg3Px4ugkkSRm3Rs1Z
+ properties :
+  width : 1200
+  height : 906
+  widthClient : 1198
+  heightClient : 874
+ controls :
+  -
+    name : ONG_Menu
+    identifier : 0x2817392204eaac07
+    internal_properties : HgAAAB4AAADE6iqhGJCA3qZGDJnKaAJ93s28/+3v6Qy75A58DDQIUctaR2tGiSkZvNBxwjPJnOg1sy8Ky27VrMZNnUCx1NeP4R1Olt6iLc4HdPO6WJnxqC0dBIrmGCVE4+bNpVEY4kDMvxqQBFpdTXloyPRUduTli4XrcyFDnugD9WJaiC4zrEo+DGLQNVrXLK7UuyN2sdVUCVeNpjSSOYcdXP6VvVH4snQ/+ZazbT9YtoQVJXM+tFx6SXxLZvxhK9/0Ub1rWB9T2VyQIQmTx1tZn5mjqvVTA5XveD00SlDoe8qNXoIdtdE0x7SWUsCL43YWNyUCHLzrVusUcDSxAE0n77QJUYvUab/9cP73Q3ahLK5qjAmgkVN1zw1H6A6eMhDY0G9/KQrClv1S84wln83j+uFZptxGW5PK1/EZykRXKTvhZ8UFiIKUmPFpAaebUNDfy3KwBiNUEqp+/U1OfyDyOHPENUB2ZsPVDwzttzE6JgeT9rnPcUk3/R0bJiz7g4I804Co+o7jxokzvlkGGGgZeTJaIl+YyyE7TpZ438LtNlKfjZFD/zrMf5ZWTH/mGeljpWwe2TYFXfC/7oodOEP0DSAD8kQOoGiCYknvR7bp3+ylqC9KNGWZUveFQzNk2VWA93hWKD7A4Ctpps6cYTBw6ySrU4T1bsmEm0p7hcNlLJPCp7Xf7qHY++7QeZHHDrOan/Jvd9zxwwrIW/dC+5bmOL7lu1ovWh9SRISpNExo2/5o74aEl6vhm3sJCFUuS6+Vzq5KY0zTs4Wob8hwKxHHpS5ZliQdCx305jl76mgLg4Wjs9f+0gD8Mni0Bs8IO1W+c2G3f+y4kIyBkLuEGILhC7n9CgUw1vRtdfSIHVA6t7zPKSnsvEyAcvoUL6Wxog6S2atdkC3l825YTxf8vD3Y6er4CKUZrtORBTRdIuLgQEd/TMl9CU0FT9/yJ70SMDkEb6catsq9LhU11lbfQqZle5NKoZPl6rQn/wDE+Py3kbnRZbUgaICQk1CcIuM934a+EZULd0eq3fq/Qql6nx1hpQM+JnGYta/o4bTy5uKrCu8I0Ce4zlXTNgvY9kzwJdXhxUcQfxGoImRZIFWvPO3o8y9p+zYb0Nr3t0HoPtVWuLOJYuOT/YpBkGtOEbffsoo0p78JvGUphe1ZhaUJllGnls+uA1l/4k/eDS00Pc/w58InjggEGTg=
+    properties :
+     y : 16
+     width : 1200
+     height : 860
+    tabs : []
+    type : 16
+    code_elements :
+     type_code : 24
+     p_codes : []
+  -
+    name : LIB_MonApplication
+    identifier : 0x2817392204e9ac07
+    internal_properties : HgAAAB4AAABwySZs33xS9il+hrq6DnI9vqYaw3Pz73gQSOKceMtfPO/6Qyd1dJt74UpeifXhRiiaIFCQ3Qw0uPQDeBjTH5RQvJKlCVaVwKI6lHak6SMgeFvkK0OM0OoRb6eGqbwr/sCK+uDTk5Mc0Y5GFHHgrWJnhNVBa0/GcstcFkD8Bk3BeyV4o25eHqsM1S/5pYTE7fS1omI1Pgda9ZXOA/XNTsh5gVSjHtHJg41rb50kH8PQ56JotaRtKHz8+0a3/j7vi0sbW0rg/h7X181NDe8cet+yf06tl4yQvJhbWW0l5RNwak0y0pf+hrj7vcAwkOdX3FiQCrJi2v+Jd2+bmGiLXeDrO8SEPbizclBOLzwCV2uA4Vci+/2KhgWbG1TwtrC0TJYDRaANYepp41SzZmD2SRyKTdfTwecXIDKo8iAI1SrONMzV3EA0/P/J9u9DcYlPmqggSJptUFEOoEGNA0OPQSylfEQbJAYWRreqkg==
+    properties :
+     x : 569
+     y : 6
+     width : 623
+     height : 34
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1+
+         MoiMême=ProjetInfo(piNomProjet)
+        type : 14
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : HgAAAB4AAAADK0K9prsdoZEC6hhl1v8rZMSUr4Le0l66VDfYtcWHiELD5Y40igWUvlgswTSP+fDKfWfwacV2R8rAJPtnC6ID7NvbtQ2NNb/hCztAXuLNAFI5LbC/9aOB3eSHvcEwD+9Lxh08JxE3kQM1zqWDfTKsD8bkDx0PxlQP/NrX72bd161zvBMhARcoS0P6fJ25w2t2RE0ueNwrPzYmonN8mSKNzAOEArf0KuHAjWzXrAFSeBpeON0lOpI1rf+uab5Qbrd1YfjZjeZfqi8Ugg5JbkaroR+qhMv/u1MePRYhYEt1QZQTsPBTOKHBP40yF482
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : HgAAAB4AAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre()
+      mafenetre..Titre=ProjetInfo(piNomProjet)
+   -
+     code : |1-
+      // ouverture des fenêtres dans l'onglet dynamique
+      //OuvreOuActiveVolet(<Nom de la fenêtre interne, <Nom du fichier>)
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : OuvreOuActiveVolet
+     procedure_id : 1735918999585467399
+     type_code : 14
+     code : |1-
+      // Résumé : Ouverture d'une fenêtre dans un volet de l'onglet dynamique
+      // Syntaxe :
+      //OuvreOuActiveVolet (<sNomFenetre> est chaîne, <sLibelle> est chaîne [, <Cle> [, ...]])
+      //
+      // Paramètres :
+      //	sNomFenetre (chaîne ANSI) : Nom de la fenêtre à ouvrir
+      //	sLibelle (chaîne ANSI) : Libellé du volet
+      //	Cle (valeur par défaut="") : Clé pour la construction de l'alias
+      // 	<*> : Paramètres de la fenêtre
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE OuvreOuActiveVolet(sNomFenetre est une chaine<nom de fenêtre>, sLibelle, Cle="", *)
+      
+      sAlias est une chaine=sNomFenetre+sLibelle+Cle
+      
+      // touche CTRL enfoncée
+      bActif est un booléen=pas ToucheEnfoncée(teControl)
+      
+      // volet courant
+      sAliasCourant est une chaine=ONG_Menu
+      
+      // désactive l'affichage
+      MaFenêtre..AffichageActif=Faux
+      
+      // si le volet n'existe pas encore
+      SI ONG_Menu.Etat(sAlias)=voletInexistant ALORS
+      	// ouverture du nouveau volet
+      	NouvOnglet est un champ <- ONG_Menu.Ouvre(sLibelle,sNomFenetre,Cle,MesParamètres[4 A])
+      	NouvOnglet..Alias=sAlias
+      
+      // sinon activation de l'onglet
+      SINON SI bActif
+      	ONG_Menu=sAlias	
+      FIN
+      
+      // si le volet ne doit pas être actif (touche CTRL enfoncée)
+      SI PAS bActif ALORS
+      	ONG_Menu=sAliasCourant
+      FIN
+      
+      // active l'affichage
+      MaFenêtre..AffichageActif=Vrai
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : HgAAAB4AAAAvRcpFsPNemO3vUtVV6Mo12SLqHbNXuGDBI64uXxOgU3MPl5yHzJ6RCJRVbEhaT0vQRzSrDTDhaUjvqTOMWPMI+bkYjBUY0vwQNkjtczKOOsh5bGDOyQ==
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x181738ef008fe3c6
+  internal_properties : HgAAAB4AAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : HgAAAB4AAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

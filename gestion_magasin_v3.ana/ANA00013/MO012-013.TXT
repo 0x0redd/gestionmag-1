@@ -1,0 +1,5 @@
+//MO012-013.TXT ANA00012 TO ANA00013
+receivings		NFI		nouveau fichier de données
+receivings		FIC-	receivings	Fichier de données supprimé receivings
+receivings_user_id_foreign		DEL	users (id) et receivings (user_id)	Liaison supprimée entre les fichiers de données users (id) et receivings (user_id)
+receivings_supplier_id_foreign		DEL	supplier (id) et receivings (supplier_id)	Liaison supprimée entre les fichiers de données supplier (id) et receivings (supplier_id)

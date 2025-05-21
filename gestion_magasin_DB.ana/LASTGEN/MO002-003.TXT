@@ -1,0 +1,4 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+users		TAR	1184	nouvelle taille enregistrement : 1184
+users	profile_photo	NNR	profile_photo_path	ATTENTION : la rubrique profile_photo_path a pour nouveau nom profile_photo
+users	profile_photo	CNW	Mémo binaire$Chaîne Unicode	la rubrique profile_photo a pour nouveau type Mémo image

@@ -1,0 +1,292 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FI_WIN_GestionPermissions
+ major_version : 30
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : FI_WIN_GestionPermissions
+ identifier : 0x2823a20d08c7c5a7
+ internal_properties : HgAAAB4AAACk6h9zeohguyIhcDpFnMLdCpcEbdfM4n/Oo1Bxt+Wp2DT9sCbTAGxt/K5EuB/RX1JYiwGB3/1RIlM1bcCO7mOoBFUmRuiv2WXV1Vbq+ho1mLyGOxuLaSEqwmWzlfYo8sqEhmMTdCsd9ZzmVICSxZgcb3Ltm+mBIebHITpYPT8dPWUWnxQ/16T+K6czg7D70C1D5bPAVcqkvFH6ZTVToC0qJtl/hw3XqdB41AOo3074j4egi7KTu2jQeuoTemHbXs2ClqtebKubGVSqx0/X/jjr3v/odTsgT4+UFqppSxzrcRKEYlAG3vB0K2WUX3c24bIU9GBHcctYWvjclJBA2C7InRO2JUMZfAHxnj3YzzIJSHqYc1u0z8W+/BgMRMX1O2vcI5rHNuy0K20pr0oW8tjo0/NLljIRIF+enQxx+qIWXMN6WAMoD7J4wof7QfvpEaNY2dj+ifdZovzXTdXcrc00GGg7KygpoF40x0qpn7ApxUY98rLRbNPnz9UF51HaYTiHSDqXNgupX43qdw620dSeg1MCt47L8tb9A0g2Hj/rjsEnUiwYUlOpKDhGADqOxlWHzGe5JFbYuf55fXF3zsrnYdElUD0z6jbeEp+jj1cavYFoLDkcEnht7oY4yPsDaiP2Hl9CmVkD5UvMyQANzIWfuKeRXx0aEdBXfWTzPqnb6TfuEkRG4eKYd8IvXYdK5rbvBh5gmda1A+yqYS9f4Jx9jKQvK0AAV85vSHfrlTBspn8RsbXbEaqB5Xxhgogi4/fu7nQkxquXkU/nLs3tKTQAs3n3kXsg
+ properties :
+  width : 782
+  height : 637
+ controls :
+  -
+    name : FI_WIN_GestionPermissions
+    identifier : 0x2823a20d08c8c5a7
+    internal_properties : HgAAAB4AAACMjnNv7d1/HIoYnEKWzVWt9GjjKOk5vvLdUicrNrebMNZMgE5T0VlcfCkZk6dBWGjDqG8U3cmLfHiOWZKk+2uKtbMhjbDyMTYBppjgTt3+sKQXLfj8QqI/SMNTyd2c3q0c8U/yAgaDkzi2puHSATOwnw+jJnlfXdeLz73sRHNWTWfJeSnxgQLV/FCkwD0M+D2VwdRH+4tKALRpel4uW2B9UeaBIT+aPKBWeDTJcX28B7bjmcJcipMnH5DgNnN+4ouE8/Qz8NMaP+Hk4IiWj4il9lL36A4HbOXRrbrS+n/AaUNOSwFTGTVPvSnmdjausGVhbPBxFX8T5slqhMK8SOvFXEwWQPna1IbCZ+Koqtd99hSU25pMLGx7g6de/T31xKHI2Wbrf2TpQTuno5hUFv1GqDaO4Dci5eP6rDgEO0NuSLYvA6iDvMiErast9OHsOQONhsDRq3VF+IGF7vNtChTk3oOP
+    properties :
+     width : 782
+     height : 637
+    controls :
+     -
+       name : BTN_Ajouter
+       identifier : 0x282477c629cca197
+       internal_properties : HgAAAB4AAAAf3KiegdWwVKQ5ioaDIDlNNAqMNpjO89s8mSwTUtKfbrZ8QV9Mqmtmv+Hu6lp7ETtni/B2Gs89mf8cv22PpkyASc1Pour+5wYv+7ZSyDujG2/DqSe73/IZImmu+DHtU5cK0OT4g9aOj+JoIX326QK3m+Qo36045NJ3UVlZ0hyrYnkMW+Qt7AyTH5iKtOEEjHjcMiQWRklT/314EsX/Ci04OkgVs2mORkkcTiMDGmwULFKNfpY6BomFeJ1GEs6M+HJyLqqUik+IpfGIZydL3A2Jp/bNPnOHs8uhZ9bQWYK7LPfC6zIr8g28lvvuTthkKd1ytZTHKAytoPe/OTHDT22dX4yMfxFw/82nuABpKR68OP+QIy871ZxFYW0+aKTVM6PSWu7y/0KkKvy3Xr1saa17objIJFlrAR2+NyagocHj4txNcjjFwVdzi/klhEQe5i53ZtIQCJDCgLQTv/s+8QQ/XwqiV2cPyNncPWEF6kcAUdUXpmZftHtN2waEHVJYC9+6gXKw8dl4u826RDwDZPRf2FPZRYtvlrmC7GSB0LI8vwtD8rPE10bpEGghq+M4QGU6MUP1OVuJrzdosEf8MrMRRAfdeXESsNW2JiKows2jVxp6aQPmZ+An4PLd5DxDJvHhpWZKzx8i75C59aKNTqOQyzzTWby4+RV1qOp12KR4U55QWktQ9q0ITHuyU3VJhDnfMJPZ6+Gj2u7BTmz5IN9pQeojKvZjNevwwlGP3Nw/9FavE1lDw6MRKOxj85MRn+h1oqCnVnrlYn0cKu6a830RazbvPUWibVaSlElqutJIvGPBAc2fqh/y8i4olO330qoC1ZvqedVhnJ+W2+xU2I5I9QEAHfAErpJ+wrdhyUScU9I4tREsmdpN1r5CPdoQTwJcvvT4ieZoF/0eoEl9N92/3S5KTuvnY7Uh2Y2WP7ht2iV4F5NNDiV/k8rw7OkoZ75ft5vy865dB3QQpmfLyQ4R
+       properties :
+        y : 10
+        width : 110
+        height : 89
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Bouton au style Nouveau pour ajouter ou créer des éléments
+            
+            
+           type : 14
+         -
+           code : |1+
+            // Charger toutes les permissions
+            SI HExécuteRequête(REQ_toutes_permissions) ALORS
+            	COMBO_ToutesPermissions..SupprimeTout()
+            	POUR TOUT REQ_toutes_permissions
+            		COMBO_ToutesPermissions.Ajoute(REQ_toutes_permissions.name, REQ_toutes_permissions.id)
+            	FIN
+            SINON
+            	Info("Erreur chargement permissions : " + HErreurInfo())
+            FIN
+            
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Supprimer
+       identifier : 0x282478fd2a336031
+       internal_properties : HgAAAB4AAADGbLW7SPfxXjdxjiKIY+ImK20+0mOp2AtSLEv41CM213Yo3s3n0jUpmcgHY+mwTjPfvOM/yiLrKPPZW4owMVYJpdtTULkoSkJiW0g0wTlqujMhfP6oIG99gf2RE47SU++ui4I3pTFLqp7nBEB/AH6QZJpnM6DVsCk/DpB6NPDhyCgiNaFIWbb6HKVpSY4xnqXAS012GLaBpNZxOvJZxBMuy2GYoclLe3RuVORF4+HzGPyqxR3PkpubiJGRdmZ85NMj6BavSkBmuzYMBW9ja6S+ZZL3CYhhVUfIBv0y69za+G1uhl+6Qc+2H37gP8dqzVcsxrqhFxXfNNJwEFHkRcL3qIR9wffM/HCq3ulEKZBqgsX7YhRPWC7ta6SOthrp5pC4GOB/vz0J/XfmVdJMTg/OZefAsLCP1Mwc2QK16zMR+ZiahF+pe2z3sCXXzp1o5n2UMsW51tQpr8bODXNIT5WqfNowyDsoiVopFi8VnY5wEqRzSD9RB4vuwoYX1gLPso6JsgTRzdAvz2VMKbG+Q4ORzFTOjfyFlIBJDFPpAb99Y8eW6s7fu94dFaAMykFK0q0Lgky5e5oNE8Oc/L8BhIIW7lSKckXz9rRcxftPI6OYciu+XMVX0cvjk+1SiAAs648RSIdOGUbiOHvijQq5stB0BZ+hVVC/iPbxkY1BCoCo/rOMAGAYqQKqt8pmZHJFixkLei4a/om7T3KO6dsEEfn4mBMVmB3I9ta4X9dexMu+Pli/h1xRt3zUl7W3kzNC55ZAn+PGW/Wl1tBXwy5OME8TSgdXZazhTkAEzTS730bswzgrc9NdWiyueiNIKUfZW0yiLSJuoVpT9oINrthGz2sgdc1OFuHgSvXpl30odAdvpAfRFffxmg==
+       properties :
+        y : 84
+        width : 110
+        height : 89
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Bouton au style Nouveau pour ajouter ou créer des éléments
+            
+            
+           type : 14
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Modifier
+       identifier : 0x282479122a39b287
+       internal_properties : HgAAAB4AAACU5SuC04J1ztXzfXTNfdgslBPO+3hP62ehb6qQON0/QcL/NKRmBGcWazb0ZGnuNmaIasHJqNPtrXAAogXYT+xPULk9JLLTksYiq4dTDplOpY9Xia2kBuEhc/FLncebeqQ2IHycGRFKxdrVoNC3F4fqC+Oyk0dQy2latwnIadePrp0CEd3AqZH3pGEZxKRM3DCHSXu1gKcJCFeA/9Xgx0ugwsDv5NZIgGDzNjfZ2UH92eTc9Oo/KdH7uV4KJRde9b9xNlvIjnHA55PQLeUlk/uyOJdnrWDXLvYHvy2ysdDEV0gaIgOJ4pcbqf0gB8QthTWCNFTnjSvrKUfvDDk6ZoiR2jGRlA5xiSAQ8Csv+1gSR+dDn1sfkB0hFBGwNSI8dhI3913HHXXIKjv98YAt39rqdMqJZChdOq6CP5UngOD0GwrEC11V4hKJZuROq34Q1FNY6iB/sRBnAZuRRcJ52VkyZK6lan7YXxyiFSsOjkAuEKfqqBJ9zHDBYnRAgvKAHw0AXahoS3fCfLck3pE8cFQs6eX28pSYaftxMiw7G+pQjJq9T6S4Z2UMBXb1FHh69ZYUonVgsyFoQidNPZsJA93eMseC9hCZBMz1VIsm7Juf2VzpSPselxA+6elh9tgXaDa+UWuFxTOtKUW2PqwFEwt1Fhw3lgICwYXTZeTdOsM/K3yZinX41C91I7D3hv449up6RXynMILNR39LYChpQv3w8E3It3SfGUkeauNWCQH3j0j8NyJfaKOp5+iJNohEVERlMkBx0wzBKEZHoLzok4/8aW3AKYHrQNJzGpYyOOw45tg9boHRsYi2EVCToRkVw+IOoUA6AIZHUSEfWisDbS9i9Rtqeijk1OuvYaMtJwSpmBjsmW4=
+       properties :
+        y : 173
+        width : 110
+        height : 89
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Bouton au style Nouveau pour ajouter ou créer des éléments
+            
+            
+           type : 14
+         -
+           type : 161
+           enabled : false
+     -
+       name : COMBO_Permissions
+       identifier : 0x28247e762aa2c33a
+       internal_properties : HgAAAB4AAAAprzNDyOFRB1aqcDgCyt5m1+VChylPhSH5Rls7sVpN0Ggj/sWKUe0QVUzjJvJHBblFAm8yPudQ4G5FuAMMLZFN+7iaqXTtV+3dg9BaOPq1RvpFyYJfGXt6Wrn65WozvKDH7uUIfakwZzhhdhg6IHpLkGh4cffQ2ouyFqgPHmeGIs3ax/Yfln9vwtQ8gnjK8nTskXSpxY6P4RXuQGCjxwv4pnl87OprnhUn4lQhdrP/d5yIXkV4V0p3FKoLhkr9S4fglnxbbR6VfZINDn8bbOpF43crJSeo8pg2Xce0C7thhZrIXpWT26BsDdU1zyQevylD3SYWkS6+5aMyL0gsQ9lXJf1ATHAz/MNC6ayPAScXBizmM2hUuwS4FNQ9ACnDeJJMorX65Qb/v5L5XiGCIRAfwDvaOcB1M4O7O/LIoT/X7f0V581yVFe0k/hWJHWIwUNufATXJmO1O2j2QxGhGA1SPPoJEMiBbeEi6nAHtiQrVT01uGaDyZN15pPTXW8R+UugCXEOCl6ZO2QeFtMSjPg8SiwGYJo1TNywxaQrOGQ0GXDiqMqDiekmITSrtyPyYLyS7ZHSVHguSqrUu59V8yOc/ewxjcmQeYHbEOLqxKzec5IHOyEVM4p2qn8HHMfEeFX2y9Alh8SLaUv8LjbowGpHB4hLrfxuPstKLBvAyF1jKQwzKZVFDeT8nda73e/ZZcv3mEmJwJ9sg5ZN/fPoO4SWRF9OMFeUjhaHsvFP25QNLgh+ae7UqH260cIxpe8RButHKzQ2bX04wgZsQi3zcPdQ4xDi4TWfq9+kiCm05lzmjGO1Nyd1M2+weQhXEf3efi05RJm1AbCbU0WZ0yumaVGkp7/060+ywNoa6V2SArbu86KwImNb3Tcg2fMlyoEAbZ1BLY5deiavxv+we0AfnOKCkT/hppQ9ndqXH44/C/ZFhsm0g+9bWsOM37KcgyxqZN3yj1mziqfdmeQBCb8MFssknUvIxtBSKGUViYbXATHRi3mINexxHfE9DjRnaN2Iz4E6vX6+HIyuTbkG3b+JVyAHnNs/JZmcYhXIOLPZEEXNJ26rDQizoIRzrMwWKxtoqEyn7lC1x040QbUk2cdBx0IBY8/2tKT2Drmm93r0GG69jGUr8Auv7ko5YPPyz8ow1EK6/Tas7bTyRYHRUtAwCKQDdjQeHX7FK2hZR+0cxcV1xGVfYGXn70DaB1bNaIzoNqKRv3EFjLAJ304gQ6mbeUcPbo7olUD4nVYyKhKOE9Re7ItBwQQkYgU/JsOTUbO7qMyPee+3H83KKMW11o7AlLMHWFr1yeaHkN6gdWNRcLcCiWX1uwWnUFuPivZ8mIY2MZ7Lckcezqiqf6nehS/CYEH3GiQH1gdQH/kU3Cr1k8RgTdvb/q8N+ebiN3m1rrlestY9UoU16uhBhaMIs5nMVlgfzZ5gryghGgVmdeLw+owYdg+hzpuwmcWtUcG5g0xQS1+FKcQnbdGYVI4SOtuVqTnpBidkru4zsHYUli0H48mW4a2S2nreAVm6NW/ty5epPtMo2YXtyyb/z+lHO7lAfgfK6uGNmOp4p2n6KjCMmwPpVgpDfpsKtVtqKEFxRecU6jaro517iQA0V2FORlAozWVG9vjeY44v9VmacMLSgk4ay85rSa/TgwzN78cM5aTc2e9+N/O9hpMuMStuyLe3P3gwCJ0w97VTRRVzc/QkP0SRg470YJj6i0eJ6JN7bp6SnPiIKS2rNc1XE9F+ZkC7H8yRsd3gBmJMcu+yL0Vg9NakTmYArubOT3wHtmTmgEMjcJSW4flbZh5o+qUq0liaymc2OEtWSCqUmTYEXsmn0ctBK3IsLad4F1fksrNQViRl7B6Vtsns0QNC5pdNvKzkuNYqzxeE9LslJ6dlqtN3o4mA6lprrxk8MNaTYg37GQ6VKLMPiHkgROEf6XK3vzVfXrkJ8sBfEvi6sF8r6mtdC5oBxwEV91V2jRhTCESsIqk76PRjd6zMeRPLvyLwPnvVhS+p3AtamJqAGMrERMlbeNHU+peXLTik2MAGpsllfvuFcaEOMC+6T/joRIuWAxfMgJer7AjTAxKp5cmSi46Z//tuD+4OUhrePDm5DVjVrbGP9AeWQdNv9ZAxSQM7
+       properties :
+        x : 34
+        y : 437
+        width : 537
+        height : 112
+       dropdown :
+        internal_properties : HgAAAB4AAABOg/YH/VpcwELD2YtU/CMLbgH9f7wg6CdVxrSQxM793rbihn7bfrJaT8EK6TKWWSBQGDway7D+9xEOrwHzXjp2tiWf67dI/xF3GY/jwhba6VgoFezihX+Q4qL5vTc/xPhmq84LUcAnR4G34U9tza6vTIf51WOsZT58mOgOHAKzf71DUy6RmzAeJXXCYNAa4/Xs/FuBpZ2D7UlcIsZQAw5kxQAGgIBO6p0zkKRGDwlOuAmhrvx/Sg87WoRi8JPfqZaQZiuFJ01V/NivCzEoBGxKPY04r7b4nwm4cpLBnmp9BLDFHvRcpGCpr53nh8VjGeGLFOvarCtwrYtsv/bmaDXEnZViBj4n1vYcFjRHwvh3LhLDG4chmBct4sjhiKq3Bc8MACl1IQnrZLH0ttwNWgcNDrp/42zPCnfKAogW0w35+nZz6kGqCrXdDZK0iyKelbnfZ4JwDQJVLKwwsPiaBhu+GAYO7ewT85bX2X24jpUW5UD4sEXoJyMlLx4VzWUz8twMvGX0ZUljeskH5Jz/4Suh7TTFySTPEA8QNjWSBpDgWeNLAphxQDbD0phawInaLaUbHVHslknHeKyOMr0iGhcCOYAjM693VjokbzczFs35eW+1nBtktorSZt/vgNVoluAbOI8Tfc/B1+JfNJ7NrlP3dIDJtpepHcrGfEniuBzjMEQmzxh5acUtsSoiSc6Cp4exS7os0jMfsiko9w4tpj+aWUgMDZkiEjWdAqW/spq1jkDT1vnnv8pj2WJcVMWl1ydvJu8Ni8OJzHE+Ov3Y2izrjp6uBg7o3GpUOO2x6hhv4h4nRF0FI/DwWnqmBqC1s82NwmR/YfdK65K2vG3p1C5B5k8oocgx3mxBmSCOKJ6kgra1hwhh+SMWz5VUoV6PbWC0ILVpRWf+M1L7OcyKCfWejr0SG5cMFnpuwMegmzF/HYa3NmmpCQkxoSXDgp4InAr1PPHq5WB/N8caaadYX+q9gc0QMNPR6IOQV8Jv5t595VrJ5zGVDgY4dldJV7742Yoz5iOX5ElQlKKDtkHajm7OkFRx8bcxcezG
+        type : 7
+       type : 14
+       code_elements :
+        type_code : 23
+        p_codes :
+         -
+           code : |1-
+            
+           type : 35
+         -
+           type : 17
+           enabled : false
+     -
+       name : COMBO_Role
+       identifier : 0x28247fa82ad66bfa
+       internal_properties : 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
+       properties :
+        x : 34
+        y : 336
+        width : 537
+        height : 101
+       dropdown :
+        internal_properties : HgAAAB4AAABKLCuH3BNkTC6IheHlThlDGhNDGTi9p0xU2uJ4qLQMahA9s4kUEUsSd9XBWNhc8rvg/T0cvxHvmcCk4FUDo2SEWt/Oue8o8qVvU9UXIF+JpOaE/4/pHto1juwZs6HewmPINh9bMUA0k53v2MGTOJBDBLlLdHsAxPyL7J+bxUq5YarTfdn78VvFzOL0t0k7DwhZUAmXNBuiw5nKoe7UYHFa5KTTvUaMtXveRhrSW0NvwWMmvuAyQzsKswc1YoQt9HQvfATsJrfjOyUdFGmtSVAUhhm8hhm8q4N+GO188dbytK6PsrhX6ybGBQrbV7PZv1atb5Cdak40/uyKF+dUtWL+Zw1Sc02DtW3A7ivBQwwuLrns/K3zKITNXeGxSFbjf4DVwTXXklBx/MRBu3N0VCIraaBPHLSjbXEFkJIxWPs6FCvYfJIXr5F0Ce7M2eNOW41rEfIi2LLg/jDbSCaeSXg820joMKQQJGVW5H+pHHAwDoA8wVneWLQ7GopKNBwdOWsFIpAMQQ/o/lNAcQOJZ7p7CNfPMjKiOcof28WnkIYDh+JivNuxYVn415EylwmqmPPSsGsxstT4+ylFCj62RqIW2t23vJfmKzUlrpUMSGs4OahgQph+M5nHZ9C1V/vCb2j0u/E0ySz45DnaqsV5AiR1l5dpuSFAeoW/j/NVzMjQUg8rURf9TuT2OuWcvDr2tKlalJpZJgBOc/h5vesnLNpu9H0G9CW9GyyG8cnA5CjeXlPiDEYHfrfyTAtcOR9bCrvueSfWPTIma6CpsNxIKit7+Ukaq8aXMcGpCaMQaujOEv8mNODxZlEHD9mwozqbMBcIhSy6u4RJsFUJgv4rUuHv3VD8WnLuJTkSqo69IiT70q2mfaVrDuKDguKEzkIbAgLr/WU2CQxtqN2UU3umfUyQq0oUrIe9metb9+0jI/k6UYGw8j571jgOkOqxK6yaDwbwE5EXRaGqHO83g1MSCE63Qf8Sjw95BMKY2IfYt53rxQwV6TeIJEQVhv9jF0Q6mQEfnMh0cNHpv9IRHd6B4Q+5Wdk=
+        type : 7
+       type : 14
+       code_elements :
+        type_code : 23
+        p_codes :
+         -
+           code : |1-
+            
+           type : 35
+         -
+           type : 17
+           enabled : false
+     -
+       name : BTN_SansNom1
+       identifier : 0x282480192ae5262d
+       internal_properties : HgAAAB4AAAC8dGzGYPNq5sBHciE15bC8pVWdZ0Dnm1cidsxbR5CGBrXt/CJ1jnZu+oWn8eDil7eRTiqk0Cck0+7fXOCm5ye8zixbg6AtBc4DLgXri/RpVtQXmKMufNqY2skS7tYe4bxVGwv31gW6IZ+n0J7JXT3Ye2EbJJwNaiSlRtQQg7JS6cakJx7JpZ4LS999HTuUVEqWn5AzUaYDNQZ87Y9IWVMtby4ngaPeQqQLXhBez1gnM8g6QGxPjVebxGbbMZKjYsT9tVhnNqgVG2KpfXQ3aDGr6k/tiVCGKExEmU8qsYEG0PwJOeSFKB9SjAiE1eElOXwmpIJnbNNR7kThcSiUkbsGYXvE2kBNGwYvRsl0WtmmEnf/SrXbVlPAlhfoLkZmiHzFz73abEjp5M1F+V3orBY59jHkirwXRMgtOHt7FE406C1vhzrhWDk2i8kJboBNWUlPeeIteQIapMEPq0ne53T5R70dA1rcdzFP4IfHSufeDwUr0307UYfAcSPy7JX3mAr+xhKlKpyhIB/s/oIA4ntDzVbfdULB61wplGue/RGdQEBfVNLGgGMtSFmFg5kY3FK+TIvo/NI8QSqnDfiDOJJxc7N2ovPCHjmTAtEfj/XZaDyNAAen2Ww7nb53fwn8bfAoLj//LoKTAIGTVNH8mbpd5TnS5RH8NMFrGkXejAe/JahGH5FDTPCoVvZZeiAut+vlzASBeDWXKx+xI86yKY2oMD7oN7VBjLuDbWmXlnszrKr+iSrz/KZVIjZfbd35m1701hz/WT1VPoNJcQB0CnWAlwl0dCcWzj0Vx8cz2nVXqM9hmELhI36D7nx0G+hyBMJOtrbdUggRu5m5R+aCdduQT2ZvdsrIHw==
+       properties :
+        x : 604
+        y : 486
+        width : 106
+        height : 31
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            
+            REQ_ajouter_permission_au_role.Parampermission_id= COMBO_ToutesPermissions..Valeur
+            REQ_ajouter_permission_au_role.Paramrole_id		= COMBO_Role..Valeur
+            
+            SI HExécuteRequête(REQ_ajouter_permission_au_role) ALORS
+            	Info("Permission ajoutée")
+            	// Recharger les permissions
+            	ExécuteTraitement(COMBO_Role, trtModif)
+            SINON
+            	Info("Erreur ajout permission : " + HErreurInfo())
+            FIN
+           type : 18
+         -
+           type : 161
+           enabled : false
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE MaFenêtre()
+      -
+        code : |1+
+         
+         // Charger les rôles dans la ComboBox
+         SI HExécuteRequête(REQ_tous_les_roles) ALORS
+         	POUR TOUT REQ_tous_les_roles
+         		COMBO_Role..Ajoute(REQ_tous_les_roles.name, REQ_tous_les_roles.id)
+         	FIN
+         SINON
+         	Info("Erreur chargement rôles : " + HErreurInfo())
+         FIN
+        type : 14
+ menu :
+  name : _Menu
+  identifier : 0x2823a1fc08bc8543
+  internal_properties : HgAAAB4AAACNN/aJULRILqSqdPc/nbg/wIz886TchdeN+THlc+/6YoWg3cwXvl7OHZRr+rWpuAow9bfsBaNK0AYG9f5bkmVuXQH94A3Ke2UqltxsUZoHgcKER6Ga9SO1L6pIsnUGyYCOlss6py5mRLd2F72+sNpMXD02duqs8w4QVmTwRTJdUgd4RaqH5dA48SjgkkPT9vyb9aeEZVq9+H3YQNEpVrkRKUeXElmSewtSWYUB/KpjTrIQ3YABNqaslssTubHml3O8WNYw2JBxuaKbLNaW9uR/xGUpHCuhBg==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : InitMode
+     procedure_id : 1739416803762741994
+     type_code : 14
+     code : |1+
+      PROCÉDURE InitMode(mode est une chaîne)
+      
+      SELON mode
+      	CAS "voir"
+      		AfficherPermissions()
+      		BTN_Valider..Visible = Faux
+      		
+      	CAS "ajouter"
+      		ChargerComboPermissionsDisponibles()
+      		BTN_Valider..Caption	= "Ajouter"
+      		BTN_Valider..Visible	= Vrai
+      		
+      	CAS "modifier"
+      		ChargerPermissionsExistantPourModifier()
+      		BTN_Valider..Caption	= "Modifier"
+      		BTN_Valider..Visible	= Vrai
+      		
+      	CAS "supprimer"
+      		AfficherPermissions()
+      		BTN_Valider..Caption	= "Supprimer"
+      		BTN_Valider..Visible	= Vrai
+      FIN
+      
+      
+     type : 458752
+   -
+     name : AfficherPermissions
+     procedure_id : 1739419629851553519
+     type_code : 14
+     code : |1+
+      PROCÉDURE AfficherPermissions()
+      roleId est un entier = ChercherIdRole(COMBO_Role..ValeurAffichée)
+      SI roleId = 0 ALORS RETOUR
+      
+      REQ_voir_permissions.Paramrole_id = roleId
+      SI HExécuteRequête(REQ_voir_permissions) ALORS
+      	TABLE_Permissions..Source = REQ_voir_permissions
+      SINON
+      	Info("Erreur lors de la récupération des permissions : " + HErreurInfo())
+      FIN
+      
+     type : 458752
+   -
+     name : ChercherIdRole
+     procedure_id : 1739421145975033937
+     type_code : 14
+     code : |1+
+      PROCÉDURE ChercherIdRole(nom est une chaîne)
+      SI HLitPremier(roles) ALORS
+      	TANT_QUE PAS HEnDehors()
+      	SI roles.name = nom ALORS
+      		RETOUR roles.id
+      	FIN
+      	HLitSuivant(roles)
+      FIN
+      FIN
+      RETOUR 0
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : HgAAAB4AAADXPUOq6bQdTI/fs1mC0I6nimWl2G84EsAbne5i32IM05uoRA==
+  original_name : FI_SansNom1
+resources :
+ string_res :
+  identifier : 0x1823a1fc009b8543
+  internal_properties : HgAAAB4AAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

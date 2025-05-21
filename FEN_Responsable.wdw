@@ -1,0 +1,72 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_Responsable
+ major_version : 30
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_Responsable
+ identifier : 0x281cf3611bdf93a1
+ internal_properties : HgAAAB4AAADc0nyuntQoLCVJU2H2yTwDYOfIBnxNFvm6laSGBSnTk8k4zPc2b1FnhKT225GTMXJjxcREfFSJEM22LWMOI2fSrCm+uoIW2yauefp6oD5C6HT6xZCyAT6xfA42MkmHsya4qoHTlOtcF6TzA6hMaMn/i4G2DwmHzSM6Xcrhc8H2cmaxSeEjjJeQSqlt+GVrlaKexK98jfwr/A54Hk/wkPe6wyOw2qw3RWQuE9qpyOPP0/bFw6hDKA27/Yk5iA/rANRIPfYlQCJPsEMfjTDdtZeELMkYCrTtZ7dK/DbY/BuG3VLUdbdFGNqreKn+Zbkm7AwrOJZ2VNUp1DK3zyWosYa10fNAIWNIteMPH3BvGklNdP8wDbK38n3VQhgs42xzw1WvnHKkMeHaxFHe0o/pRs97gJY7A46chbjGEOLXcq1lDj9E40LS5dfMmejsNydnCe18Mfa/l3A4ZFHgb5GI+ga0NfrDRgQi46VBQHuYOot0Zjc+OOVMxUYHyRs0tfviST0aXSZj88FoYgIn65xa+uGx4Ffjsn5acPHdZV8fAih3geKagXUb68X2igHzQgHFkEM+sQRFU6i08jT7TlnP1bLYsDEqFmrStU/0SQRtC3u5nmHsNaOdCrZIlK2A9HzlQQ1/XBIkJHgN4oHsuLs6whgokAFnCc167MrN+uPgR/W/fdJlE/M4kVyKvYdI9IRj6QmsSQp0YY/THRp9ltsO+RhAMMOxhg==
+ properties :
+  width : 1024
+  height : 768
+  widthClient : 1022
+  heightClient : 736
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : HgAAAB4AAABolUUTe/ChVGjvhClq1yuaCw5C9uOg/mgP4csm5PPaumQ+mzbPvzHPT0N1AA/zoUcEB/Q2aEPudoGlHf/1w8aNW1l2ke7K7YvjL+KXl6ui7n1LFpWs+vjf9qTjtm7du5s7KSAtr1vgdYe7nWSVoaX/0l2GvX796g11PoTG/4ookeCAuYEOEftCoD/kYqOjmrgiMqwhk/6INbMLdhsRErSC4R/nZR5SMzseiCJDwTb5da+jbyhuiVR9GSMtN9F4SgZ+M3Ci6N1x48qEAhvcPkP5n81bGWXdtSdHP3Mi59A=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : HgAAAB4AAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     code : |1+
+      
+      nRoleID est un entier
+      
+      // Lire le rôle de l'utilisateur connecté
+      SI HLitRecherche(role_user, user_id, Glo_idUtilisateurConnecte) ALORS
+      	nRoleID = role_user.role_id
+      FIN
+      
+      // Exemples : cacher certains boutons si l'utilisateur n'a pas le droit
+      SI NON PossèdePermission(nRoleID, "ajouter_utilisateur") ALORS
+      	Bouton_Ajouter..Visible = Faux
+      FIN
+      
+      SI NON PossèdePermission(nRoleID, "supprimer_utilisateur") ALORS
+      	Bouton_Supprimer..Visible = Faux
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : HgAAAB4AAACoLZs0mW4lq5aP9aNErAlUOSHZ7X4ZrJFFT1JWjhhvitD/xL/r2Etbr+oKxbieVf7YoEoO7HUdc4CD59271o8AU+x7o881eemR/sfDJwMvJH35
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x181cf30f028352c4
+  internal_properties : HgAAAB4AAAAEBvz4BdTt90ISSptwDJCphvKgZdUR2e2WGWtmgJlonsrIZP01S5+UbwYBB2sFt7MTEw==
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : HgAAAB4AAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
