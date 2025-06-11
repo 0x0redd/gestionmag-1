@@ -1,0 +1,36 @@
+{
+	"editor":"window",
+	"figma_file":"q2v7pBplKtO57o2yzShibh",
+	"page":"103:3004",
+	"frame":"332:1022",
+	"controls":
+	[
+		{
+			"type":4,
+			"id":"WDFEN_5289c192287348039be9f227530a030f",
+			"name":"BTN_Arrow",
+			"children":
+			[
+				"335:1041"
+			],
+			"parts":
+			[
+				{
+					"type":3,
+					"ids":
+					[
+						"335:1041"
+					]
+				}
+			]
+		}
+	],
+	"ignores":
+	[
+
+	],
+	"Expanded":
+	[
+		"WDFEN_5289c192287348039be9f227530a030f"
+	]
+}

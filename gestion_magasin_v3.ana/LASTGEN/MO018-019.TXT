@@ -1,3 +1,2 @@
 //MO018-019.TXT ANA00018 TO ANA00019
-items		NFI		nouveau fichier de données
-items		FIC-	items	Fichier de données supprimé items
+items	pictures	CNW	Mémo texte Unicode$Mémo binaire	la rubrique pictures a pour nouveau type Mémo texte Unicode

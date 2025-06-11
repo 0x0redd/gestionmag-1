@@ -1,5 +1,2 @@
 //MO017-018.TXT ANA00017 TO ANA00018
-items		NFI		nouveau fichier de données
-items		FIC-	items	Fichier de données supprimé items
-inventories_trans_items_foreign		DEL	items (id) et inventories (trans_items)	Liaison supprimée entre les fichiers de données items (id) et inventories (trans_items)
-sales_items_item_id_foreign		DEL	items (id) et sales_items (item_id)	Liaison supprimée entre les fichiers de données items (id) et sales_items (item_id)
+Connexion		CNX		

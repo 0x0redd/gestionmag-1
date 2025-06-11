@@ -1,7 +1,2 @@
 //MO019-020.TXT ANA00019 TO ANA00020
-item_quantities		NFI		nouveau fichier de données
-receiving_items		TAR	569	nouvelle taille enregistrement : 569
-receiving_items	item_id	CNW	Entier sur 8 octets$Entier sur 4 octets	la rubrique item_id a pour nouveau type Entier sur 8 octets
-item_quantities		FIC-	item_quantities	Fichier de données supprimé item_quantities
-fk_location_id		NWL	stock_location (id) et item_quantities (location_id)	Nouvelle liaison entre les fichiers de données stock_location (id) et item_quantities (location_id)
-fk_location_id		DEL	stock_location (id) et item_quantities (location_id)	Liaison supprimée entre les fichiers de données stock_location (id) et item_quantities (location_id)
+Connexion		CNX		
