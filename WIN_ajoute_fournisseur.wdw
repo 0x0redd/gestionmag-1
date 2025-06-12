@@ -408,7 +408,7 @@ window :
          
         type : 14
       -
-        code : |1+
+        code : |1-
          
          	INTERNAL procedure GetGender(Value) : string
          		IF Value = 1 THEN
@@ -479,8 +479,8 @@ window :
          
          
          
-         TableAffiche(WIN_fournisseur.TABLE_Supplier)
-         Close(WIN_ajoute_fournisseur)
+         //TableAffiche(WIN_fournisseur.TABLE_Supplier)
+         Ferme()
         type : 18
       -
         type : 161
