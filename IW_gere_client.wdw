@@ -62,7 +62,7 @@ window :
          -
            code : |1-
             Ouvre(WIN_ajoute_client)
-            
+            TableAffiche(TABLE_Customers)
             ChargerClients()
            type : 18
          -
