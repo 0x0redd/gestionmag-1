@@ -1671,6 +1671,24 @@ project :
      internal_properties : HgAAAB4AAACwjug086gAGzilCiFOMHtbajthaUQZBx2M/Yssk4UX0Xv7C1lskw6shbslkxPNtSuVnQ==
      physical_name : .\WIN_gere_prod.wdw
      type : 2
+   -
+     name : REQ_Verifier_Item_Stock
+     identifier : 0x484df4370524ff88
+     internal_properties : HgAAAB4AAABCOLru3YqivR7bMuFaXCzPOK83n6ipcZ+ycvv5JpKCfkaI4K9g5YJOZ93HMfHvi31Hzw==
+     physical_name : .\REQ_Verifier_Item_Stock.WDR
+     type : 5
+   -
+     name : REQ_MAJ_Quantite
+     identifier : 0x484df45e05269948
+     internal_properties : HgAAAB4AAAD4ViB8y/C44+BxXLawrK470GEfd7KL2DeO37JCvcvJJ9FxO17bIhzozXNtS8sF/fPdZQ==
+     physical_name : .\REQ_MAJ_Quantite.WDR
+     type : 5
+   -
+     name : REQ_update_quantities
+     identifier : 0x484df58f052e40ee
+     internal_properties : HgAAAB4AAABaMAIGpeLK1ZZji3UUAInJZFezW+AxFcyOX1Jb7LzYcFxC7MRV6EeWv2VfWdkX49U/xw==
+     physical_name : .\REQ_update_quantities.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -
