@@ -1086,13 +1086,13 @@ project :
    -
      name : WIN_modifier_client
      identifier : 0x482e008301575b3e
-     internal_properties : HgAAAB4AAAA2HB4CoZ6WmboYrLvSs1orPp2FnSZUvbmtw4ZgmHCsFOzGdOdvStkLAzmjHeUb59kjIw==
+     internal_properties : HgAAAB4AAACTb8vf7FnRiqkL386FFodIw0AeBrE5DwKqEDQfBeMznRfpF0QM9Y6+9iyWYiLemg72fg==
      physical_name : .\WIN_modifier_client.wdw
      type : 2
    -
      name : WIN_modifier_fourniseur
      identifier : 0x482e008301625b5d
-     internal_properties : HgAAAB4AAAAZdcHF4l/X2PtZ4Xwb96F934zacr2DgcKh2mUBqZ9/uUPNsikmkyDQxHpkXCTcpBT8BA==
+     internal_properties : HgAAAB4AAAB10V1BfttTDN99deDvayX5o/BOhiFPyBtygjCl/SvrJS8xLq2iH7RkqJ4Y4KBQKJhg4A==
      physical_name : .\WIN_modifier_fourniseur.wdw
      type : 2
    -
