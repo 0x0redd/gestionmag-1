@@ -436,37 +436,29 @@ window :
          
          // Step 1: Insert the person first
          dDate is Date = DateSys()
-         
          HReset(people)
-         people.first_name	= EDT_First_name
+         people.first_name		= EDT_First_name
          people.last_name		= EDT_Last_name
-         people.gender		= GetGender(RADIO_gendre)
-         people.phone_number	= EDT_Phone_number
+         people.gender			= GetGender(RADIO_gendre)
+         people.phone_number		= EDT_Phone_number
          people.email			= EDT_Email
          people.address_1		= EDT_Address_1
-         people.city			= EDT_City
-         people.country		= EDT_Country
-         people.created_at	= dDate
+         people.city				= EDT_City
+         people.country			= EDT_Country
+         people.created_at		= dDate
          // Execute the query to insert person
          SI HAjoute(people) = Faux ALORS
          	Info("Erreur lors de l’attribution du rôle.")
          	RETOUR
          FIN
          
-         
-         
-         // Step 2: Get the newly created ID using HLastIdentifier()
-         
-         
          HReset(supplier)
-         supplier.id			= Null
-         supplier.person_id		= people.id
+         supplier.id					= Null
+         supplier.person_id			= people.id
          supplier.agency_name		= EDT_Agency_name
          supplier.account_number		= EDT_Account_number
-         supplier.category = EDT_Category
-         supplier.created_at		= dDate
-         
-         // Execute the query to insert supplier
+         supplier.category			= EDT_Category
+         supplier.created_at			= dDate
          SI HAjoute(supplier) = Faux ALORS
          	Info("Erreur lors de l’attribution du rôle.")
          	RETOUR
@@ -474,12 +466,31 @@ window :
          
          
          
+         
+         
+         
+         //
+         //REQ_AJOUTER_SUPP.Paramid			= Null
+         //REQ_AJOUTER_SUPP.Paramperson_id	= people.id
+         //REQ_AJOUTER_SUPP.Paramagency_name		= EDT_Agency_name
+         //REQ_AJOUTER_SUPP.Paramaccount_number		= EDT_Account_number
+         //REQ_AJOUTER_SUPP.Paramcategory = EDT_Category
+         //REQ_AJOUTER_SUPP.Paramcreated_at		= dDate
+         //
+         //// Execute the query to insert supplier
+         //SI HExécuteRequête(REQ_AJOUTER_SUPP) = Faux ALORS
+         //	Info("Erreur lors de l’attribution du rôle.")
+         //	RETOUR
+         //FIN
+         //
+         //
+         
          // Success message
          Info("Supplier and person added successfully!")
          
          
          
-         //TableAffiche(WIN_fournisseur.TABLE_Supplier)
+         //TableAffiche(IW_gere_fournisseur.TABLE_Supplier)
          Ferme()
         type : 18
       -
