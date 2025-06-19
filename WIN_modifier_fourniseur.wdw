@@ -390,12 +390,12 @@ window :
     identifier : 0x2822d56f11ab3797
     internal_properties : HgAAAB4AAACHvvDJCBR9kr1pL+B6RI+CpFUqjxPaETN2azQUZ0Ug/zguoS5cqDD3SFY+4D329Z4ZUTXGidUnmTf8mJ606YnRj0xlwn8hWu5N5nFZJnhQzQy5VtwlO53fuUxiTor8SGfldUr4JEtX6tkyQeRqU/nSXIJXMzzBFlcHWoOOl7VPez/5fSdogqNiDnZNCS7m5YD120NxevdQPmp6yj+LZQ9ecNQXt0F64tdAK4cCx0s77j9HzHSwbLi7cZssSc2Khb6GNOjiQMZFBZlEiX9GJ29XHj6FEwSXLVpWrej4rI1zNpMA4UlDc+rwMs+Xoohh2q1S+9bedXdnfwFXHMyZczhxR50zib+2yQpdnxSQ2XFK/AZogdKa1uX5AsDgaopxhOj5qfmu9wjHpuVXMLpt29VNwzvYTgvVZA2iuKyfogN/kL4xPu1VkpEKTd+HXOLsBcBA9XOKeEqtQP/hQS3QpPh2GKYgFiUR/CGls5/166WYh6adAOym4wu+3WTmHwMBXAHAGH1XpO0gwRguUmV096JJOAqyNoIMydmObxsLttUKm84R10fGRN5hIlE8uXy9qfDbu0Si8yfAByM+ArfDLWbPZxFLA+HPU7aex8anUzragUqaf+jE5VIXmhBRGEKb6zF0QfbXzMKrzuILb34WzJMgng0SYEsh7nrmCVOGt88GCUjEENVcYqZSmNg1RJ6uLLW0mU5eopA3LpBOy2U0YHdky5kJektZGlfHFzxzusIDz6EhqgguxOdpTzzcfs6Ven/KbppVBEPCBdKR5Pcsb77Wcfw8lW57KrftWIYfd597YoxqDBRiMu/VHt88Gk3VYaSlbp70NTdxRGhWFSJD4EpqDzkwbBgepc6rjsc9FIbUmAUu5Q2eXfgWMKvcDav7XjjtGn8y9muFw9MREBr3Yahr
     properties :
-     x : 265
+     x : 24
      y : 495
-     width : 213
+     width : 454
      height : 31
      accelerator_key : 65535
-     tab_order : 12
+     tab_order : 11
     style : {}
     type : 4
     code_elements :
@@ -472,40 +472,6 @@ window :
         enabled : false
       -
         type : 339
-        enabled : false
-  -
-    name : BTN_supprimer
-    identifier : 0x2823beb1095df2ba
-    internal_properties : HgAAAB4AAADV9vHED6GSAU3kI8CDtcKhP2VgRDv+GH+5/EVS8obtAOCl5sxd5QiHLuQ8zY/mRl6OOicFXRABdYbjenNIsOkbVZcRFTTuO2AkcNvqXHmMTEwrjNVPbgHHwXq+PJaHktQYSvxdEo7XsF1gWs/1HdahrNnnEE4ZuyXhH8pvQrR2eGxvItD/jK9oojzth8jVz9gdfjSWn8MF3zinsNBue8HAOnjiB3gDy3tlNGRa2qmq/ReOy7EgjZUnCopyzlg1I3JGhiH6TZrgPJ8EbWlwKjpl6c8ViZkMCRYLQ0Cnp5WruKxyYGK87Ik52sCBi+P5MYRcrWOqLNTz1mdCYELbgPQh6uWR6e+xWgHeZLPRCbKtVsN7rQgmZniQy7fhifd38o7Q12G9WNY7O6PC2I/eflv+t11YvnYyFC/FWrnuMv7idU/nPgR8iTE1p4l57VfF2+FQa+oqmAWV5L0OOWBVH9KMX5/KoTSQ+iqGmCCNMjEMmCdXc1uCskGq1lRsjGD6J2enSBDs64IPJP+onT9XpW59LZbgkKkCBfQTNOiSTg6iyU7Gkq8SLHOIhL5di8KdFPus4DE7wAScszDN7+qH92BrweIthq0X+TqJccCgIyYQUS1AZJ9X2ZUS94LNSbT+uQSApOLHWp3OlzxmDdO6DrbTltbO4F3eu0P0cl/PLx1FHDJjJnP483XVjMfBKu1tssO7Z+HC4HGqW4TNKGXzlxfUdIOanQANiD0iR1s2VdUQ/Mo1/SXPRDkOYAv2sNrclq3UxJVKQvg+wwfnxWO28MF4sRh3VCXyswDLl5yOKnVbW0OZI0/doLVg8a9/0XRFX+NI1KOhJtWjgAUxh8UlrJSi+rO5gchDpACZhXN0JQunpQ4V4ybeibtPIgrmyfwz2+mag5W0E1nC5z/DSSuY0Bo=
-    properties :
-     x : 27
-     y : 495
-     width : 213
-     height : 31
-     accelerator_key : 65535
-     tab_order : 11
-    style : {}
-    type : 4
-    code_elements :
-     type_code : 4
-     p_codes :
-      -
-        code : |1-
-         
-        type : 14
-      -
-        code : |1+
-         HSupprime(people)
-         HSupprime(supplier)
-         Info("Supplier and person supprimer successfully!")
-         
-         
-         
-         //TableAffiche(WIN_fournisseur.TABLE_Supplier)
-         Close(WIN_modifier_fourniseur)
-        type : 18
-      -
-        type : 161
         enabled : false
  menu :
   name : _Menu

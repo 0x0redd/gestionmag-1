@@ -906,7 +906,7 @@ project :
    -
      name : FEN_fen_ventes_
      identifier : 0x481d12b401029b77
-     internal_properties : HgAAAB4AAACZ9UFFYt9XWHuIkVeb9yGHy/hGznlAETJODx/+xVPDHSfJSFO8Dfc/RPrk3KRcJJR8hA==
+     internal_properties : HgAAAB4AAADudMba6ZaeURK/NGrO+iqclJvjK4RjFlC0e7Hj4jbmwkr0Y0jJOBziO+HbJe3jnxH7ew==
      physical_name : .\FEN_fen_ventes_.wdw
      type : 2
    -
@@ -1688,6 +1688,24 @@ project :
      identifier : 0x484df58f052e40ee
      internal_properties : HgAAAB4AAABaMAIGpeLK1ZZji3UUAInJZFezW+AxFcyOX1Jb7LzYcFxC7MRV6EeWv2VfWdkX49U/xw==
      physical_name : .\REQ_update_quantities.WDR
+     type : 5
+   -
+     name : REQ_AJOUTER_SUPP
+     identifier : 0x4853584a0942ff87
+     internal_properties : HgAAAB4AAADZtYGFIh8XGDuu61nH61FTU+yOvhUcq8ZzQzjY+53xJ91zNlnmY+ethLoknGScZFS8RA==
+     physical_name : .\REQ_AJOUTER_SUPP.WDR
+     type : 5
+   -
+     name : REQ_supprimer_supplier
+     identifier : 0x48535bd10977c623
+     internal_properties : HgAAAB4AAADNT/uXYF0b1s6UdXWUFsO6Q0a2o9YJTk296UgWpTjdRlgQ0mHNusekajLzjLdT7NdI
+     physical_name : .\REQ_supprimer_supplier.WDR
+     type : 5
+   -
+     name : REQ_supprimer_client
+     identifier : 0x485360270ac0b46d
+     internal_properties : HgAAAB4AAAA/GxcLuOXN3u1kJRTmR7QXyUgwaOEYyOukLzdhFnIgiGCwnwWkZmHfynBqVt4S7uIqKg==
+     physical_name : .\REQ_supprimer_client.WDR
      type : 5
   other_elements : []
   array_of_analysis :
