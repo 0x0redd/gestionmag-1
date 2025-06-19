@@ -1719,6 +1719,12 @@ project :
      internal_properties : HgAAAB4AAABEwqyIN2xEZ3QMDUVwjjInCF8Hz3iAfSyw+XNQdiJyrlbYmCk40wwLIQfxz1eJcWdR0Q==
      physical_name : .\REQ_acticles_tendences.WDR
      type : 5
+   -
+     name : REQ_quantite_stock
+     identifier : 0x4854223113a90e80
+     internal_properties : HgAAAB4AAAAtKQUZppObRBfrYypFViSARXQ85F395sNFJcgaPkpA4GCAAhyKSchqQObQKOgY4NA4OA==
+     physical_name : .\REQ_quantite_stock.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -
