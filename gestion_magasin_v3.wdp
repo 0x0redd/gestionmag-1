@@ -906,7 +906,7 @@ project :
    -
      name : FEN_fen_ventes_
      identifier : 0x481d12b401029b77
-     internal_properties : HgAAAB4AAAAWfH6iAX42OZoXfDIGAgLkrNOrY0xbxcpLao6rqn4e+gIsK3CRcFSa41lDvUW7R7kDAw==
+     internal_properties : HgAAAB4AAABq4FK2dTJ6pabD2B4iLm5YOE/3H6hwp/mK1PoQ1iLyznaYn4x1VDD2DzWvCYlHM6Vv9w==
      physical_name : .\FEN_fen_ventes_.wdw
      type : 2
    -
@@ -1714,10 +1714,22 @@ project :
      physical_name : .\REQ_supprimer_supplier.WDR
      type : 5
    -
-     name : REQ_acticles_tendences
-     identifier : 0x48540b0f1356b1b0
-     internal_properties : HgAAAB4AAABEwqyIN2xEZ3QMDUVwjjInCF8Hz3iAfSyw+XNQdiJyrlbYmCk40wwLIQfxz1eJcWdR0Q==
-     physical_name : .\REQ_acticles_tendences.WDR
+     name : REQ_ProduitsLesPlusVendus
+     identifier : 0x48541aa20764252f
+     internal_properties : HgAAAB4AAAAiGBoOverC3f5i/irwMJ6mrj+VTfgYkchSajMvqx13uRvbdKHGQUHtx31nUdEP690nLw==
+     physical_name : .\REQ_ProduitsLesPlusVendus.WDR
+     type : 5
+   -
+     name : REQ_ProduitsEnRupture
+     identifier : 0x48541ad80766f8eb
+     internal_properties : HgAAAB4AAAArJxN3tPG54uF55W83YZZfU9yufrWN7RqKNOV1fwmVc4GvHtqZbjrkznRuSsoG8uYuNg==
+     physical_name : .\REQ_ProduitsEnRupture.WDR
+     type : 5
+   -
+     name : REQ_StockFaible
+     identifier : 0x48541b01076898c4
+     internal_properties : HgAAAB4AAAA2HB4CoZ6Wmbouu9Eukpt9UhPp8UwEa1u2uSM3A4UXIZsLmX/41/opAzmjHeUb59kjIw==
+     physical_name : .\REQ_StockFaible.WDR
      type : 5
    -
      name : REQ_quantite_stock
