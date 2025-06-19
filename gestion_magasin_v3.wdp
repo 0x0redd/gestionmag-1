@@ -1713,6 +1713,12 @@ project :
      internal_properties : HgAAAB4AAADNT/uXYF0b1s6UdXWUFsO6Q0a2o9YJTk296UgWpTjdRlgQ0mHNusekajLzjLdT7NdI
      physical_name : .\REQ_supprimer_supplier.WDR
      type : 5
+   -
+     name : REQ_acticles_tendences
+     identifier : 0x48540b0f1356b1b0
+     internal_properties : HgAAAB4AAABEwqyIN2xEZ3QMDUVwjjInCF8Hz3iAfSyw+XNQdiJyrlbYmCk40wwLIQfxz1eJcWdR0Q==
+     physical_name : .\REQ_acticles_tendences.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -

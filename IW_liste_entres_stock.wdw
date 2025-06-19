@@ -613,7 +613,7 @@ window :
          		REQ_selection_entr_stock.location_name??"",                                         // COL_Nom_De_stock
          		REQ_selection_entr_stock.full_name??"",                                             // COL_Fournisseur
          		REQ_selection_entr_stock.description??"",                                                  // COL_Nom_d_article
-         		REQ_selection_entr_stock.quantity??0,                                               // COL_Quantitée
+         		REQ_selection_entr_stock.quantity_purchased??0,                                               // COL_Quantitée
          		REQ_selection_entr_stock.receivingPayment_status??"Non défini",                    // COL_Payment_Statut
          		REQ_selection_entr_stock.payment_type??"Inconnu",                                   // COL_Type_De_paiement
          		REQ_selection_entr_stock.payment_amount??0.0,
