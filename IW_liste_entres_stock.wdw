@@ -95,20 +95,18 @@ window :
         p_codes :
          -
            code : |1+
-            // Version 1
-            // Description 
-            // Bouton au style Modifier permettant de modifier un élément
-            
-            
             SI TableSelect(TABLE_Liste_Art) = -1 ALORS
             	Info("Veuillez sélectionner une ligne.")
             	RETOUR
             FIN
             
-            Receiving_id est un entier = TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_ID
+            // Récupération des IDs
+            Receiving_id			est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_ID
+            Receiving_item_id		est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_item_id
+            location_id				est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_stock_id
             
-            Ouvre(FEN_modification_entr_stock1, Receiving_id)
-            
+            // Ouvrir la fenêtre de modification avec les paramètres
+            Ouvre(FEN_FEN_Update_entr_stock, Receiving_id, Receiving_item_id, location_id)
            type : 18
          -
            type : 161
@@ -407,7 +405,7 @@ window :
           style : {}
           type : 2
           content :
-           internal_properties : HgAAAB4AAABavlT/KTzM/K92CswDIzwztiPZ5+6ld/MbDt2yuE6bsjBiV4vJG0pZI8QhVhdu5kVWomF0q0VW78spiZk26qRUNqYiUX5han3M7OMxKcNsepmvObZv7PXO5/wS+29lzIBdGsG328vIEdE2dnwPnYwo1z30qDsIKcxkmv/pgsNQ1l/JCycWN/Hnw8rrroVBMeQf/5FVgFYOLks8+T8XDh6mtg6V72ZbUSI1apTaNg7kyhANxHRIBN07kmRXbl+VB2e+oLsC2mInPZ8aEa301gInYFcXxB8l2VcMm4LkMOT+6czO7NgFNLoG42BJ1dqYkPVKh+luywFokzPr4tBdwf4zxpy87P3TTLjFrFUFA8f2yQgK8DXSRODUrzYMpUgFWEGT4N6ViD9CkWHrVhQf+sYpxEqvj+oW6uqf7k2A0Nff8+Ha33y5gcxE7eF4YLJRBdoxoWgIsrydGreiYggHJrfElysiCdsnjtVpU1Z7zFIKTEUPCF0WS4e5NuKCmBzwhrcIeB1nfwEol8GGdP0o2gsYJlwWBbrCegy6SbqUG7qyKVTj7s1PrwYz7Gwg/Tt/zm/094LFt1OdVkFiylO7gFOPHzwlobdvw5voudgCJlvao7mgeVzrRsF4Km4O82Ocghe+tGK4LdsLw/d47GupKyWOaEtu42pmMoZSAD+oc2UlG5ipoM6G4TQG+RKg1qj14yMxHfnFwS/K3NnVCJ4AMW3AXzMpEutt01dWFQJArdOmaqnvyMGw0Ss5WbO4Nhj+VnBhJhiL1X2ddQa0gdeYoJkEht6TBJMOwncJIQ7oxmrVfc9xi7DQ89ADLEMAb9Ri12MUlCGT34+iZp0lzPKnm1Y+VZKsWO5OvQtpdP/COALk8opTj4IVDj4lHgXuEM8QNsnFWdegA4kw7k8WFOvRU3jS/37u+mvAkvalhKHyR4DklfnAQH+eGxsAc83N/FfjcBErN/RJ38bTBaJINcAR7bRtZoIykCmtKXDEavBlI4YF3mhiGZT8jczTHn41EdbMwhTcwfc+fuAadi+YNfGK/DZgH5qqawTguDWYKEN6DUBNFJ2/9SGadwjqt9ZuS5tGIFGTxa0YlVs2CtQvM7X87qwhdXgh5xUATHd45pLx7XHhb9Pg9J3ZaRtunrU4SdVmke+8wuxezD71fRbQSGullDCmb6CkvrcnwJlqKMx/qqwdkgPaYLrc8/5Pg+318z4iOJDLPTgm6otjf1KcTvNgLbvPsFfX
+           internal_properties : HgAAAB4AAAD7PxJBbhArUZqtsyPkbOXpOHPBEx9FP/sK2geO4fo0jaEX18YQJkE9fJN0hS4ce+jjzQddYha3k7CuT6COwfsjq1o11iegJRBNYz4MmCsZPeqStgX0nCrMKK3cmuhmseA4KWLG93Y2Kgwc8wh4sBAhTrRxGwpQwXHXNqpGnfcl9yj58vr5Ip67K5TwGCVn+r2G3W1HTFPBqT/+SFzCb8GVE0Vnje3/qsxidywazmpBfnndn0efbtCeGQcVpJsPcTHUYtHwv1dClz3LQ+0ljioJuQQV2/phnTldLushmAHSpUoAaCVm60zjq0kEYR2Ncn2wN3740yqMQaVH7Me81640uyffmVF0E2WA+sAaKTRxHf4qFWAhn4wR/Sw1VnkYMKTZWMOe9MSGu2gC1l0BMBa46HjyHpwgjTE24Iy0jjzueIbNGpRK3qlM/eEORLLyJBXz/NqX2GunQ8n/BwHFvuen6USoF3s5ZLZMyJUg9LtWyzzRrJK+pJetdaAbIfPIX55V3B73iZYe0znDS8Dd6okm8CxgV3ZNYizYPhAC/sAsWZts9m34oOr6H5lkU3OwJZ3SM4PXkyOKINm7zdGFGuqioev7rWoc0+9Vqlfr9pzhueBJw/3rH1G38X0CE2CHWB4s10cw1uPsZjnzTZnDBQ1NkGD0XZZ7pZnYf4p7s5YrvbE+5tew8ozypQcBdgWARRO56NuWWObKqONjBU70CXQaT9J/bW+SfeiDa+vn+8YtPpXtZoqHp9LV82d71Rq6WeWlcBmkKgGK2OlbO6pIMD9myvfCSpKYymrsKq+y1doIK/Kz3+A43nQQeb2tRbpKHXCmouzL2Fs2BqHacCAzWKnKOe4UAqVh9lhhgZ3A7X99NKCS4l3b8xSbg/kfP8ffkonN7A3qHClzvsg0rhAOIbtfG/CGqev6oqfzsiGkYGcWKlloGGD+PrTqJgAcfmixtXtLkP4+/Zo1jAE3a6dQJGV0xCXZhcMDcgQx4IB11uSPOwgWV0B4E6sH6maabdrnZHwP9nY=
            properties :
             accelerator_key : 65535
            style : {}
@@ -439,7 +437,7 @@ window :
           style : {}
           type : 2
           content :
-           internal_properties : HgAAAB4AAABavlT/KTzM/K92CswDIzwztiPZ5+6ld/MbDt2yuE6bsjBiV4vJG0pZI8QhVhdu5kVWomF0q0VW78spiZk26qRUNqYiUX5han3M7OMxKcNsepmvObZv7PXO5/wS+29lzIBdGsG328vIEdE2dnwPnYwo1z30qDsIKcxkmv/pgsNQ1l/JCycWN/Hnw8rrroVBMeQf/5FVgFYOLks8+T8XDh6mtg6V72ZbUSI1apTaNg7kyhANxHRIBN07kmRXbl+VB2e+oLsC2mInPZ8aEa301gInYFcXxB8l2VcMm4LkMOT+6czO7NgFNLoG42BJ1dqYkPVKh+luywFokzPr4tBdwf4zxpy87P3TTLjFrFUFA8f2yQgK8DXSRODUrzYMpUgFWEGT4N6ViD9CkWHrVhQf+sYpxEqvj+oW6uqf7k2A0Nff8+Ha33y5gcxE7eF4YLJRBdoxoWgIsrydGreiYggHJrfElysiCdsnjtVpU1Z7zFIKTEUPCF0WS4e5NuKCmBzwhrcIeB1nfwEol8GGdP0o2gsYJlwWBbrCegy6SbqUG7qyKVTj7s1PrwYz7Gwg/Tt/zm/094LFt1OdVkFiylO7gFOPHzwlobdvw5voudgCJlvao7mgeVzrRsF4Km4O82Ocghe+tGK4LdsLw/d47GupKyWOaEtu42pmMoZSAD+oc2UlG5ipoM6G4TQG+RKg1qj14yMxHfnFwS/K3NnVCJ4AMW3AXzMpEutt01dWFQJArdOmaqnvyMGw0Ss5WbO4Nhj+VnBhJhiL1X2ddQa0gdeYoJkEht6TBJMOwncJIQ7oxmrVfc9xi7DQ89ADLEMAb9Ri12MUlCGT34+iZp0lzPKnm1Y+VZKsWO5OvQtpdP/COALk8opTj4IVDj4lHgXuEM8QNsnFWdegA4kw7k8WFOvRU3jS/37u+mvAkvalhKHyR4DklfnAQH+eGxsAc83N/FfjcBErN/RJ38bTBaJINcAR7bRtZoIykCmtKXDEavBlI4YF3mhiGZT8jczTHn41EdbMwhTcwfc+fuAadi+YNfGK/DZgH5qqawTguDWYKEN6DUBNFJ2/9SGadwjqt9ZuS5tGIFGTxa0YlVs2CtQvM7X87qwhdXgh5xUATHd45pLx7XHhb9Pg9J3ZaRtunrU4SdVmke+8wuxezD71fRbQSGullDCmb6CkvrcnwJlqKMx/qqwdkgPaYLrc8/5Pg+318z4iOJDLPTgm6otjf1KcTvNgLbvPsFfX
+           internal_properties : HgAAAB4AAAD7PxJBbhArUZqtsyPkbOXpOHPBEx9FP/sK2geO4fo0jaEX18YQJkE9fJN0hS4ce+jjzQddYha3k7CuT6COwfsjq1o11iegJRBNYz4MmCsZPeqStgX0nCrMKK3cmuhmseA4KWLG93Y2Kgwc8wh4sBAhTrRxGwpQwXHXNqpGnfcl9yj58vr5Ip67K5TwGCVn+r2G3W1HTFPBqT/+SFzCb8GVE0Vnje3/qsxidywazmpBfnndn0efbtCeGQcVpJsPcTHUYtHwv1dClz3LQ+0ljioJuQQV2/phnTldLushmAHSpUoAaCVm60zjq0kEYR2Ncn2wN3740yqMQaVH7Me81640uyffmVF0E2WA+sAaKTRxHf4qFWAhn4wR/Sw1VnkYMKTZWMOe9MSGu2gC1l0BMBa46HjyHpwgjTE24Iy0jjzueIbNGpRK3qlM/eEORLLyJBXz/NqX2GunQ8n/BwHFvuen6USoF3s5ZLZMyJUg9LtWyzzRrJK+pJetdaAbIfPIX55V3B73iZYe0znDS8Dd6okm8CxgV3ZNYizYPhAC/sAsWZts9m34oOr6H5lkU3OwJZ3SM4PXkyOKINm7zdGFGuqioev7rWoc0+9Vqlfr9pzhueBJw/3rH1G38X0CE2CHWB4s10cw1uPsZjnzTZnDBQ1NkGD0XZZ7pZnYf4p7s5YrvbE+5tew8ozypQcBdgWARRO56NuWWObKqONjBU70CXQaT9J/bW+SfeiDa+vn+8YtPpXtZoqHp9LV82d71Rq6WeWlcBmkKgGK2OlbO6pIMD9myvfCSpKYymrsKq+y1doIK/Kz3+A43nQQeb2tRbpKHXCmouzL2Fs2BqHacCAzWKnKOe4UAqVh9lhhgZ3A7X99NKCS4l3b8xSbg/kfP8ffkonN7A3qHClzvsg0rhAOIbtfG/CGqev6oqfzsiGkYGcWKlloGGD+PrTqJgAcfmixtXtLkP4+/Zo1jAE3a6dQJGV0xCXZhcMDcgQx4IB11uSPOwgWV0B4E6sH6maabdrnZHwP9nY=
            properties :
             accelerator_key : 65535
            style : {}
