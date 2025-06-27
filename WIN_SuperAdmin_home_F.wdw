@@ -262,6 +262,15 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         // Nettoyer l’ancienne fenêtre interne
+         ChangeFenêtreSource(CFI_SansNom1, "")
+         
+         // Afficher la nouvelle fenêtre interne
+         ChangeFenêtreSource(CFI_SansNom1, IW_Profil_Utilisateur)
+         
+        type : 18
+      -
         type : 161
         enabled : false
   -

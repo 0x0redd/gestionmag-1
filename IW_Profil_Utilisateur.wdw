@@ -1,0 +1,216 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IW_Profil_Utilisateur
+ major_version : 30
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : IW_Profil_Utilisateur
+ identifier : 0x285e6ba92ef110a1
+ internal_properties : HgAAAB4AAABvSRDq0Nh10W204G4JUd/3L20uq+Zaktjp6T3CamJjohrp435QI0LSeObgCkY1kP8TXzK6+bvMlGSV/cMUStRP0UYYiqHtrP5NowUZhTxEBFOy4ZJV9bbsgmhThEx7MY0FE/vEILP/X7K1s+GADTAqaUPaQ6w6rshOpNoMmCOgEEb9dREK9lqYsLU/2vcFWHf+rJK7LyLCSyDuD3rQX+UjXuvhMxCy0bAL9u1D7ksDkqK9TUUAkWokP0C+e8niQ4Km3hnSybRIShqojx2zZQSI2yqOWE4Ft3mt01q7hFFYk2m/RD/fZgCO7bQnDGQwx/M/tmm2S5ntv1zTt+iZ/FipXBpoTHcY+zKHND+y3EpOxNFyQoPVWlHnKVutkfDqFaSZ8QMwU5JFnP6NgajDK6yiKQ5qyUp/uKFAp5A/PswsRyBoxls6grJzKzNQpdAFVnHQZn4oEUWyUwt3TuELXxigFKbR9QDFfXOOfM784fsqKL4orU7MA6lwngmIv3b27VRx17u0p/Be520fDm/MNEPnnEeuXCMJ5+/FDJcIATtXvEkiC6LZ/hIRWr7MfujeYYB2E/w9hcUDFhZRI/+iAnUiReHWbuIC8HQjiOmPs+4jYuQ0D3YyqNlrWFcmqZ0yF+T0HPjiO4+ho7mpOGCeC/rXdbE3UuWhRbxiCk1f1rk5/KA5QK7HBzlNXYxaj+z/SbZiegEOfkk9u5GZ01hXjKV8PTCcUWNo5PeLljckeHTjEvTWVB6laAcHvzJE/9zxTlvLrJgpArVZh81d516RRbNJtX26F9gVCyvF
+ properties :
+  width : 1209
+  height : 892
+ style : {}
+ controls :
+  -
+    name : IW_Profil_Utilisateur
+    identifier : 0x285e6ba92ef210a1
+    internal_properties : HgAAAB4AAABPzD7g65jpPE/FMkbOuQnCQqBwGSFBCVIyJAI+kVljM/F1n0Y7raBMLzuVckZCqH2ZIEIO15lNuxccgBuWS9e4HPDWqqghNl34XvMFQ7cx/4C8f3CgLV6b23Nxn+oKh2Cm0mfCqv8FK2JLivnYaRyfryHz9l1wt7JtGmmWfpR8kY+1CmKy93g0uPp13z7WzId5mKkKfkzeQud01Tc4P6K41T+Do1rvkYKyd+jn79vaecj+rcIL5FoYVqjCMoZgY60PVHQLkzXVBBiSxDSNPZkHadsZXp13MVze77qSDb3v7eQBr6GGbeCMYA++oMmQwyc4vVJnhI+8hQKEDgQ3cAw3l2E2pgjkc9ORUxA8473KfI1rWdiFtI1uGKmYpXAjNTurzgp9IOrCvORZNGPAV+FNoO/DDc15dOOglhiK00PbQZtokWK+h4/du0Z4TOCJrfLWJUI1
+    properties :
+     width : 1209
+     height : 892
+     tab_order : 0
+    style : {}
+    controls :
+     -
+       name : LIB_Nom
+       identifier : 0x285e6c0331df710c
+       internal_properties : HgAAAB4AAADfK6AF+DIR2C2yU5dYTc+PmiMXhk2NUACEJuqndTkksFTN+hBOCVrboU7JRGLzEyG5YTTA9KgZkszLplvdoRp45ll2S1pAgopBI3Xf6/oiP6XQpS+qWAGYwBa15kPAgBi+5W4lBHcoxZQN6kxw+K5+KHtZ90YaKWCgU0BXNilF3wU2pECyihBM4yupdzUwO9Mp8yFGqbDmGm5rGrduPBMMWIRG5GVdJJaUXswAfMzJt/CIbQHwLM70Sc/QpnF8LpZLKkMNY3cfGH+PYccAK6SyRDMp06IkjNarSVZ62ROwW2jfnamKJ+h9YUEsijw8MZiMY6LRgN8VPmMR8eXVGghFrOYX31MlGCZGCfN0wzK6eX83Ippuyp14DrswuFRG5cgvIFkeYlveHPGAFV03vDfAjJQniM9Rg2JHywqFwoWyJ+44uIKFy2TwCVF8YGPz8dT+U/w7xpTe75SQa4R34CChzTBt01pU8WKXZ06vxaz8S12yQ1sXamcla7VcXregO+v39mGm2QlTlB/7Im3mLO9+WMTnvytrvA==
+       properties :
+        x : 44
+        y : 237
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Prenom
+       identifier : 0x285e6c6231f5e647
+       internal_properties : HgAAAB4AAABZDdQIUtxAxC5/huv85RK4md1JjSmXmXmJU8m5qWvXAUdDtFJrDQf6DfUx18VWkYKUl8/hpt0krjWzmLVEkVRxf8ELjF/V3ASGCrByLhC2VWt/APGDGuomwOGolnTOupgSZfnxrcruRLDxtQ4kc393EfssAWos/MEQTWm1ZkkXYb97K9anLs9f2wXNWOkmh02qgBw4ceYapDKutqodC2TZl7ONC7W9tey1cUi3ltxLSBZfFvEUZUWHvXGleDF0+3HF1t/vPv6u94R3I40ofHIWsaiCiFoExzTbhPtNixoCvBldGTyPk5BSFc29sW7uP157dmNSUrHflplvLXFXNwEc7RSxrETR0VIKRDD0rMC5PukqBPfhgSK1Js0lHvN/j1drZ/y5F2F0VizuzuTbDsYFwqsFQSj0i3fSKBCXLuRu3KKuFk4uJjCc83X/XpJtDHBbJxVdaoJ77ZWx
+       properties :
+        x : 647
+        y : 237
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Email
+       identifier : 0x285e6c7431fb2a35
+       internal_properties : HgAAAB4AAAA+SIUUL/vh9/MWXX5+1UjljYLWDQII+DqibFgC/fXaKpTb0kbeHXCVFa5T7TjLF3DHT6tXeoVbU/B582KilDeE+vkF7az9nHKRu5WZqaIu3v05qeQOA+hAsn1iQVcDtxGKcU7QSugeauqu+0G3d7LS75WiwYY01MvFrm5biQ0J3L5sy+xQQmJz8nAE+8c2+Bd/TBxm0apOXJPzRRqcVu6WJ21mbuQGYzDXag2kLSAQx07PqsITNtZuOuPzGbo7P7Nve2sUHZ8V5BfzAarPbcymOwtyD8l14rHGJGeK8ovwKPeWldNsjtXRsgMj9okLGfpvBa0t45B4UW7b+5RcclMYm6Fx1zsaVBdBCrTTXQezYp1ZPmi2FHtkIyHXHzQ2Aw2JAjhWXJRfw6sokKfCP3bfDCCDLFf1fDYnJP4jgbNjLQ5yDiVnVcGXbZ5/EgQARGAmH4Qe9CF+76J5U7gWVE9dBhcxwg==
+       properties :
+        x : 48
+        y : 328
+        width : 549
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Role
+       identifier : 0x285e6ccd320985fd
+       internal_properties : HgAAAB4AAACa3csE8g9fm9E3odkw1T6Ikdqflk/6cmMQkEPq6nmRu/tW15y40GGHE35qX4dYoFDwHqQj7yVzTAPLTub9pU++YsClFgM1/KpeV9dIs4ZPt4BEOAlPWIU6+u1wKw3lW3rRqpsltbYJhSjV6cDVoeBz0Muth3NjAceQOnFhbJPnngxw1KuyXZfukBui+ips06YyJKksOSYAnJkqQyjrbHdhRkHEy581X99LD1WJmjSMerrK46zIOw/6CbTex4SB5kmdfbDG8MJaegY83BRrubUoy4et3USYQd2h+er+vIE7YP3guoNrWVCDJWB2KNVP9gYlZ2SZWp+p17HUmK5alAjypwn60zC3Q/MozwcNwzHQ0rWtrVZR+4LaZn6wK4JolhejwGmMlxMS29qzS3fkuAf0bV0InU15ZISBqkwQNeNxdK31Enf0HiMkr6COCAQaK1kttDkHx5cugzdSxcclsn2O
+       properties :
+        x : 44
+        y : 417
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : STC_Table_des_personnes
+       identifier : 0x285e73cd3fcddd8f
+       internal_properties : HgAAAB4AAADyVVSDhTP6uXzA+YWsxti1jVwjbj+iwyXvQjR9lXxQY+LkeCwKsiI+boIMkXKPkkKFr14EN0sRJBWZPKevKVfy8zM24+CELimvTYRSyeiLTet1CHrVTm2YKo0kqiZk2kQ2BTvM4NxRV6qMZP0fudojSxioVcjzOwTZs5Yg16vgDV0QNV1tj/S9mbNrW+6rY6MnjmMJDr8Gvsg4jXbMaoRxhJYZqNQ3aekFCiLetGn1u0TcIEvFL6QhkgbtU4fcetav5mUAnKInc0Vg+JRtuCtp1kpy6S9pSo1TVSzBV68EiWLjxZD8u5FGTytAK854NSU9l7uUQ82zpQaNz3lrLytbAvEdBAQaeAi58hdCjS+YaKDxBNEpDtWY8AhJWfvQYJgQoJ00mFW+kAnM5os2gy5BgXZxyJluZNEezjRNkDtG2g4WkMatlgqClV4b5sRKX56k3yROKo1WyLmshj8aI5Q7Qhqszfkz4v/I6m5SiY58DCmhIKxfbMCF7W5Y5TX5TIgehAyY+Ofzhrr7cw==
+       properties :
+        x : 48
+        y : 47
+        width : 816
+        height : 103
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE MaFenêtre()
+         localjjjj()
+      -
+        code : |1+
+         
+         
+        type : 14
+      -
+        code : |1+
+         
+         
+        type : 234
+      -
+        code : |1+
+         
+         
+        type : 43
+      -
+        code : |1+
+         
+         
+        type : 42
+      -
+        code : |1+
+         
+         
+        type : 2
+      -
+        code : |1+
+         
+         
+        type : 17
+ menu :
+  name : _Menu
+  identifier : 0x285e6b8f2ee6ad34
+  internal_properties : HgAAAB4AAABhW4p9LBg8Ymj+OCt72fR7jPgIzwg4Vb8t0Sn9Y8/6giUgLUQXFpbOdVRLCt3RsAIoHb/8fbMaaKZuvUZb0rVejVGNKG3SY2Vi5szs2QIfWXr8b9FixQPNz/Kg6kUWmdBeZkvyZwZedA9mV9naDF4Y8KmaGo74V5IUKnBs8R4BjhukWR47cTRc1UycTg/P6sjPIUv46dZBPCE87A1lAh2NbSObBl3+fw9WXYEd2PaXulZcsTRV8vrgKl+/xb3y688QNDpcrMStdW7X6BLKorBLMMmFsIcNag==
+  properties : {}
+  style : {}
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : localjjjj
+     procedure_id : 1755960811672994539
+     type_code : 14
+     code : |1+
+      PROCÉDURE localjjjj()
+      
+      // Formater nom et prénom
+      sNomMajuscule	est une chaîne	= Majuscule(gNomUtilisateur)
+      sPrenomFormate	est une chaîne	= Majuscule(Milieu(gPrenomUtilisateur, 1, 1)) + Minuscule(Milieu(gPrenomUtilisateur, 2))
+      
+      // Affichage dans les libellés
+      LIB_Nom		= "Nom : "+sNomMajuscule
+      LIB_Prenom	=  "Prenom : "+sPrenomFormate
+      LIB_Email	=  "Email : "+gEmailUtilisateur
+      LIB_Role	= "Role : "+ gRoleUtilisateur
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : HgAAAB4AAADXPUOq6bQdTI/fs1mC0I6nimWl2G84EsAbne5i32IM05uoRA==
+  original_name : FI_SansNom1
+resources :
+ string_res :
+  identifier : 0x185e6b8f0305ad34
+  internal_properties : HgAAAB4AAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
