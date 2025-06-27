@@ -906,7 +906,7 @@ project :
    -
      name : FEN_fen_ventes_
      identifier : 0x481d12b401029b77
-     internal_properties : HgAAAB4AAACY9kBcaxAYw4DhejwABHRSPk31HZZuipuGM3ji4Cj0zHSelYaPclKY7VNNq2tlHZN9hQ==
+     internal_properties : HgAAAB4AAAArJxN3tPG54uECB9kdcbMVfQowUGuNFJm2sUrvk2Uxj7lb2sFCh221znRuSsoG8uYuNg==
      physical_name : .\FEN_fen_ventes_.wdw
      type : 2
    -
@@ -1827,6 +1827,12 @@ project :
      internal_properties : HgAAAB4AAACd+fWpFkPr9EflmMpDu9+y0X4UxP9Z3zGhzeRHi73RV/l7ofChrnssMBaAeDioUECIiA==
      physical_name : .\IW_Profil_Utilisateur.wdw
      type : 8
+   -
+     name : REQ_GET_FOURNISSEUR
+     identifier : 0x485f06550645e5aa
+     internal_properties : HgAAAB4AAABWPL7iwb72+VrpnAcjZRxrUgGJYWolXxGu05F98Khs/MzGwKWvFw4UIxmDfQX7h3lDww==
+     physical_name : .\REQ_GET_FOURNISSEUR.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -
