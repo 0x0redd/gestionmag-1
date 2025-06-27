@@ -228,19 +228,27 @@ window :
      p_codes :
       -
         code : |1+
+         
+         
+        type : 14
+      -
+        code : |1+
          // Confirmation de déconnexion
          SI OuiNon("Voulez-vous vraiment vous déconnecter ?") = Vrai ALORS
-         	// Nettoyage si nécessaire (variables globales, etc.)
+         
+         	// Réinitialiser les variables globales utilisateur
+         	gUtilisateurID		= 0
          	gNomUtilisateur		= ""
          	gPrenomUtilisateur	= ""
+         	gEmailUtilisateur	= ""
+         	gRoleUtilisateur	= ""
          
-         	// Retour à la fenêtre de connexion
-         	Ouvre(FEN_connexion)
+         	// Ouvrir la fenêtre de connexion
+         	Ouvre(WIN_connexion_F)
          
-         	// Fermer la fenêtre actuelle
+         	// Fermer la fenêtre principale ou tableau de bord
          	Ferme()
          FIN
-         
         type : 18
       -
         type : 161
