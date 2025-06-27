@@ -1821,6 +1821,12 @@ project :
      internal_properties : HgAAAB4AAACQbsjU04iguxipOgVQgLi2uCUHT/4PmaJOiyL4V0FTTbsHRv/202JgZdvFM/PtlQv1fQ==
      physical_name : .\REQ_selection_receivingItems.WDR
      type : 5
+   -
+     name : IW_Profil_Utilisateur
+     identifier : 0x485e6ba907a4111e
+     internal_properties : HgAAAB4AAACd+fWpFkPr9EflmMpDu9+y0X4UxP9Z3zGhzeRHi73RV/l7ofChrnssMBaAeDioUECIiA==
+     physical_name : .\IW_Profil_Utilisateur.wdw
+     type : 8
   other_elements : []
   array_of_analysis :
    -
@@ -1848,7 +1854,7 @@ project :
   type_code : 0
   p_codes :
    -
-     code : |1+
+     code : |1-
       PROCÉDURE GLOBALE GénérerReferenceReceiving() : chaîne
       sDateHeure est une chaîne = DateVersChaîne(DateSys(), "AAAAMMJJ") + "-" + HeureVersChaîne(HeureSys(), "HHMMSS")
       RENVOYER "REC-" + sDateHeure
@@ -1858,6 +1864,8 @@ project :
       gUtilisateurID		est un entier
       gNomUtilisateur		est une chaîne
       gPrenomUtilisateur	est une chaîne
+      gEmailUtilisateur	est une chaîne
+      gRoleUtilisateur	est une chaîne
      type : 196608
    -
      type : 196627

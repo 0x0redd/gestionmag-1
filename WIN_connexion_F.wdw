@@ -199,7 +199,18 @@ window :
          gUtilisateurID		= users.id
          gNomUtilisateur		= people.last_name
          gPrenomUtilisateur	= people.first_name
-         
+         gEmailUtilisateur   = users.email
+         // Identifier le rôle utilisateur
+         SELON role_user.role_id
+         	CAS 1
+         		gRoleUtilisateur = "SuperAdmin"
+         	CAS 2
+         		gRoleUtilisateur = "Responsable"
+         	CAS 3
+         		gRoleUtilisateur = "Magasinier"
+         	AUTRE CAS
+         		Info("Rôle ID non reconnu : " + role_user.role_id)
+         FIN
          // Redirection selon l'ID du rôle
          SELON role_user.role_id
          	CAS 1
