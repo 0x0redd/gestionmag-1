@@ -94,19 +94,21 @@ window :
         type_code : 4
         p_codes :
          -
-           code : |1+
-            SI TableSelect(TABLE_Liste_Art) = -1 ALORS
-            	Info("Veuillez sélectionner une ligne.")
+           code : |1-
+            nIndex est un entier = TableSelect(TABLE_Liste_Art)
+            
+            SI nIndex = -1 ALORS
+            	Info("Veuillez sélectionner une ligne à modifier.")
             	RETOUR
+            SINON
+            	// Récupération des données sélectionnées dans la table
+            	Receiving_id		est un entier	= TABLE_Liste_Art[nIndex].COL_ID
+            	Receiving_item_id	est un entier	= TABLE_Liste_Art[nIndex].COL_item_id
+            	location_id			est un entier	= TABLE_Liste_Art[nIndex].COL_stock_id
+            
+            	// Ouvrir la fenêtre de modification avec les paramètres
+            	Ouvre(FEN_FEN_Update_entr_stock, Receiving_id, Receiving_item_id, location_id)
             FIN
-            
-            // Récupération des IDs
-            Receiving_id			est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_ID
-            Receiving_item_id		est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_item_id
-            location_id				est un entier	= TABLE_Liste_Art[TableSelect(TABLE_Liste_Art)].COL_stock_id
-            
-            // Ouvrir la fenêtre de modification avec les paramètres
-            Ouvre(FEN_FEN_Update_entr_stock, Receiving_id, Receiving_item_id, location_id)
            type : 18
          -
            type : 161
@@ -617,7 +619,7 @@ window :
          		REQ_selection_entr_stock.payment_amount??0.0,
          		REQ_selection_entr_stock.location_id,
          		REQ_selection_entr_stock.item_id
-         		)                                       // COL_Total
+         		)                                       
          	FIN
          
          SINON
