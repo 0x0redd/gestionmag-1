@@ -372,21 +372,41 @@ window :
   type_code : 1
   p_codes :
    -
-     code : |1-
+     code : |1+
       PROCEDURE MaFenêtre(id est un entier)
-      REQ_chercherParIDy.pID=id
-      HExécuteRequête(REQ_chercherParIDy)
-      HLitPremier(REQ_chercherParIDy)
-      SAI_Category=REQ_chercherParIDy.category
-      SAI_Item_number=REQ_chercherParIDy.item_number
-      SAI_Cost_price=REQ_chercherParIDy.cost_price
-      SAI_Description=REQ_chercherParIDy.description
-      SAI_Created_at=REQ_chercherParIDy.created_at
-      SAI_Name=REQ_chercherParIDy.name
-      SAI_Stock_type=REQ_chercherParIDy.stock_type
-      IMG_Pictures=REQ_chercherParIDy.pictures
-      SAI_Unit_price=REQ_chercherParIDy.unit_price
-      LIB_SansNom1="Details de l'article : " + REQ_chercherParIDy.name
+      // Affecter l'ID de l'article à la requête paramétrée
+      REQ_chercherParIDy.pID = id
+      
+      // Exécuter la requête
+      SI HExécuteRequête(REQ_chercherParIDy) ALORS
+      
+      	// Lire le premier (et unique) résultat
+      	SI HLitPremier(REQ_chercherParIDy) ALORS
+      
+      		// Mettre le nom en majuscules pour le libellé
+      		sNomMajuscule est une chaîne = Majuscule(REQ_chercherParIDy.name)
+      
+      		// Remplir les champs de l'interface avec les données
+      		SAI_Category		= REQ_chercherParIDy.category
+      		SAI_Item_number		= REQ_chercherParIDy.item_number
+      		SAI_Cost_price		= REQ_chercherParIDy.cost_price
+      		SAI_Description		= REQ_chercherParIDy.description
+      		SAI_Created_at		= REQ_chercherParIDy.created_at
+      		SAI_Name			= REQ_chercherParIDy.name
+      		SAI_Stock_type		= REQ_chercherParIDy.stock_type
+      		IMG_Pictures		= REQ_chercherParIDy.pictures
+      		SAI_Unit_price		= REQ_chercherParIDy.unit_price
+      
+      		// Mettre à jour le libellé avec un nom en majuscule
+      		LIB_SansNom1		= "Détails de l'article : " + sNomMajuscule
+      
+      	SINON
+      		Info("Aucun article trouvé avec l'ID : " + id)
+      	FIN
+      
+      SINON
+      	Erreur("Erreur lors de l'exécution de la requête REQ_chercherParIDy.")
+      FIN
    -
      code : |1+
       
