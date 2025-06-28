@@ -89,6 +89,8 @@ window :
            code : |1+
             Ouvre(WIN_ajoute_fournisseur)
             
+            TableAffiche(TABLE_REQ_GET_FOURNISSEUR)
+            
             	ChargerFournisseurs()
             
            type : 18
@@ -119,9 +121,9 @@ window :
             
             // suprimer person from table supplier
             
-            REQ_supprimer_supplier.personID = nIDPeople
+            REQ_supprimer_supplier1.Paramperson_id = nIDPeople
             
-            SI HExécuteRequête(REQ_supprimer_supplier) = Faux ALORS
+            SI HExécuteRequête(REQ_supprimer_supplier1) = Faux ALORS
             	Erreur("fournisseur n'est pas supprimer")
             	return
             FIN

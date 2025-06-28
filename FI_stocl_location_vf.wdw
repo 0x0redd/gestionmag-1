@@ -161,8 +161,8 @@ window :
        identifier : 0x28261ddd15409426
        internal_properties : HgAAAB4AAAB5kiS4eSLUyyCup7JWbg/7jqs5jWESiuo00ysPbDbYqTYRwuaDURAMmCcRhP59gZOd5sbNYDm1kQ+EEYmQx/QKAYgm14lHJ+mkbsnHNY69mJXBYG5HleNeghyo1hGv3ydlMh6c+C4JeOcQRFaN/4v/BWC8Qrpt4wVh0jNsJP9NEAOvG16oodGXeybmq6+cWtOWvJzSR6s+jutxu4Hu/lbDHBumc1q4fQ+UyRLV77TVNWw+nuoe+33IDDGzmwfYpHeJJykNMltVwX1DlgiIuhYMKgwdEvaN4vlYSEe94pGCJXZy6QaCJKevAWxkm/RquFq97Uk7R41yWs1soINpExg9HlBmZ6anH037TAjIYEdgFm8Lu/69Qyjp3TACBMNqoHi9QYRUmYzCN5exWHE0oU6gdePl+7l5rzRIGKeM34SnsVr4Ihx5BRRF6m4HxCyGd1JhtUswJdNI5uYyAN/e0UuTXP8uWyTlF8QjQPfqa2OQAgFrXLwBKN/GAiMbnrcvGmz9
        properties :
-        x : 1105
-        y : 200
+        x : 1108
+        y : 177
         width : 177
         height : 46
         tab_stop : 0
@@ -1584,9 +1584,9 @@ window :
        identifier : 0x284df8e921d859b7
        internal_properties : HgAAAB4AAADfr+FJra0Ull3v8eMa0aluV8QpV81E6gEB8RjsRcBDP83F8KiO2aeAqoQ5bzvV388Mvh7AidP+xDNCkAZCsXHsyEzefZGC2dPvxkQKUPAD+fUh0wrAYCELLZRoTSSSYGjM4zF95veadQmdELv/M6X//qnegyYKKa9EtKoZxtVPDNSNpc+U/r1X0QzWR3tNJvc6b++/Nrr9WtjBG0JOg9rJE0ZLAr3sYs8lVX9qGr2gzbsct5HsIx3fdfDs9nUqdkRDfvREodmR9QT85yWvJ0a2IXUj+qyq0h3eib8DxIzTVqgC8oZYHDECHnbcnU52Gbtlbz+crYbjkQBaHK0cXg1FSGpjCeL8lqZRV9Bu6EKZg8ZWjyq3eBusXr0uWTI2bNVcSNxwwDZFO7qjFxrvUI1NEGtJ176xD0m9OiPuPSrvfMCkwNtCtwC6L/90soOvCPPj1qzHYGn3nXc=
        properties :
-        x : 1188
-        y : 251
-        width : 73
+        x : 1113
+        y : 225
+        width : 154
         height : 27
         tab_stop : 0
         take_focus : 0

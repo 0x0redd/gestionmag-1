@@ -482,8 +482,6 @@ window :
          //	Info("Erreur lors de l’attribution du rôle.")
          //	RETOUR
          //FIN
-         //
-         //
          
          // Success message
          Info("Supplier and person added successfully!")
