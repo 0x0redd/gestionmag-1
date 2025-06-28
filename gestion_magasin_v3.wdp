@@ -1390,16 +1390,16 @@ project :
      physical_name : .\REQ_select_items_quantites_md.WDR
      type : 5
    -
-     name : FEN_Modification_entrés_Ventes_Y
+     name : FEN_Modification_entrés_Ventes_H
      identifier : 0x4838404a04c989d0
      internal_properties : HgAAAB4AAACppZH1Mm9HaEsT7a8+9uekfTogsBtsXPu2MTqOu32ZpwHzg4Yw3F4iFAr0zFSMdGSstA==
-     physical_name : .\FEN_Modification_entrés_Ventes_Y.wdw
+     physical_name : .\FEN_Modification_entrés_Ventes_H.wdw
      type : 2
    -
-     name : FI_liste_entrés_Ventes_Y
+     name : FI_liste_entrés_Ventes_H
      identifier : 0x483840ce04e68e2c
      internal_properties : HgAAAB4AAACzj+s/DHkxakkV6z04FRqu/+z6Ut1Vrlqw0Carad8/uQPNQV2KclwgFgz2wkK+ui6Wng==
-     physical_name : .\FI_liste_entrés_Ventes_Y.wdw
+     physical_name : .\FI_liste_entrés_Ventes_H.wdw
      type : 8
    -
      name : REQ__modifier_password
@@ -1832,6 +1832,42 @@ project :
      identifier : 0x485f04310eeaceb9
      internal_properties : HgAAAB4AAADudMba6ZaeURLxovu/hrmuED1v50YpMFajt7ISX0lLhbO/HrBJhfwcO+HbJe3jnxH7ew==
      physical_name : .\REQ_update_sales_status.WDR
+     type : 5
+   -
+     name : REQ_selection_vente_modif
+     identifier : 0x485f0a7a0f195c6e
+     internal_properties : HgAAAB4AAABo5lBMeyCIk1Az7u7OG7HlSGkHn6pV+9y3cjqIaT/Ve51FJTftGlDi/SOdG5tVLaNt9Q==
+     physical_name : .\REQ_selection_vente_modif.WDR
+     type : 5
+   -
+     name : REQ_update_sales_items
+     identifier : 0x485f0b7a0f244624
+     internal_properties : HgAAAB4AAAAzD2u/jPmx6smcxM/1zb6y214agr9amme3mp51mu4kxEj0LigN+jDHlox2QsI+Oq4WHg==
+     physical_name : .\REQ_update_sales_items.WDR
+     type : 5
+   -
+     name : REQ_update_sales
+     identifier : 0x485f0c970f269d97
+     internal_properties : HgAAAB4AAAA/GxcLuOXN3u1A+QxDNVePV+aOlpeCNWivZMELdAQOMtJyC4KhtlHrynBqVt4S7uIqKg==
+     physical_name : .\REQ_update_sales.WDR
+     type : 5
+   -
+     name : REQ_update_sales_payment
+     identifier : 0x485f0d250f28c6df
+     internal_properties : HgAAAB4AAAAWfH6iAX42OZop06sqPufmem956dA7n+KP3GXgbVu5N4VJ9tBrrDnU41lDvUW7R7kDAw==
+     physical_name : .\REQ_update_sales_payment.WDR
+     type : 5
+   -
+     name : REQ_select_vente_liste
+     identifier : 0x485f10e30f6666f4
+     internal_properties : HgAAAB4AAABfO7drWAUtPo0g7bC7PVCA3bgk9EEUiTuvxDnX9JQG8s4ijOqJTgXL6lBKtn5yDoJKyg==
+     physical_name : .\REQ_select_vente_liste.WDR
+     type : 5
+   -
+     name : REQ_selection_salesItems
+     identifier : 0x485f36161082b4f3
+     internal_properties : HgAAAB4AAACwjug086gAGziL4lq/DJtA+Js3rxTPSrCDvxFlZFQ4ONxi8UM+0qS6hbslkxPNtSuVnQ==
+     physical_name : .\REQ_selection_salesItems.WDR
      type : 5
   other_elements : []
   array_of_analysis :
