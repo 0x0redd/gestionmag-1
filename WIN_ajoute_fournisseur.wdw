@@ -488,7 +488,7 @@ window :
          
          
          
-         TableAffiche(IW_gere_fournisseur.TABLE_REQ_GET_FOURNISSEUR)
+         
          Ferme()
         type : 18
       -
