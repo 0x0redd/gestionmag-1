@@ -2712,7 +2712,7 @@ project :
    -
      name : FEN_fen_ventes_
      identifier : 0x481d12b401029b77
-     internal_properties : HgAAAB4AAAAPC2e7iDV9rr0eE1XpHR+JyfasfDeaiHm/MEGUf4kV8x3HTl2mG/nB2kC6Bo5CPrIaGg==
+     internal_properties : HgAAAB4AAADCuDpuXQoiPZ7rcDYKBnZQIFePB6AU/qqu82BkDhr61n6gl4SNfFie511HsXFvC/3HTw==
      physical_name : .\FEN_fen_ventes_.wdw
      type : 2
    -
@@ -3204,7 +3204,7 @@ project :
    -
      name : FI_liste_entrés_Ventes_H
      identifier : 0x483840ce04e68e2c
-     internal_properties : HgAAAB4AAACV8f0hnvuz7P9HAddid0RMgY6UNP+TDwavOfUNV8Hd2yXvY7sonILGyH54QMAwyDiAgA==
+     internal_properties : HgAAAB4AAAD2XN7C4V7W2fpCGMplckFRmomROQK2ThWuSM7yfKzo4CjqZrgtl4fNw3ljXSXbpxnjYw==
      physical_name : .\FI_liste_entrés_Ventes_Y.wdw
      type : 8
    -
@@ -3698,6 +3698,30 @@ project :
      identifier : 0x485f0d250f28c6df
      internal_properties : HgAAAB4AAAAWfH6iAX42OZop06sqPufmem956dA7n+KP3GXgbVu5N4VJ9tBrrDnU41lDvUW7R7kDAw==
      physical_name : .\REQ_update_sales_payment.WDR
+     type : 5
+   -
+     name : REQ_supprimer_supplier2
+     identifier : 0x48607cd60a92cf28
+     internal_properties : HgAAAB4AAABdObVpVgMrNIcn1Q8Ym6lMqQjQiEEVXVOKPLbOhgKQmBCA6lVK+H7m8FZAuHhoEIBIyA==
+     physical_name : .\REQ_supprimer_supplier2.WDR
+     type : 5
+   -
+     name : REQ_supprimer_client2
+     identifier : 0x48607dd40a97ad84
+     internal_properties : HgAAAB4AAAB+5FZKeSaOoaICPbwdFQxFUgOJYWwovBNWHdbvZyHrfU9HHRCGRKAtCzGrFZ1TL6Fr6w==
+     physical_name : .\REQ_supprimer_client2.WDR
+     type : 5
+   -
+     name : REQ_GET_CLIENT1
+     identifier : 0x48607f1a0aa2a609
+     internal_properties : HgAAAB4AAADZtYGFIh8XGDuLTDNafbz507we3mXR3Cl24RJt86XpL5VbSF4xkSm6hLoknGScZFS8RA==
+     physical_name : .\REQ_GET_CLIENT1.WDR
+     type : 5
+   -
+     name : REQ_GET_FOURNISSEUR1
+     identifier : 0x486085520bbbf240
+     internal_properties : HgAAAB4AAAAjHxsPvOnB2vlNcOVZdNAoKaTwsJ3Z/PKDP33IZAQOgnZK8PLGDfX4xnxmUtIO6t4mLg==
+     physical_name : .\REQ_GET_FOURNISSEUR1.WDR
      type : 5
   other_elements : []
   array_of_analysis :
