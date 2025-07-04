@@ -3204,7 +3204,7 @@ project :
    -
      name : FI_liste_entrés_Ventes_H
      identifier : 0x483840ce04e68e2c
-     internal_properties : HgAAAB4AAAC3k5+DIB0VFiWBR4m0YbbCa3hm7ll+tc680UYstWOzLZdZ1cke5siMgrginmaaZlqiog==
+     internal_properties : HgAAAB4AAACd+fWpFkPr9Ef/yZ9av5wU2UY8rIczspeosrd9/yl1c12nq+Pw1Lr+MBaAeDioUECIiA==
      physical_name : .\FI_liste_entrés_Ventes_Y.wdw
      type : 8
    -
@@ -3722,6 +3722,30 @@ project :
      identifier : 0x486085520bbbf240
      internal_properties : HgAAAB4AAAAjHxsPvOnB2vlNcOVZdNAoKaTwsJ3Z/PKDP33IZAQOgnZK8PLGDfX4xnxmUtIO6t4mLg==
      physical_name : .\REQ_GET_FOURNISSEUR1.WDR
+     type : 5
+   -
+     name : REQ_supprimer_sales_payment
+     identifier : 0x4868328908c310f2
+     internal_properties : HgAAAB4AAAADf3uvHEnh+lkVTQDoduoqVRLoiEMfhvZOi9lZA4URH5kLxdvVMyYgJhyGcjKuSr4GDg==
+     physical_name : .\REQ_supprimer_sales_payment.WDR
+     type : 5
+   -
+     name : REQ_supprimer_sales_items
+     identifier : 0x486832ab08c5945b
+     internal_properties : HgAAAB4AAAA4FmC8izB4o6AMaFFXDyvwFFGTywpW0i2iRhvfC42PmReLzMgM/D87DTOtC4tFPbMdJQ==
+     physical_name : .\REQ_supprimer_sales_items.WDR
+     type : 5
+   -
+     name : REQ_supprimer_item_quantities
+     identifier : 0x486832d008c72466
+     internal_properties : HgAAAB4AAADNSSV5RjN7pLdfiwkqdHZ28fC4YNmNlFOuk1Dius7EZOQMdDCUvGTe4EawCIh4APDYWA==
+     physical_name : .\REQ_supprimer_item_quantities.WDR
+     type : 5
+   -
+     name : REQ_supprimer_sales
+     identifier : 0x486832eb08c99158
+     internal_properties : HgAAAB4AAADfuzfr2IWtvg2pcT480G/MyVjACDHtF0FOx2SOzvoYkHi44r8f4dpUatDKNv7yjgLKSg==
+     physical_name : .\REQ_supprimer_sales.WDR
      type : 5
   other_elements : []
   array_of_analysis :
