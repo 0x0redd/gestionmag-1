@@ -220,7 +220,7 @@ window :
         width : 306
         height : 112
         accelerator_key : 65535
-        tab_order : 16
+        tab_order : 15
        style : {}
        type : 2
        code_elements :
@@ -348,7 +348,7 @@ window :
         height : 36
         cursor_id : 32649
         accelerator_key : 65535
-        tab_order : 21
+        tab_order : 20
        style : {}
        type : 4
        code_elements :
@@ -359,101 +359,87 @@ window :
             
            type : 14
          -
-           code : |1-
-            // --- Récupérer l'ID du receiving à utiliser ---
-            SI PAS HExécuteRequête(REQ_select_max_id_receivings) ALORS
-            	Erreur("Impossible de récupérer l'ID du receiving : " + HErreurInfo())
+           code : |1+
+            SI nDernierReceivingID = 0 ALORS
+            	Erreur("Aucune entrée de stock à payer.")
             	RETOUR
             FIN
             
-            // CORRECTION : Tester le résultat de HLitPremier
-            SI HLitPremier(REQ_select_max_id_receivings) = Faux ALORS
-            	Erreur("Aucun ID de réception trouvé.")
-            	RETOUR
-            FIN
-            
-            nReceiving_ID	est un entier	= REQ_select_max_id_receivings.le_maximum_id
-            // CORRECTION : Supprimer la redéclaration de nItemID (déjà déclaré plus haut)
-            // nItemID		est un entier	= COMBO_Article
-            
-            // --- Initialisation des montants ---
             nTotalSaisi		est un réel		= 0
+            nTotalArticle	est un réel		= Val(total_achat)
             
-            // --- Paiement par chèque ---
+            nQteTotal		est un entier	= Quantitée
+            nQteCarte		est un entier	= 0
+            nQteEspece		est un entier	= 0
+            nQteCheque		est un entier	= 0
+            
+            // Paiement par carte
+            SI carte_saisie <> "" ALORS
+            	nMontantCarte est un réel = Val(carte_saisie)
+            	nQteCarte										= (nMontantCarte / nTotalArticle) * nQteTotal
+            	
+            	REQ_Insert_Payment_Type2.Parampayment_type		= "Carte"
+            	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantCarte
+            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
+            	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
+            	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
+            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
+            		Erreur("Erreur carte : " + HErreurInfo())
+            		RETOUR
+            	FIN
+            	nTotalSaisi += nMontantCarte
+            FIN
+            
+            // Paiement par espèce
+            SI espece_saisie <> "" ALORS
+            	nMontantEspece est un réel = Val(espece_saisie)
+            	nQteEspece										= (nMontantEspece / nTotalArticle) * nQteTotal
+            	
+            	REQ_Insert_Payment_Type2.Parampayment_type		= "Espèce"
+            	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantEspece
+            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
+            	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
+            	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
+            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
+            		Erreur("Erreur espèce : " + HErreurInfo())
+            		RETOUR
+            	FIN
+            	nTotalSaisi += nMontantEspece
+            FIN
+            
+            // Paiement par chèque
             SI cheque_saisie <> "" ALORS
+            	nMontantCheque est un réel = Val(cheque_saisie)
+            	nQteCheque										= (nMontantCheque / nTotalArticle) * nQteTotal
+            	
             	REQ_Insert_Payment_Type2.Parampayment_type		= "Chèque"
-            	REQ_Insert_Payment_Type2.Parampayment_amount	= Val(cheque_saisie)
-            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nReceiving_ID
+            	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantCheque
+            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
             	REQ_Insert_Payment_Type2.Paramdate_cheque		= SAI_Date_cheque
             	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            
             	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur lors du paiement par chèque : " + HErreurInfo())
+            		Erreur("Erreur chèque : " + HErreurInfo())
             		RETOUR
             	FIN
-            
-            	nTotalSaisi += Val(cheque_saisie)
+            	nTotalSaisi += nMontantCheque
             FIN
             
-            // --- Paiement en espèce ---
-            SI espece_saisie <> "" ALORS
-            	REQ_Insert_Payment_Type2.Parampayment_type		= "Espèce"
-            	REQ_Insert_Payment_Type2.Parampayment_amount	= Val(espece_saisie)
-            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nReceiving_ID
-            	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
-            	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            
-            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur lors du paiement en espèce : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            
-            	nTotalSaisi += Val(espece_saisie)
-            FIN
-            
-            // --- Paiement par carte ---
-            SI carte_saisie <> "" ALORS
-            	REQ_Insert_Payment_Type2.Parampayment_type		= "Carte"
-            	REQ_Insert_Payment_Type2.Parampayment_amount	= Val(carte_saisie)
-            	REQ_Insert_Payment_Type2.Paramreceivings_id		= nReceiving_ID
-            	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
-            	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            
-            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur lors du paiement par carte : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            
-            	nTotalSaisi += Val(carte_saisie)
-            FIN
-            
-            // --- Vérification du montant total ---
-            nMontantTotal est un réel = Val(total_achat)
-            
-            SI nTotalSaisi >= nMontantTotal ALORS
-            	// Paiement complet
-            	REQ_receiving_payment_status.Paramid						= nReceiving_ID
+            // Vérification
+            SI nTotalSaisi >= nTotalArticle ALORS
+            	// Marquer la réception comme payée
+            	REQ_receiving_payment_status.Paramid						= nDernierReceivingID
             	REQ_receiving_payment_status.ParamreceivingPayment_status	= "payée"
-            
-            	SI PAS HExécuteRequête(REQ_receiving_payment_status) ALORS
-            		Erreur("Erreur lors de la mise à jour du statut de paiement : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            
-            	Info("Réception et paiement enregistrés avec succès. Statut : Payée.")
+            	HExécuteRequête(REQ_receiving_payment_status)
+            	bPaiementEffectue = Vrai
+            	Info("Paiement réussi. Stock validé.")
             SINON
-            	// Paiement incomplet
-            	nMontantRestant est un réel = nMontantTotal - nTotalSaisi
-            
-            	REQ_receiving_payment_status.Paramid						= nReceiving_ID
+            	nManquant est un réel = nTotalArticle - nTotalSaisi
+            	REQ_receiving_payment_status.Paramid						= nDernierReceivingID
             	REQ_receiving_payment_status.ParamreceivingPayment_status	= "non complet"
-            
-            	SI PAS HExécuteRequête(REQ_receiving_payment_status) ALORS
-            		Erreur("Erreur lors de la mise à jour du statut de paiement : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            
-            	Info("Paiement incomplet. Montant restant : " + nMontantRestant + " DA")
+            	HExécuteRequête(REQ_receiving_payment_status)
+            	Erreur("Paiement incomplet. Il reste " + nManquant + " MAD.")
+            	bPaiementEffectue = Faux
+            	RETOUR
             FIN
            type : 18
          -
@@ -470,7 +456,7 @@ window :
         height : 36
         cursor_id : 32649
         accelerator_key : 65535
-        tab_order : 20
+        tab_order : 19
        style : {}
        type : 4
        code_elements :
@@ -920,7 +906,7 @@ window :
         height : 32
         cursor_id : 32649
         accelerator_key : 65535
-        tab_order : 13
+        tab_order : 12
        style : {}
        type : 4
        code_elements :
@@ -1062,7 +1048,10 @@ window :
             	Erreur("Erreur lors de l'insertion dans receiving_items : " + HErreurInfo())
             	RETOUR
             SINON
-            	Info("Ajout réalisé avec succès")	// CORRECTION orthographique
+            	bPaiementEffectue	= Faux
+            	nDernierReceivingID	= nReceiving_ID
+            	Info("Stock ajouté avec succès. Veuillez maintenant effectuer le paiement.")
+            	
             FIN
            type : 18
          -
@@ -1079,7 +1068,7 @@ window :
         height : 32
         cursor_id : 32649
         accelerator_key : 65535
-        tab_order : 14
+        tab_order : 13
        style : {}
        type : 4
        code_elements :
@@ -1223,7 +1212,7 @@ window :
         width : 137
         height : 38
         accelerator_key : 65535
-        tab_order : 15
+        tab_order : 14
        style : {}
        type : 2
        code_elements :
@@ -1255,7 +1244,7 @@ window :
         height : 90
         state : 1
         accelerator_key : 65535
-        tab_order : 19
+        tab_order : 18
        style :
         scrollbar : {}
        controls :
@@ -1457,7 +1446,7 @@ window :
         width : 137
         height : 38
         accelerator_key : 65535
-        tab_order : 18
+        tab_order : 17
        style : {}
        type : 2
        code_elements :
@@ -1504,7 +1493,7 @@ window :
         width : 99
         height : 39
         accelerator_key : 65535
-        tab_order : 17
+        tab_order : 16
        style : {}
        type : 4
        code_elements :
@@ -1546,35 +1535,12 @@ window :
         p_codes :
          -
            code : |1+
-            MaFenêtre.Ferme()
-           type : 18
-         -
-           type : 161
-           enabled : false
-     -
-       name : BTN_SansNom3
-       identifier : 0x2826208b1cff0d3d
-       internal_properties : HgAAAB4AAAA75kg31+MuX3f7KWWfDuXRQom3GuLalFuueKsBFzkiJvBHa1APojd+rVksn5tIc/BPl7HxOAMUC5aGeu9fDjU+PGqg/p98LZbLXZo4ckdFrUYmTHrp2Zfr4Aj5NM1ml8mGL0yMeCONS2PipLiueLbLMKDulBiuElF8qCm1pelEgGlxJLYs1/ysPY4u5Dd8jAuSiStuUFQCwN17nmymnRK7YE/h8TAF3KHP57xblksPuwibsWHKcpascVRSLAyeoaSDB/0HTTUZmdlcqimldM5J6jd+aHHDNejpOaEfcKlNwlLhw3s4P/41T+KQ3jrpF9oXb9zPp3ljS4OeoiNBazwDS3PD26yVUfiNyW8J2eci1QOqHt6siln3i4VFiwXpQwRI1ku54roNet0cxqSCFqBHjLWAZQVacit/RxU8+dU1n4KJ3QJdY7mhcxGElVI4/gbGeYkrjSA8mOSaOL6+T1dUFpciVtKk47qYmfgL4NOVEzyq3q14r8mn2jI/4I0t67Ia2c5FVQmYqsIjAqcuSp8JRbWIAovOgv+CzsL/V6yxpfth3dDD5o4HmImBEZZa49e3rJOAXu2aKqthOku+HUoWAuMD1s25kEshqVC60c4deAfJITB8kqqTEYpKZ7h2W5yNIr6JYZS9ewyWEMof8gtdqVbPjQJwwheVTAxttcfSplcmvVJSGfFdQfZHhxHaW6R3JsqFokhzQG2h91ce5VrQg3d0Q2GxO6ovWU6LqVQgwbAjP+rGviHOfc/s93MMlPV1PAwxrfo/RFPX8Gq9nweUEJEwjhl+g/RH4+y5GpfqV/wmMkyWGI5piEwsC9Zq+jrCrRfz68q3bQRLSSJNU8fVdeWLGTP2ycNQzUmq6zwDDatRKT5PYPVjGWwZXu9zmKjpQdpsaB8h5s7gKrEJBLQ664DVwzgy502+6lbkckXoAUrWGDnRJRCNrmjXuJsTpyh0RBI3CHiSz7ssxJLsJIYakvKrjecy3oRwNG+y5IY/n9PCJ8tqT8CZHPJAlybgBvrqZuoG7zaG6ylq9p06UKQS7MRAiJD2YloV7MIHIqxkvn7XjuCMWeCAsSw4
-       properties :
-        x : 537
-        y : 435
-        width : 210
-        height : 32
-        cursor_id : 32649
-        accelerator_key : 65535
-        tab_order : 12
-       style : {}
-       type : 4
-       code_elements :
-        type_code : 4
-        p_codes :
-         -
-           code : |1+
-            // Nettoyer l’ancienne fenêtre interne
-            ChangeFenêtreSource(BTN_SansNom3, "")
+            SI bPaiementEffectue = Faux ALORS
+            	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+            	RETOUR
+            FIN
             
-            // Afficher la nouvelle fenêtre interne
-            ChangeFenêtreSource(BTN_SansNom3, FI_liste_Entrés_Stock)
+            MaFenêtre.Ferme()
            type : 18
          -
            type : 161
@@ -1582,7 +1548,7 @@ window :
      -
        name : total_achat1
        identifier : 0x284df8e921d859b7
-       internal_properties : HgAAAB4AAADfr+FJra0Ull3v8eMa0aluV8QpV81E6gEB8RjsRcBDP83F8KiO2aeAqoQ5bzvV388Mvh7AidP+xDNCkAZCsXHsyEzefZGC2dPvxkQKUPAD+fUh0wrAYCELLZRoTSSSYGjM4zF95veadQmdELv/M6X//qnegyYKKa9EtKoZxtVPDNSNpc+U/r1X0QzWR3tNJvc6b++/Nrr9WtjBG0JOg9rJE0ZLAr3sYs8lVX9qGr2gzbsct5HsIx3fdfDs9nUqdkRDfvREodmR9QT85yWvJ0a2IXUj+qyq0h3eib8DxIzTVqgC8oZYHDECHnbcnU52Gbtlbz+crYbjkQBaHK0cXg1FSGpjCeL8lqZRV9Bu6EKZg8ZWjyq3eBusXr0uWTI2bNVcSNxwwDZFO7qjFxrvUI1NEGtJ176xD0m9OiPuPSrvfMCkwNtCtwC6L/90soOvCPPj1qzHYGn3nXc=
+       internal_properties : HgAAAB4AAADfr+FJra0Ull3v8eMa0aluV8QpV81E6gEB8RjsRcBDP03F8KiO2aeAqoQ5bzvV388Mvh7AidP+xDNCkAZCsXHsyEzefZGC2dPvxkQKUPAD+fUh0wrAYCELLZRoTSSSYGjM4zF95veadQmdELv/M6X//qnegyYKKa9EtKoZxtVPDNSNpc+U/r1X0QzWR3tNJvc6b++/Nrr9WtjBG0JOg9rJE0ZLAr3sYs8lVX9qmj0gTTucNxFso51f9XBsdvWq9sTD/nTEIVkRdYR8Z6Uvp8Y2ofWjeiwqUp1eCT+DRAxT1iiCcgbYnLGCnvZcHc72mTvl778cLQZjEYDanC2c3o3FyOrjiWJ8FibR11DuaMIZA0bWD6o3+Jss3j2u2bK27FXcyFzwQLbFuzojl5pv0A3NkOvJVz4xj8m9OiPuPSrvfMCkwNtCtwC6L/90soOvCPPj1qzHYGn3nXc=
        properties :
         x : 1113
         y : 225
@@ -1598,7 +1564,7 @@ window :
      -
        name : COMBO_Stock
        identifier : 0x285ec1bd17db3ab3
-       internal_properties : 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
+       internal_properties : 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
        properties :
         x : 36
         y : 184
@@ -1630,8 +1596,9 @@ window :
      type_code : 70
      p_codes :
       -
-        code : |1-
-         
+        code : |1+
+         bPaiementEffectue	est un booléen	= Faux
+         nDernierReceivingID	est un entier	= 0
       -
         code : |1-
          

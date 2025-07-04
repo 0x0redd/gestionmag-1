@@ -232,7 +232,7 @@ window :
   -
     name : SAISIE_Quantite
     identifier : 0x2855fcec198c7290
-    internal_properties : HgAAAB4AAAAyRVbMZzWiZ6baUFwvTFf8QuX/DURwKdgJi28Lqm4BtQoSMdUNdgNEGHo5e8+dpgmPmKKg1bmC57ib7vfuEkLLL+O6X9Ykijpj9Yr7lGGaUe3Y0WZS39Xgt8WByAh0b9AamuJ+TckUq0niSdNhxGGUxCibpjfQgxTq59oLaX+MdXL7qnf5ZCNn9YdPwXlZEkA7SNoe4tXO5EfUdoG4Jncpc91W0KgQwZfUkzs2kHUCWcnxhzMIv2N4yW8GiV3nbHkIcGoBCim0PTweWaaJn5XxVoLOqc57717QJ1uvCKW55RSelnHk+bIzdeKZiHdNr2am9++Ps+dJ7dF5+N7pJ1HlmUt8O7XAOCZRf/eDyYT9w3778QH+8SfvWhv6ndvPZJwNuHVrHkfMmouEPkooM1AP87i56UWpkEFdtA5qoGUmwCXKptKinHUIjWJkyU4X+FjeEKGF55MPwSjsuC6482W8wBwUFpYzIs3J7phazVu7dTPnkkOs1uMJJM+pP6HNd5IHCX0M5EALT5oMPyQPw9RRlT4vQMzvWI7NIiTK0mOvNQVNEvTF5K6DYTZ4zPKCIAZEO3aRY2sNNfbUCxi2qdGRkLtlXuNoQL1yfmp/PkfLqpXrBNk1r+JCBJ9e+xQRtF0X9ZUn5pUcsvvC/khX4CdjQXN9OXo3jawbQ+v17kfttCbjw1/Hd15f9BRN82PGy0dCfsIPAt/9ifbzMct/TaH8Kx/2qFd4PVgPb86cyxulIousL8pC5UPmqCRYlCF8MfjsGRSWwLTmfhoe4yGTTb/MwEOc/zVjXRMwyOSFwSxsHYDsC9hZ0sVtvpml9gk3/kZAuEXyqgsxBuTf8wVBZA9qnt1oDf/qh6WFn1ep2TpqGGjPrrS1cNODh/objfyl/vRX7K6LCmlodlRwye6VI9OuE9oMey/oUtndTrdqaiuGHL+69dF+O/q1BAUa8u0yThMnrWTFwAO65mxnWOlABybI92VrgW2Pvhh6u3d+2ZkqbdmLaDHVFcomPA2wRBI3sqbuCZw5OGClqsfltzw2cANzquiCdi7l5k9qXt/1FkR/EaFkv7sdQHhghH91KFkw8L4h1EnzD9GvDzLinXgOEiA9VBzXHAVAlSWsKU+k+7h/ek+2ML/jKTDpGltK3lczXNxXuXe1NLQggPu9Fsl2YLNiKXJApth9kEdDzZ8oPjbd7m6FNbX9DKtRyFKGgN3l98NJdZqHcZuIYiHxGn4BaaymV15MdCFyv/sNtANP7BmZ9b5fc7Vk2Uj6w1KliOqEYuoSpp169uJ22zjYUCPyg6dgiYruE3tnqPLVvPhKJfGkyFCVa2EEMoZ+dYSwyQ8aywWQRqKYVi2jGzSToVxeUI7IZs1nwuztcr9lsCjNKYKziqo0YuGYXRP7Q2NvMWt0lab3FK+ST176VPGiysk7TpVv7VzFGOlZrLU6OzM=
+    internal_properties : HgAAAB4AAACtc9Y+IiOYgZskPBT6ICpQ5OwGEnmiwmPJpPripexd/GwFOG4wPzITZqH6j8/huV+TJj3hUjhKv5DLb0/ElWsUwCpWMN/xE1FfyTSfW4L/3CGYvYpt5nbsM2VTd9uLAozmsTENEx697qXW3B33hhEBVGk9o7IICIy5CCCEPLF2XXEpfEkHwaWwvTqF6J+rZPbJEmrl+dB+57qoPwUTwx1GnREQrHGdzW0OEU/tga+UWsmA7EynmQU3oIRdsYMMplNzDaH8V1iu4e5rrf4MRAw4lGifzt9cab7B/3eTahFT+Kqg+nt4x0RMwz1UtVXGbRlxpccEFjhFGJkAnYkvlh/QSNur1sYEyPd4AqbKwd0BHcQ1tDGldpoMFuWPBpz2wTsSCANgOc5VoSkWruhLYkqLoOWMa5OmOG83sPYdgx8uNRXFi+RSYnaf9BW0r6ZVHxPvbH7G2igSduEBb1pA9Iz4taaz1f6ZsMWJjjYzbVi13zktxW1yoos2+pv2l2XjnKxFFmyONx9vKR4+lYYoqP671/r/a5mlLiklx6/wBx5DebkbJsb2SblzYgiWzjZbPxTewAsJHBhaQc0bD/J8TdM9zDRWohaQ7MZGZrEx7a/haBv7IgnewcFWxJ83gUVvQAo0aKWFndCzSbgZPrwU42wf27XhiTRqj+pX4jl4fUqhJ86ubgGQJq4nstwL44ItuaadvNRcxDrF3NlPbzzDAIw84IFPYNeC+1lkOWfZ1S6GlwPZPItGVCDfLrtYqiA8iVp9ThBuj408jYn4BeBLXBPONE+GCosv4rt9yapgwAR+UC7xyAhJjkIIGtDftHEmNgOBfAuLCKyw+LmkzPJZCQeiUL+95ZG25GgCUxZhH1lEdTlG1caqsn7vdFE51uIQ3AWQM8KePxA24R8utJi1HDepiLbrgjYYNBJPSxc9ucewDBWegQrBecZiJD/KLKrXgmxPddlArNoQ+uNC25VI2cx4BwEPkEae8SQRJ6rDNbDxIdZXtJSzoBq53skk1cIoyiMUk4PuWFc6KXA8tIUnO6D9noH2YNjw0+OXBYX1o50mdZgMQYYT/FFXBgooTOHwKUfYEj5NuVCr9DBsjUGd77JwMmQ1Gr69n9+jA6hp+KZ7/x85PNhI+QEEc4yyduVBuV6OUtvnkN35ikFC5g/ebCR0UaBNJiFyUGeFdH6Tt+Epr22lFZafgrnNu2acqR8Y8i+5Zj1FjVmzSIiM6uhIWjnpjg96p3F8HvTttW96xoEFzA7TVdE3m9ezNqMUaol70K7ckX6cKrPuOazoA0swoN8rNPWsEgJhHtUtSfNz/PBVywtfYKztTKufGro5H2C5jjpo0GWH+4cGbA6MLBKkmR9nMSTgKDzw6DKzbrzI4mvIy6WW1JmVMRwTPDIpCQGb5VEQlLsVA7LvcSzb8pYk5rP/m2fkoLB+e4d0gU+OLXSx1zQ0emTj6xjNXo4BcpR2s20DIKYP4SyAVtWApqe1l85Ek7ivNTHMc3SXofdXnD3mZdm3PniOaoOG3HTSg0Oyd+cUJzJx1V2JF0b8X2Ec/dOpxVsR1WHGUsWhbg3afPI+VH340gNbUft4ck3xLlK0UB1gSPRmn9fHN0D3uHxbtv3GXcoCjbku94UInH/icFc9KeeS6H7UEDvmBawDr8hNMZIiGbsVTeMD841J4GR8QNmYZ7ToT6ZUQbLri/vKAbT1cKdidXUHcfhfZS8fuzt3wMLCe5hPzq0qyU4xM5nxyHOf06Wc2As6uVJ5BxzL6QJBI5TGiTlnfK/9HCpu3sFr3tRo3lpNKmEW8PQeitxAzLWZBmhqsB87YZ/mu6og/DPvG56sqWMs4TxmP+aTbPxou5JghZqirF3YQ0/Ez6/pAxgrWN7O8YoGJc2Hvw==
     properties :
      x : 24
      y : 191
@@ -250,12 +250,37 @@ window :
          
          // Fonction qui se déclenche lorsque l'utilisateur saisit la quantité
          PROCÉDURE CalculerTotal()
-         qte				est un entier	= Val(SAISIE_Quantite)	// Récupérer la quantité saisie
-         price			est un entier	= SAISIE_Cost_Price		// Prix de l'article
-         total_achat_cal	est un entier	= qte * price		// Calcul du total
+         nDifference est un entier
+         // Calcul du total
+         qte				est un entier	= Val(SAISIE_Quantite)
+         prix			est un réel		= Val(SAISIE_Cost_Price)
+         total_achat		est un réel		= qte * prix
+         SAISIE_Montant_Paiement = total_achat
          
-         // Afficher le total dans un libellé ou champ spécifique
-         SAISIE_Montant_Paiement		= total_achat_cal
+         // Vérifier si le stock est chargé
+         SI STC_Quantite_Stock = "" ALORS
+         	Info("Quantité en stock non chargée.")
+         	RETOUR
+         FIN
+         
+         // Calcul de la nouvelle quantité en stock
+         nStockActuel			est un entier	= Val(STC_Quantite_Stock)
+         nNouvelleQuantite		est un entier	= Val(SAISIE_Quantite)
+         nNouvelleQuantiteStock	est un entier
+         
+         SI nNouvelleQuantite > nQuantiteInitiale ALORS
+         	nDifference				= nNouvelleQuantite - nQuantiteInitiale
+         	nNouvelleQuantiteStock	= nStockActuel + nDifference
+         
+         SINON SI nNouvelleQuantite < nQuantiteInitiale ALORS
+         	nDifference				= nQuantiteInitiale - nNouvelleQuantite
+         	nNouvelleQuantiteStock	= nStockActuel - nDifference
+         
+         SINON
+         	nNouvelleQuantiteStock = nStockActuel
+         FIN
+         
+         EDT_Nouvelle_Quantite = nNouvelleQuantiteStock
          
         type : 15
       -
@@ -641,7 +666,7 @@ window :
   -
     name : EDT_Nouvelle_Quantite
     identifier : 0x285601a01aaed171
-    internal_properties : HgAAAB4AAABJZG8AP5OwSxLGwTAm6te4wCNhxHk3U9EEyduZGvppcGnfNgNI7HQYsrXUSO3igZu8ohw2iUmRQt+2kCXSRknuUGU9j4f2YmaeUDmEOM6KR5+pBCBsj7Hret8IjW3K3Tg6dNyXFXZtvbbaZL7REDAzNq6sfLx/EvwHRZ84K6xR5GA2bAIgo2CNHXqKYAkPD06Z0LXHVkHg3+d8RlgZjwb03Bsoah4ldCN29a1DsMVVo+BQhZYdIKA4B61j5xh/spraScTCi3rJ1pOTzXz5I+1WkG7eBbG2bu7Of3eSJFke4XJdZl6PAIj17Np11xgoGG+97Ofr+RHd34wXnMpHNzC7ZRe5WrjscPecwCux7jsXJPfFi2JZxRnx1xzR2xH3uocAjzIrdE7HKHbHmyNawFGsAJuGlJmuMFwMfRlFmqKSFC6KGfCjWFtTZWN+pbvhzpni7rLwwP0TxddJq5QDMqBk7sMjyH4Ow/c8Blb37nTSQV+hhcDsLzKXrXlRHBFpJFK4hPdIgkvK4s0HCekUyNk9m9/A3vhZ0DqYsj/7KS57n/sHtxhrbZ2sBtnqm8zZ8SAz0gYRo21PxAngsQ9ttgtOFgCAH6PJHxbuVWf4O1X2EW4hgPTx97+PSU9kTk4DZHsSHRAO23mGHHeDkcriuq4eiQWVEjU5yxNXUDF0l/1bM+hn+XSWHAMmsgfBBOR+lxAyaM9/Xp/yO99UwQCqi1GJGepcGMGxyG60ogoMIOM0EJlm5Qj/V6Eqn8CSOlgbY/6yYxNYUiltTLJQ33u0ayLA3T1d8HKkcJLBVB7E/nWohYl5uE69laXvaINVb4OJSer+KzqI+6nv9oLSjF3loBhBYfW2xcFtQTra3SDni0UktSXGrTEpYY9XtwfHlp8342l4aq9IBi+4TmQp6a/2WpxMzJkFWWKDYnJofpOkH3+it8IifcbdqhTRI3qZNQ5Gx1juRJjdegGPRVEt9on85YVOPq9LAunjfpj7tVFADeR57CiWRPeAOa+TGdJmR2krsV7DKA5ZL66aB+G0i9hXNGQa/VUQrh0VenVvvFsPFixk13vzZzOic2DQst0OYNjuLq2oHHJUvOaDtLoS9p6Jv2+b5rvK6vMfxFKtIyDPopWqyR8a+v276OP7r6ON3XEowf0dujCVZ4WWV8Aw4s0vLKSV/M1YiC3rOaVrJpaLXMPm+iBX8xczpe6MgNk/KJOHQ7EztPz6AhDn2UE5BE0hvk9CQ9zEBlp0aUFgurmE1LZ+5m2YO9lcrNWVO5OPVgWNRDXMuNtJP+GovDq7e62sdrKh6icdSMpXcNSzPUZ5LK+2/Dr1HEJo9h45OHRC9yY+zAmu0KR7vmERoGGmJcRDve+eEe5D7Ci8NMamYDfgphqUrvI9S3TYX5XrCGAtfHeq2fWmimJXOUqxCOA=
+    internal_properties : HgAAAB4AAABzSPYfZKAjyYo+AlQfY0c6oB5eUzXhG+pfCJ2XGm97ddJ3NC+dBLkO63DUZNrKb5YO8UAGoPhRpPjPRqy05qSacOJ2RlFy5jmpNdOg1AOcAfWxjbSQcBPWLVoUucTEfAqnPWmZPMHQqz41Q/KMLzCSbc1BT7MCpmAV94M3xjGG5hcH4uZ9bs6LIoianpRyVF/rfftH8eOqGz6f7X082TLw6O8KesrerV8DHKojwdorRKABDxJnKkz6gowKH4UczF343vt6Qra9A9H4wFNgi24sdna+cLToPuqnuDANFShtoH+w+nPg3plCzVPePPVdxNZdt3RpUVdKedNRtVeAI7Ps9LvRJ48S9JQjsK6Jt8/Rm8kHhIuine1oPJu4glVZPIfHE+8mRPfF0viObGm0mE0VGX+8i9ERxhomhm/3u1RNSxQuWgPRdZBBco47/+Vfp6mTvg5lejnuz+X/SPSz63xSvcwTOrIcFP4JzyAuICnZ/nonBBdMKXzsEFKTjJhQTWhozAP9uiQN9ow6g+0MNaS9IyZsWTwV3mZbCyxTyfORSRdvfqfjlCCauFen0FpM1euC2hAHAt/q8uum1ykzI0nXFix8qaVY+oTIdlNcfMFswOF18hbTULTdBupwFFR5uo2Y+dATJDcf8FOvTXHpqwYmA9vH2J66hx9NvLYmUlS42sJVq5WS2F5ahGpWHDqBcDJEPKsyBLqC1lAQvbosAboBin3XIU1Q2kLPS3Qcys6PRw3K/V+vWybLPEksv2FDfiCDxCIrknEbk7VNoMGQcKSOkFcU5gCPrUilETppzFfEp1JU9Bv4bzp/s2QNLJar8bnKeZ1uIiyuyiac/fJ7vgPbWDXTIwozTEBZ2QSPnS4IeME2q0nDz6lE4ZPxARJ5Bf5qD14qC8uxZkEzRq9G/SzOMzKz+zyoUFFRNcYxuIlyZNoE9oHUU48zqvyc8DWwx2P+6l96ndCmx8jtp5Cv70OV9k0QWYy2h0xISbhD5e9uNCYwY0ZztMDRfFDzxa3zblVicMUb62plRAUP83yXZRtQhIAMqi4s+aZjWeWOWoflAxqa9xv5vsIiKC2bZPgK3Cs5sUMY6x05/hgymnh9QHp2VCcMvvEYTQuZ+nDhq3aPDY0OkzDbyK5QQHIO7BXZ8hKzDvPQVF4t03hgs/K4R7GM5TYMT3hosb67iglRtY09hvI1Xav9M0JJDt1CzesH/WSWTXwYyfE5GnwX7K/3jaO90l0e+1Gren5ubKvaxj9fuCee8NAatynpuuhmL3B5rUfMB27BdF3TD2pCJNvVlmaASgGFJNengq6zvn3VLxcoiTlgK353rlR0PvPOWKse0xCAbT0/tkDhsK3iGJJVvLCciBIHFDoowzaiK0U4XieILTG9z8v+mbct5ns4oUq1dxEnf6dWjam1SwwPGxyHEID4DRZDyjeNX2x8btYPtB18wb1/aU19MTywc0CW5RvQjUpvjT9PNEFa83TmCVznPeJG0DV8KbSMRvZq710Q5lbLHjtfTMQLxL8r47woXW494L8NBDlVBiz46YOryfBoJIA9L3xLe6lPg51OEVvi2pXpTdSgDDuXKEss2/+jcci99IOxc/kuhPuKg4G9+k/l2E92OmfrTxNQ5ZhEN1fDc4gyc2xXjRozIJT/og6oIRE3WeQS8ePqzpKhgl8wir1Jouu+BInwD9fKWUATYPyilsXC0yYjavzPfRhvW86lYv4MuAik06T90g4ygjKrKXUeXccHCrp71CMHBuAeqz1kIi0SqcNQ94iUn7z5CfCQc9PQMnpeH2/M71Yrhl+cKutfBltSpPf7/xBchHJFcGza/MyzRjCWQ2xjZwwIELQa/5kH6EjCpVxV55gCKNle5g==
     properties :
      x : 26
      y : 475
@@ -725,11 +750,11 @@ window :
   type_code : 1
   p_codes :
    -
-     code : |1-
+     code : |1+
       PROCÉDURE MaFenêtre(Receivingid, Receiving_item_id, location_id )
+      nQuantiteInitiale est un entier = 0
       
-      bRequetePrincipaleExecutee est un booléen = Faux
-      
+      // Exécuter la requête de sélection
       REQ_selection_entr_stock_modif.paramid = Receivingid
       SI HExécuteRequête(REQ_selection_entr_stock_modif) ALORS
       	SI HLitPremier(REQ_selection_entr_stock_modif) ALORS
@@ -737,37 +762,32 @@ window :
       		COMBO_etat_paiement			= REQ_selection_entr_stock_modif.receivingPayment_status
       		COMBO_Fournisseur			= REQ_selection_entr_stock_modif.person_id
       		SAISIE_Montant_Paiement		= REQ_selection_entr_stock_modif.payment_amount
-      
-      		// Si les données de stock sont dans la même requête
+      		
       		SI REQ_selection_entr_stock_modif.item_location_id <> "" ALORS
       			COMBO_Stock = REQ_selection_entr_stock_modif.item_location_id
       		FIN
-      
-      		// Si les données d'article sont dans la même requête
+      		
       		SI REQ_selection_entr_stock_modif.item_id <> "" ALORS
       			COMBO_Article = REQ_selection_entr_stock_modif.item_id
       		FIN
-      
-      		// Si quantité et prix sont dans la même requête
+      		
       		SI REQ_selection_entr_stock_modif.quantity_purchased <> "" ALORS
-      			SAISIE_Quantite = REQ_selection_entr_stock_modif.quantity_purchased
+      			SAISIE_Quantite		= REQ_selection_entr_stock_modif.quantity_purchased
+      			nQuantiteInitiale	= Val(REQ_selection_entr_stock_modif.quantity_purchased)
       		FIN
-      
+      		
       		SI REQ_selection_entr_stock_modif.item_cost_price <> "" ALORS
       			SAISIE_Cost_Price = REQ_selection_entr_stock_modif.item_cost_price
       		FIN
-      
+      		
       		SI REQ_selection_entr_stock_modif.payment_type <> "" ALORS
       			nIndice est un entier = ListeCherche(COMBO_Type_Paiement, REQ_selection_entr_stock_modif.payment_type)
       			SI nIndice > 0 ALORS
       				COMBO_Type_Paiement = nIndice
       			SINON
-      				COMBO_Type_Paiement = 1  // Valeur par défaut
+      				COMBO_Type_Paiement = 1
       			FIN
       		FIN
-      
-      
-      		bRequetePrincipaleExecutee = Vrai
       	SINON
       		Info("Aucun enregistrement trouvé.")
       		Ferme()
@@ -779,12 +799,12 @@ window :
       	RETOUR
       FIN
       
-      
+      // Chargement du nom du stock s’il n’est pas encore affecté
       SI COMBO_Stock = "" ALORS
       	REQ_select_stocklocation_modification.Paramid = location_id
       	SI HExécuteRequête(REQ_select_stocklocation_modification) ALORS
       		SI HLitPremier(REQ_select_stocklocation_modification) ALORS
-      			COMBO_Stock		= REQ_select_stocklocation_modification.id
+      			COMBO_Stock	= REQ_select_stocklocation_modification.id
       		SINON
       			Info("Stock introuvable.")
       		FIN
@@ -794,7 +814,7 @@ window :
       	FIN
       FIN
       
-      
+      // S’il manque infos sur article ou quantité, compléter via receiving_items
       SI COMBO_Article = "" OU SAISIE_Quantite = "" ALORS
       	REQ_selection_receivingItems.Paramreceivings_id = Receivingid
       	SI HExécuteRequête(REQ_selection_receivingItems) ALORS
@@ -815,9 +835,10 @@ window :
       	FIN
       FIN
       
-      
+      // Charger la quantité actuelle du stock
       REQ_total_quantity.param_item_id		= Receiving_item_id
       REQ_total_quantity.patam_location_id	= location_id
+      
       SI HExécuteRequête(REQ_total_quantity) ALORS
       	SI HLitPremier(REQ_total_quantity) ALORS
       		STC_Quantite_Stock = REQ_total_quantity.quantity
@@ -829,16 +850,6 @@ window :
       	Erreur("Erreur chargement quantité réelle : " + HErreurInfo())
       	RETOUR
       FIN
-      
-      // Cette requête semble redondante si les infos sont déjà dans REQ_selection_entr_stock_modif
-      // SI HExécuteRequête(REQ_quantité_purchased) ALORS
-      //	SI HLitPremier(REQ_quantité_purchased) ALORS
-      //		// Traitement si nécessaire
-      //	FIN
-      // SINON
-      //	Erreur("Erreur chargement quantité reçue : " + HErreurInfo())
-      //	RETOUR
-      // FIN
    -
      code : |1-
       
