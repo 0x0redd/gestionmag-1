@@ -37,7 +37,7 @@ window :
         height : 56
         anchor : 4
         accelerator_key : 65535
-        tab_order : 0
+        tab_order : 1
        style : {}
        type : 4
        code_elements :
@@ -87,7 +87,7 @@ window :
         height : 56
         anchor : 4
         accelerator_key : 65535
-        tab_order : 1
+        tab_order : 2
        style : {}
        type : 4
        code_elements :
@@ -139,7 +139,7 @@ window :
         height : 770
         state : 1
         anchor : 10
-        tab_order : 3
+        tab_order : 4
        style :
         scrollbar : {}
        columns :
@@ -518,7 +518,7 @@ window :
         height : 56
         anchor : 4
         accelerator_key : 65535
-        tab_order : 2
+        tab_order : 3
        style : {}
        type : 4
        code_elements :
@@ -593,37 +593,90 @@ window :
          -
            type : 161
            enabled : false
+     -
+       name : BTN_actualise
+       identifier : 0x286841564615e350
+       internal_properties : HgAAAB4AAAD0JK81mhiIjGx+6aZbhE8qSNrahcCQ2L7Ze5DPXO+eNEO7xqVPdC0XyzbPRPLr7UVpyu/W1zo8ZnlWEJiFowRRNf+3Af8mygNlPU3iui+K62Ev6MjVe8oWxomEzMy7IjiSSX+2OhGlFhK+6/gfoakO1S8v8VBNbg6LGCrhPhiP1Sl+1UMWAMzB1x+1tXrVV+WEUScaSFbyeJxOnT/Vbb/KrXrqij69i+0FqxbOTVGhNC5n5YkIoSbjDxLkfHBCXjQfb+KSM/bgpk+fWHcxidasT6G/A3V6Mxt+25TV+j4jUsuwzZQ9Quxatr9vS+w3fiXRIlqich9kKrXp1c2ItjuOmsahCGVeUEo2ANiz2MjT5GbNKzvF0xzAWPpAbPxmtiZAb2jj5koCYfdavyjK6WdZVziIZpG2ZnHe/O1hP0rkJX8sv52kmZS5Dnq6/W9wuEhEIHmG8uEZoUKKHl7jYtOs0KR0uumhIviGxSRyLSoZDgq0VPTa/igDtOg/HxD0nW9dtTGQtRkysWyJG90PEVjaajvUgjfA+Cnq1yabPjDwO1Uar4HF1eqUk+AUbIYr9yvZS5pbZ6cBwKVe9NGQhc8yeqptMySl8SiCM4LOSiAuH7X65aTs5CcS1HmyREn13nEFxXYQGQPHRaCQBl5OvsXz1QhAzhssZFBE9gqrxFTdP+JImtxE6D4doue3JRb7es//v3Y72V1lnlt15iwdk1Cjx7epKY4W2kGir+8Rvl4P0LL+x/aROb6wXbn0aPybfTp7KEKShmMDDwuf0b2NVIHwQyxi3KNxSF/7fTS/Y6xnw2de/RuSqO8=
+       properties :
+        x : 497
+        y : 23
+        width : 75
+        height : 56
+        accelerator_key : 65535
+        tab_order : 0
+       style : {}
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Bouton simple
+            
+           type : 14
+         -
+           code : |1-
+            
+            // Exécution de la requête de la liste des ventes
+            SI HExécuteRequête(REQ_liste_entré_ventes_Y) ALORS
+            	// Rafraîchir la table visuelle
+            	TableAffiche(TABLE_Liste_Art, taInit)
+            	Info("Table des ventes actualisée avec succès.")
+            SINON
+            	Erreur("Erreur lors de l'actualisation : " + HErreurInfo())
+            FIN
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : IMG_SansNom39
+       identifier : 0x286841d649d4d3b6
+       internal_properties : HgAAAB4AAACDLjyJGmHvAurM1ywnLoRXde/FqNJfWkXQuPy4zuI9BG8w7ixewuZljUc637YsGgfHHoJObhcQ1CvXMYwEvEkuwjBbHL/FL/HlEVLUO3wbQs/GFWbnWzGtyAi2L2ouUQHeg8H0iN1oUQtKXzKFoikf08YoOO3JYs1u5MbmGz7YdLFQ/xzNwfNj1wtiU4lggBYsZSUr50De5agaC6qbMHTSYYtJVkMmRguVtlFY6ihd0eFCKkTBroGKX7gQ64uOrBieWP3OwWZn3GjqbsIdfLgDJehDSWahH9tdJQd3JWuXL9ho70070btz4KeWgDlBnaqGcjdZg/KgPsCwDMbdXzo242lekf61oMe85zGLY7Q5ZGukBAw8kBPsSH4JEm77gx5lPTJnXdfOJTvA1EfNN0KInnXDLlnkBAqaV29gzYSkUIclBxLw4dIgOPoI+ieRiTRgF6TUuhODl6rMZEG+BGOeGoVxGAtY91yQ+CQE0xg0JvklINKyrM5eyQcS/TIgj38CGKmYM7TQ/swM4AukfgAMH7hYN7FC/AI0/ts+/KHCwRvJfrNE91WF19K4ppeT9xfxqFEe07T/ua3WW0S/+eFLniDfRR2SgEhAsiBMU0zfqcVTD4IxM7b9RKn9MLfTCJkWUiprHrtzwe1QJDQhkchRxZOtKjoRk0Z95UxJXe8MSFI9H5DZ5dSYf/CyXJPph6VuHGmyscQWuSPJxTQOzUdZ29iupkEzHke8ooA3Y9SrwhZGxhqi8idLhupErR753w/elxSGFHEp0IpiQOpurEt4Cz2cU4wTWgSUNjtJVjorLNcvXLJttSmmBptYNZwQK2VetMhTa5RYUzAAQFP6hI9x5KVvKyUJwoAhFrDKmdht+uDNao88WxEHPeuSGE2btfoOVkIf4OZcv6k=
+       properties :
+        x : 510
+        y : 27
+        width : 48
+        height : 48
+        tab_stop : 0
+        take_focus : 0
+        accelerator_key : 65535
+       style : {}
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes : []
     type : 32
     code_elements :
      type_code : 70
      p_codes :
       -
-        code : |1-
-         PROCÉDURE MyWindow()
+        code : |1+
          SI HExécuteRequête(REQ_selection_entr_stock) ALORS
          
-         	// Vider la table visuelle avant de la remplir
-         	TableSupprimeTout(TABLE_Liste_Art)
+         // Vider la table visuelle avant de la remplir
+         TableSupprimeTout(TABLE_Liste_Art)
          
-         	// Boucle pour ajouter chaque ligne de la requête à la table
-         	POUR TOUT REQ_selection_entr_stock
-         		// Gestion des valeurs nulles avec opérateur "??" (valeur par défaut)
-         		TableAjouteLigne(TABLE_Liste_Art, ...
-         		REQ_selection_entr_stock.id,                                                        // COL_ID
-         		REQ_selection_entr_stock.location_name??"",                                         // COL_Nom_De_stock
-         		REQ_selection_entr_stock.full_name??"",                                             // COL_Fournisseur
-         		REQ_selection_entr_stock.description??"",                                                  // COL_Nom_d_article
-         		REQ_selection_entr_stock.quantity_purchased??0,                                               // COL_Quantitée
-         		REQ_selection_entr_stock.receivingPayment_status??"Non défini",                    // COL_Payment_Statut
-         		REQ_selection_entr_stock.payment_type??"Inconnu",                                   // COL_Type_De_paiement
-         		REQ_selection_entr_stock.payment_amount??0.0,
-         		REQ_selection_entr_stock.location_id,
-         		REQ_selection_entr_stock.item_id
-         		)                                       
-         	FIN
+         // Boucle pour ajouter chaque ligne de la requête à la table
+         POUR TOUT REQ_selection_entr_stock
+         TableAjouteLigne(TABLE_Liste_Art, ...
+         REQ_selection_entr_stock.id,                                     // COL_ID
+         REQ_selection_entr_stock.location_name ?? "",                   // COL_Nom_De_stock
+         REQ_selection_entr_stock.full_name ?? "",                       // COL_Fournisseur
+         REQ_selection_entr_stock.description ?? "",                     // COL_Nom_d_article
+         REQ_selection_entr_stock.quantity_purchased ?? 0,              // COL_Quantitée
+         REQ_selection_entr_stock.receivingPayment_status ?? "Non défini", // COL_Payment_Statut
+         REQ_selection_entr_stock.paiements_concat ?? "Inconnu",
+         REQ_selection_entr_stock.total,     // COL_Paiements (type + montant)
+         REQ_selection_entr_stock.location_id,
+         REQ_selection_entr_stock.item_id
+         )
+         FIN
          
          SINON
-         	Info("Erreur lors de l'exécution de la requête SQL : " + HErreurInfo())
+         Info("Erreur lors de l'exécution de la requête SQL : " + HErreurInfo())
          FIN
       -
         code : |1-

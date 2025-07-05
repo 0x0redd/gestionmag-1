@@ -10,7 +10,7 @@ info :
 window :
  name : WIN_admin
  identifier : 0x28425c521461135a
- internal_properties : HgAAAB4AAAA/Z1NYIlEOVFogDQCBu6CLNl1PTJnmAbaN2ieLLKT/JlKoVAlkRj81dfQGoFVr/jo1UBi/0SYZi5uzYOpl4qU1j8gFCI2cEtd7O3QsF11WdctwhvupZqQ7LyfZDl0dHP4/6p/k4+0WhZFiv6xLltu7IDgob2ajBvkcX6SoUOcPrb0F25+E/pfq3MsnYUSr1J45v6Ri7K8meSeE7yk8xEFf+6rPNAfeIgXbKQGqoi6+DCSWihpKEpVUmFaLf/qrisdB2wY4ukb802qVL+GE+za9XCfpB287CSwFBxysrsnT6tErpumCKOHHCG/Dy1F8OpU3nayfGCMh0Ulxfsdz50krXHRmUmseDvzBDs1CyUubm9t4BPi77zO45cjvDEOhcJMmoioJJQgH3zD2gk8pTH0feVcXVnRxaVlb2jTdreB7RLmUhmhkp3WwYnPu48GAyZaL/W6C0mOKmyJ3tzB+542FPStfySLTQkW8pyINsB7uJFL/Q4eqvgz/fLZhR4J/xSvIRFJ3a0Qo19BdHN75xpyS7OJJ3Mg/zEBWjPmpzbGlhppVwZCoucJuMqhg1I04Smb+9e6KD+hLoqfYEQ3MB8mN6trWdk9XmFlj//3aRmDih/PPz5OcrnZKJ0+WsWXCTG1VksU1eZ70pTES8/95CH/wDtrYCDqMaEvWgyafbIcqxUDmaTQ9njtCSWTnPNLPpWNhwr2MeA==
+ internal_properties : HgAAAB4AAAByfYEsw1ZvQs+/kYGtYwg93X4pt7vSW0iKffk8eAmGJ3aj/MqPUczX6FHRj4hROFuelNcfUA021cAKxmRrjfGXnlnv4v3SugAYSg8L+65Kxd74rWjEJSW5K3KlFTTFFVZLoROYjHqsyzKrU5r7wBDeX9eLGjDudBOQFsP0U0SqqlS0/XUbNIeCdY9W+bWhcOxTemLmCN7U4eFrd+Isddnna01zZ7QcU9RpwAEW1poVV8rfj/KDhvyuMBLRSsxnySWy5Mv5+luEI5r0Bx6EGqfs4Ipnzaz9YeMvTOWwZyes+JWmZYFWKbz9e0/tqHKV2FB56azGdCZMTOybxxUv0laHw28HfbhRJ60n3bjPVvbTrpf4IPlw8iPM06JMX60ampzzKg36D4+gwbLaK2is4saSMP8WtPsOqVgZAiloA2fnfgM0y4SZk1hzuam4AURIJuHU/6Dga2lNNaicNQSSgJa9YmwhQBPLrXqmtS50kxJcgQUrLzzkK4+36wcRkGPf7hihD87hHGD3scZ680AfJ/JOSkeE+cuAZ0+rSGOpJq+HCCyqDSOsc7zt8p2UeWO/Sc1TAm0rrcT8UYteXDGDxutojSt23a1HuWTVFkxWEW9gGSfgxnqqKqwVARMSpSotr8JUnT8doMnzUhn/3NnYDFEl/hjCWKVQvgqdqbsZiGRGC/mTJt/4VZpmH+dMs7H3fQ==
  properties :
   width : 1442
   height : 1056
@@ -102,6 +102,18 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -120,6 +132,18 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
       -
         type : 161
         enabled : false
@@ -140,6 +164,18 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -158,6 +194,18 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
       -
         type : 161
         enabled : false
@@ -178,6 +226,18 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -197,6 +257,18 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+         
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -215,6 +287,17 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         
+         
+         SI bPaiementEffectue = Faux ALORS
+         	Erreur("Veuillez finaliser le paiement de l'entrée en cours avant de continuer.")
+         	RETOUR
+         FIN
+         
+         
+        type : 18
       -
         type : 161
         enabled : false
