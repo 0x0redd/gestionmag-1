@@ -31,7 +31,7 @@ window :
        identifier : 0x285e6c0331df710c
        internal_properties : HgAAAB4AAADfK6AF+DIR2C2yU5dYTc+PmiMXhk2NUACEJuqndTkksFTN+hBOCVrboU7JRGLzEyG5YTTA9KgZkszLplvdoRp45ll2S1pAgopBI3Xf6/oiP6XQpS+qWAGYwBa15kPAgBi+5W4lBHcoxZQN6kxw+K5+KHtZ90YaKWCgU0BXNilF3wU2pECyihBM4yupdzUwO9Mp8yFGqbDmGm5rGrduPBMMWIRG5GVdJJaUXswAfMzJt/CIbQHwLM70Sc/QpnF8LpZLKkMNY3cfGH+PYccAK6SyRDMp06IkjNarSVZ62ROwW2jfnamKJ+h9YUEsijw8MZiMY6LRgN8VPmMR8eXVGghFrOYX31MlGCZGCfN0wzK6eX83Ippuyp14DrswuFRG5cgvIFkeYlveHPGAFV03vDfAjJQniM9Rg2JHywqFwoWyJ+44uIKFy2TwCVF8YGPz8dT+U/w7xpTe75SQa4R34CChzTBt01pU8WKXZ06vxaz8S12yQ1sXamcla7VcXregO+v39mGm2QlTlB/7Im3mLO9+WMTnvytrvA==
        properties :
-        x : 44
+        x : 48
         y : 237
         width : 347
         height : 67
@@ -97,8 +97,8 @@ window :
        identifier : 0x285e6ccd320985fd
        internal_properties : HgAAAB4AAACa3csE8g9fm9E3odkw1T6Ikdqflk/6cmMQkEPq6nmRu/tW15y40GGHE35qX4dYoFDwHqQj7yVzTAPLTub9pU++YsClFgM1/KpeV9dIs4ZPt4BEOAlPWIU6+u1wKw3lW3rRqpsltbYJhSjV6cDVoeBz0Muth3NjAceQOnFhbJPnngxw1KuyXZfukBui+ips06YyJKksOSYAnJkqQyjrbHdhRkHEy581X99LD1WJmjSMerrK46zIOw/6CbTex4SB5kmdfbDG8MJaegY83BRrubUoy4et3USYQd2h+er+vIE7YP3guoNrWVCDJWB2KNVP9gYlZ2SZWp+p17HUmK5alAjypwn60zC3Q/MozwcNwzHQ0rWtrVZR+4LaZn6wK4JolhejwGmMlxMS29qzS3fkuAf0bV0InU15ZISBqkwQNeNxdK31Enf0HiMkr6COCAQaK1kttDkHx5cugzdSxcclsn2O
        properties :
-        x : 44
-        y : 417
+        x : 647
+        y : 328
         width : 347
         height : 67
         tab_stop : 0
@@ -130,6 +130,116 @@ window :
        code_elements :
         type_code : 2
         p_codes : []
+     -
+       name : LIB_Telephone
+       identifier : 0x286989077e884ce0
+       internal_properties : HgAAAB4AAAAyZtldkhglayXt2du3HJCguuEHx1FMoTfheMQwB9lb8EOW25sLpeWd4oh742AiPi5rTgEi2l1qp+MNkiqL4qFAQ148jvMjL3+bf8/yFrODyWVDIuvkOQrIfrYEXQDWJqU6jXD8NcICH5fs4fmIWiW6OFVB2buZRlhJjw+3xowvhmQysuwbERU8tE5t5J90GoyIfb+W9SsIOJzODUuhBX9UmSLLzhj9tVPRkARBtXV2z4rvdebAXA7VQWnWBHj/ZSzlkPKAiO9lwyJ3eHXLXzJRWdaLsyipPj5XlMKD8lGa47Xd7mvxHHfqJxvw8X97OV338hApBLKG6mvFOplWsg/RX4KQCVCAyHg6WH/aR69v2xnY5+ARHI3/CsFCDpaS0xA3oenYfda3BISl6qXhmhORw6ytVX+Cd/MkKDsuUbvX4H5rdmHa2Nkw4Qe+DAVhZeiPr6tjyr/MCwq3zhFENUM=
+       properties :
+        x : 647
+        y : 427
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Adresse
+       identifier : 0x2869890a7e8a5a5e
+       internal_properties : HgAAAB4AAACzc9VtIYsSWCyNP9C6F8M28vqHoWawKjiOwn6S5oEylhjyE7fdmICu5JC2eeT4V/DiXRI6SRz7EMawKFps/vEEM2s5UxRYSOKzL0Yi63cQ2f3Ux1xZbb2ZbVhsXAcJAJa9KSIkvflVS8HidZQ8iwP1VqoBGOaOwPCSt89RZPa6vzsJg3eAKoJPPEUhzxW6KxR6tiEmVaGob6SBFTUmGr83m8/Hgu7VxG89naKzV+dIylrnfRtP/5ooI8NgxJDRHkHzqtSRC/Ztdkpldj1zZeGcV/LnOgkw4ivdctBH3rvJ8k8PgLZG/2OdaWmOoe9B5GqpBiTYqc+IHzWjyM9cZt64z1Ti9tMXQtf2jMMkOXcCaPMg/5cCxU8qVP0uIGAeLO9fufGzbrW/KfDW23jUCT97+Ec4CyMsCvqE25B9KHbOI0npSHTlrBmN0yuKnpuAF5QvFiRbTEXL8Zs=
+       properties :
+        x : 48
+        y : 419
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Ville
+       identifier : 0x2869890d7e8c649f
+       internal_properties : HgAAAB4AAACuXmG5I04+qg5RYJyoZ3Q6L4+/VzTi9liwgqcWrGSJhrMOVW1KTBCPULgG0Jylyo2VOr7MjSxp55QSQdrn9N2oeDzmY76ESfUBwXGPScPfjFiOkyiuZWsHuzO6GwhKUkAebdFN5Vp2GERpPVqsW5eP7XN0faJM7C3sxQkpvmkHMcOLo5qnJtdTr8WdpDk+t12uuJxUCd7aUMbmXh6l87Qh28uVf12NhdBxgWDjfm4JTgRpDDMyB2tNGzOb8l8myUe7yM3xxEDk3cJRKbcWNmicl5L4AtCuZUIpVsm/KUTYms+Xx46tjZ5oY5czK+TYlfSRCNHk+Mt15O9JM2ulAV+eD8jf/pjla5SIpPYu8MyV3v/CVmXxgaT/sLHHjHM3F6vVw2KbSyW2YCJSoGJb1h6BvK87UxTg7XM+5cnDPAAKyNimBp7sAJbi9Zex7OBRhdsuAHTm2RMKembC
+       properties :
+        x : 48
+        y : 502
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_Pays
+       identifier : 0x28698a86812624f8
+       internal_properties : HgAAAB4AAACWUSfFP+a5vpTaB129N9Z4YkMwMzhK6oP96sKROEbyCRuiIIJTarpywMqtoUyvZHhetbQebndY0i7UkFDl/gFDJ14vYvZnFMvqlaADPK+4OAVrxy0zl00c3pFcBMyCQPVIlr4A2XEjWqoTFQ16SRflbVT8a7DFHBvFOK+ZivuoTTQtF+7SJiQsjjZU2oRF/TNxwZpb5lw9wxGzv6Sz+4iRinltHaBr6kfTCJJLxM96jzpgzy1oxbdNqHO6rhdq3hhxz2rDSJgy/7EnKjuk5Kv7o1WRaGLA9Z5u5iIVWw5HvU9I0gqbw7I4lnEkK6iI1hH7k0LMDMOHWjrFTL35eQCP7THYeuZTbQph2EleCsasBZNR+XGfP1Sjz0+WXs/vHHBnlufR7R/E+mltmEkOr0rXicvjqtHf8Lb6BdJDVuhhbf06eIBQsZBczJXkdTsV+WEbIj9/10JFnX/2ajE=
+       properties :
+        x : 647
+        y : 502
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
+     -
+       name : LIB_DateInscription
+       identifier : 0x28698a9a81307599
+       internal_properties : HgAAAB4AAAAvf5+zwbyyG2kBjgQcwiYOFsJPbrxdxJ2jokZAuduaNzXpTGMtfg+PJ/DHNCJTO8lwjxTKQkm+/BsnV0SFL73o6ilGpkggIYeUNVHG/UbpbDNY11lYbD6zUCNWDUpha9L/v4DQFB7yLrS7kbwy2lyvjB0iDULBXgFV3hjkRRGfLahc8gGYNJL5tWBhf/V+wfFcAQc3fq4NF2kH4JNK+9OwQP7/YccSu16njrpev8RJK0tedUiqThjMkQx5kvdPry+VVehO0uNdWB4ElcWsX3jGTbGHG7grkg3N1eN3haHMeFn0lMnPHn1VJzo/JaJ1hQJ9/85Pjo5GS3tW+/37DofY2ZtYPQDYTKuKadAGylN7Voc/Z/RFui2qCpLjGin4LT/3TL3QxT7Z0To+0zsgnG86TZUtwSMcpz+NJjH1wKMuKAMzp1ZrtqaOSSRLbrS8UifMHWEtTP+souRlhhbBr+vmPYAMVPCr
+       properties :
+        x : 48
+        y : 577
+        width : 347
+        height : 67
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1+
+            // Version 1
+            // Description 
+            // Libellé pour écrire un titre
+           type : 14
     type : 32
     code_elements :
      type_code : 70
@@ -137,7 +247,7 @@ window :
       -
         code : |1-
          PROCEDURE MaFenêtre()
-         localjjjj()
+         profilUtilisateur()
       -
         code : |1+
          
@@ -185,23 +295,34 @@ window :
   p_codes : []
   procedures :
    -
-     name : localjjjj
+     name : profilUtilisateur
      procedure_id : 1755960811672994539
      type_code : 14
      code : |1+
-      PROCÉDURE localjjjj()
-      
+      PROCÉDURE profilUtilisateur()
       // Formater nom et prénom
-      sNomMajuscule	est une chaîne	= Majuscule(gNomUtilisateur)
-      sPrenomFormate	est une chaîne	= Majuscule(Milieu(gPrenomUtilisateur, 1, 1)) + Minuscule(Milieu(gPrenomUtilisateur, 2))
+      sNomMajuscule		est une chaîne	= Majuscule(gNomUtilisateur)
+      sPrenomFormate		est une chaîne	= Majuscule(Milieu(gPrenomUtilisateur, 1, 1)) + Minuscule(Milieu(gPrenomUtilisateur, 2))
       
-      // Affichage dans les libellés
-      LIB_Nom		= "Nom : "+sNomMajuscule
-      LIB_Prenom	=  "Prenom : "+sPrenomFormate
-      LIB_Email	=  "Email : "+gEmailUtilisateur
-      LIB_Role	= "Role : "+ gRoleUtilisateur
+      // Affichage des informations générales
+      LIB_Nom		= "Nom : " + sNomMajuscule
+      LIB_Prenom	= "Prénom : " + sPrenomFormate
+      LIB_Email	= "Email : " + gEmailUtilisateur
+      LIB_Role	= "Rôle : " + gRoleUtilisateur
       
+      // Si tu as d'autres infos à afficher depuis la table people
+      SI HLitRecherche(people, id, users.person_id) ALORS
+      	LIB_Telephone	= "Téléphone : " + people.phone_number
+      	LIB_Adresse		= "Adresse : " + people.address_1
+      	LIB_Ville		= "Ville : " + people.city
+      	LIB_Pays		= "Pays : " + people.country
+      //	LIB_DateNaiss	= "Date de naissance : " + DateVersChaîne(people.birth_date, "JJ/MM/AAAA")
+          LIB_DateInscription = "Inscrit le : " + DateVersChaîne(users.created_at, "JJ/MM/AAAA")
+      FIN
       
+      // Tu peux aussi afficher la date d'inscription ou le statut si disponible
+      // LIB_DateInscription = "Inscrit le : " + DateVersChaîne(users.created_at, "JJ/MM/AAAA")
+      // LIB_Statut = "Statut : " + users.status
      type : 458752
   procedure_templates : []
   property_templates : []

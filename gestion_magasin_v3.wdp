@@ -3747,6 +3747,12 @@ project :
      internal_properties : HgAAAB4AAADfuzfr2IWtvg2pcT480G/MyVjACDHtF0FOx2SOzvoYkHi44r8f4dpUatDKNv7yjgLKSg==
      physical_name : .\REQ_supprimer_sales.WDR
      type : 5
+   -
+     name : REQ_quantites_articles
+     identifier : 0x486979340fba7eeb
+     internal_properties : HgAAAB4AAACppZH1Mm9HaEtUoLvPtTQL44CudjF236etzEF4EWevUfMdiHYx3kZbFAr0zFSMdGSstA==
+     physical_name : .\REQ_quantites_articles.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -
