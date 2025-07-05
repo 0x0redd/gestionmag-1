@@ -2712,7 +2712,7 @@ project :
    -
      name : FEN_fen_ventes_
      identifier : 0x481d12b401029b77
-     internal_properties : HgAAAB4AAADCuDpuXQoiPZ7rcDYKBnZQIFePB6AU/qqu82BkDhr61n6gl4SNfFie511HsXFvC/3HTw==
+     internal_properties : HgAAAB4AAACsqoSQL1Tcj1ytJnj80NA2GilROYI/cWhyAtqL7DzYMNh6+SLjJg7UKR+ZZy+hWU+5uQ==
      physical_name : .\FEN_fen_ventes_.wdw
      type : 2
    -
@@ -3204,7 +3204,7 @@ project :
    -
      name : FI_liste_entrés_Ventes_H
      identifier : 0x483840ce04e68e2c
-     internal_properties : HgAAAB4AAABQroiUE0jg+1jkPuxPhIsfzFPLA6zYv4KhRZbgGg4OinK8sO77wa3zJRuFczOtVUu1vQ==
+     internal_properties : HgAAAB4AAABk4kxoVwwkx5RAGshrIHcDKL8nr5gFvTlUUEp19iJyblaYlIpfpYnPwWdRr3dpEYdx8Q==
      physical_name : .\FI_liste_entrés_Ventes_Y.wdw
      type : 8
    -
@@ -3720,7 +3720,7 @@ project :
    -
      name : REQ_GET_FOURNISSEUR1
      identifier : 0x486085520bbbf240
-     internal_properties : HgAAAB4AAAAjHxsPvOnB2vlNcOVZdNAoKaTwsJ3Z/PKDP33IZAQOgnZK8PLGDfX4xnxmUtIO6t4mLg==
+     internal_properties : HgAAAB4AAAC3k5+DIB0VFiWJvKHloHxc9UAsHEkFrVqnJtrsQFiyJpp2pE56UTG0grginmaaZlqiog==
      physical_name : .\REQ_GET_FOURNISSEUR1.WDR
      type : 5
    -
@@ -3746,6 +3746,12 @@ project :
      identifier : 0x486832eb08c99158
      internal_properties : HgAAAB4AAADfuzfr2IWtvg2pcT480G/MyVjACDHtF0FOx2SOzvoYkHi44r8f4dpUatDKNv7yjgLKSg==
      physical_name : .\REQ_supprimer_sales.WDR
+     type : 5
+   -
+     name : REQ_quantites_articles
+     identifier : 0x486979340fba7eeb
+     internal_properties : HgAAAB4AAACppZH1Mm9HaEtUoLvPtTQL44CudjF236etzEF4EWevUfMdiHYx3kZbFAr0zFSMdGSstA==
+     physical_name : .\REQ_quantites_articles.WDR
      type : 5
   other_elements : []
   array_of_analysis :
