@@ -361,86 +361,64 @@ window :
          -
            code : |1+
             SI nDernierReceivingID = 0 ALORS
-            	Erreur("Aucune entrée de stock à payer.")
+            	Erreur("Aucune réception à payer.")
             	RETOUR
             FIN
             
-            nTotalSaisi		est un réel		= 0
-            nTotalArticle	est un réel		= Val(total_achat)
+            nTotalArticle est un reel	= Val(total_achat)
+            nTotalSaisi	est un reel 	= 0
             
-            nQteTotal		est un entier	= Quantitée
-            nQteCarte		est un entier	= 0
-            nQteEspece		est un entier	= 0
-            nQteCheque		est un entier	= 0
-            
-            // Paiement par carte
+            // Paiement Carte
             SI carte_saisie <> "" ALORS
-            	nMontantCarte est un réel = Val(carte_saisie)
-            	nQteCarte										= (nMontantCarte / nTotalArticle) * nQteTotal
-            	
+            	nMontantCarte				est un reel					= Val(carte_saisie)
             	REQ_Insert_Payment_Type2.Parampayment_type		= "Carte"
             	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantCarte
             	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
             	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
             	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur carte : " + HErreurInfo())
-            		RETOUR
-            	FIN
+            	HExécuteRequête(REQ_Insert_Payment_Type2)
             	nTotalSaisi += nMontantCarte
             FIN
             
-            // Paiement par espèce
+            // Paiement Espèce
             SI espece_saisie <> "" ALORS
-            	nMontantEspece est un réel = Val(espece_saisie)
-            	nQteEspece										= (nMontantEspece / nTotalArticle) * nQteTotal
-            	
+            	nMontantEspece				est un reel 					= Val(espece_saisie)
             	REQ_Insert_Payment_Type2.Parampayment_type		= "Espèce"
             	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantEspece
             	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
             	REQ_Insert_Payment_Type2.Paramdate_cheque		= Null
             	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur espèce : " + HErreurInfo())
-            		RETOUR
-            	FIN
+            	HExécuteRequête(REQ_Insert_Payment_Type2)
             	nTotalSaisi += nMontantEspece
             FIN
             
-            // Paiement par chèque
+            // Paiement Chèque
             SI cheque_saisie <> "" ALORS
-            	nMontantCheque est un réel = Val(cheque_saisie)
-            	nQteCheque										= (nMontantCheque / nTotalArticle) * nQteTotal
-            	
+            	nMontantCheque				est un reel 					= Val(cheque_saisie)
             	REQ_Insert_Payment_Type2.Parampayment_type		= "Chèque"
             	REQ_Insert_Payment_Type2.Parampayment_amount	= nMontantCheque
             	REQ_Insert_Payment_Type2.Paramreceivings_id		= nDernierReceivingID
             	REQ_Insert_Payment_Type2.Paramdate_cheque		= SAI_Date_cheque
             	REQ_Insert_Payment_Type2.Paramcreated_at		= DateSys()
-            	SI PAS HExécuteRequête(REQ_Insert_Payment_Type2) ALORS
-            		Erreur("Erreur chèque : " + HErreurInfo())
-            		RETOUR
-            	FIN
+            	HExécuteRequête(REQ_Insert_Payment_Type2)
             	nTotalSaisi += nMontantCheque
             FIN
             
-            // Vérification
+            // Mise à jour statut paiement
             SI nTotalSaisi >= nTotalArticle ALORS
-            	// Marquer la réception comme payée
             	REQ_receiving_payment_status.Paramid						= nDernierReceivingID
             	REQ_receiving_payment_status.ParamreceivingPayment_status	= "payée"
-            	HExécuteRequête(REQ_receiving_payment_status)
-            	bPaiementEffectue = Vrai
-            	Info("Paiement réussi. Stock validé.")
+            	bPaiementEffectue											= Vrai
+            	Info("Paiement réussi.")
             SINON
-            	nManquant est un réel = nTotalArticle - nTotalSaisi
+            	nManquant								est un reel 					= nTotalArticle - nTotalSaisi
             	REQ_receiving_payment_status.Paramid						= nDernierReceivingID
             	REQ_receiving_payment_status.ParamreceivingPayment_status	= "non complet"
-            	HExécuteRequête(REQ_receiving_payment_status)
+            	bPaiementEffectue											= Faux
             	Erreur("Paiement incomplet. Il reste " + nManquant + " MAD.")
-            	bPaiementEffectue = Faux
-            	RETOUR
             FIN
+            
+            HExécuteRequête(REQ_receiving_payment_status)
            type : 18
          -
            type : 161
@@ -920,90 +898,51 @@ window :
             
            type : 14
          -
-           code : |1-
-            // 1. Récupérer les valeurs des combos
+           code : |1+
+            // Récupération des champs
             nItemID		est un entier	= COMBO_Article
             nLocationID	est un entier	= COMBO_Stock
             nSupplierID	est un entier	= COMBO_Fournisseur
+            nQuantite	est un entier	= Val(Quantitée)
             
-            SI nItemID = 0 ALORS
-            	Erreur("Veuillez sélectionner un article.")
-            	RETOUR
-            FIN
-            SI nLocationID = 0 ALORS
-            	Erreur("Veuillez sélectionner un stock.")
-            	RETOUR
-            FIN
-            SI nSupplierID = 0 ALORS
-            	Erreur("Veuillez sélectionner un fournisseur.")
+            SI nItemID = 0 OU nLocationID = 0 OU nSupplierID = 0 OU nQuantite <= 0 ALORS
+            	Erreur("Veuillez remplir tous les champs obligatoires.")
             	RETOUR
             FIN
             
-            // 2. Lire les infos de l'article
             SI HLitRecherche(items, id, nItemID) = Faux ALORS
             	Erreur("Article introuvable.")
             	RETOUR
             FIN
             
+            // Récupération article
             prix_produit	est un réel		= items.cost_price
             Produit_name	est une chaîne	= items.name
             
-            // 3. Récupération des champs saisis - CORRECTION : Utiliser Val() pour la conversion
-            nQuantite		est un entier	= Val(Quantitée)
+            sDate			est une chaîne	= DateVersChaîne(DateSys(), "AAAA-MM-JJ HH:MM:SS")
             
-            SI nQuantite <= 0 ALORS
-            	Erreur("Veuillez saisir une quantité valide.")
-            	RETOUR
-            FIN
-            
-            sDate est une chaîne = DateVersChaîne(DateSys(), "AAAA-MM-JJ HH:MM:SS")
-            
-            // 4. Vérifier si l'article existe déjà dans le stock
+            // Vérifier si article existe dans le stock
             REQ_Verifier_Item_Stock.Paramitem_id		= nItemID
             REQ_Verifier_Item_Stock.Paramlocation_id	= nLocationID
             
-            SI HExécuteRequête(REQ_Verifier_Item_Stock) = Faux ALORS
-            	Erreur("Erreur lors de la vérification : " + HErreurInfo())
+            SI HExécuteRequête(REQ_Verifier_Item_Stock) ALORS
+            	SI HNbEnr(REQ_Verifier_Item_Stock) > 0 ET HLitPremier(REQ_Verifier_Item_Stock) ALORS
+            		REQ_MAJ_Quantite.Paramid		= REQ_Verifier_Item_Stock.id
+            		REQ_MAJ_Quantite.Paramquantity	= nQuantite
+            		HExécuteRequête(REQ_MAJ_Quantite)
+            	SINON
+            		REQ_Ajout_Items_Quantites.Paramitem_id		= nItemID
+            		REQ_Ajout_Items_Quantites.Paramlocation_id	= nLocationID
+            		REQ_Ajout_Items_Quantites.Paramquantity		= nQuantite
+            		REQ_Ajout_Items_Quantites.Paramcreated_at	= sDate
+            		HExécuteRequête(REQ_Ajout_Items_Quantites)
+            	FIN
+            SINON
+            	Erreur("Erreur de vérification stock : " + HErreurInfo())
             	RETOUR
             FIN
             
-            SI HNbEnr(REQ_Verifier_Item_Stock) > 0 ALORS
-            	// L'article existe, on met à jour la quantité
-            	// CORRECTION : Lire l'enregistrement avant d'accéder aux données
-            	SI HLitPremier(REQ_Verifier_Item_Stock) = Faux ALORS
-            		Erreur("Erreur lors de la lecture du stock existant.")
-            		RETOUR
-            	FIN
-            
-            	idQuantite est un entier = REQ_Verifier_Item_Stock.id
-            
-            	// Utiliser une requête avec "quantity = quantity + {Paramquantity}"
-            	REQ_MAJ_Quantite.Paramid		= idQuantite
-            	REQ_MAJ_Quantite.Paramquantity	= nQuantite
-            
-            	SI HExécuteRequête(REQ_MAJ_Quantite) = Faux ALORS
-            		Erreur("Erreur lors de la mise à jour : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            
-            SINON
-            	// Sinon, on insère un nouveau enregistrement
-            	REQ_Ajout_Items_Quantites.Paramitem_id		= nItemID
-            	REQ_Ajout_Items_Quantites.Paramlocation_id	= nLocationID
-            	REQ_Ajout_Items_Quantites.Paramquantity		= nQuantite
-            	REQ_Ajout_Items_Quantites.Paramcreated_at	= sDate
-            
-            	SI HExécuteRequête(REQ_Ajout_Items_Quantites) = Faux ALORS
-            		Erreur("Erreur lors de l'ajout : " + HErreurInfo())
-            		RETOUR
-            	FIN
-            FIN
-            
-            // 5. Calcul du total (variable utilisée pour information)
-            price			est un réel	= prix_produit
-            total_achat_cal	est un réel	= nQuantite * price
-            
-            // 6. Insertion dans receivings
+            // Ajout dans receivings
             REQ_Ajout_receivings.Paramreceiving_time			= DateSys()
             REQ_Ajout_receivings.Paramsupplier_id				= nSupplierID
             REQ_Ajout_receivings.Paramuser_id					= 1
@@ -1013,46 +952,39 @@ window :
             REQ_Ajout_receivings.ParamreceivingPayment_status	= "non défini"
             REQ_Ajout_receivings.Paramcreated_at				= sDate
             
-            // Exécuter une seule fois la requête
-            SI HExécuteRequête(REQ_Ajout_receivings) = Faux ALORS
-            	Erreur("Erreur lors de l'insertion de la réception : " + HErreurInfo())
+            SI PAS HExécuteRequête(REQ_Ajout_receivings) ALORS
+            	Erreur("Erreur ajout réception : " + HErreurInfo())
             	RETOUR
             FIN
             
-            // --- Récupérer l'ID du receiving à utiliser ---
-            SI PAS HExécuteRequête(REQ_select_max_id_receivings) ALORS
-            	Erreur("Erreur lors de l'exécution de la requête : " + HErreurInfo())
+            // Récupération ID de réception
+            SI PAS HExécuteRequête(REQ_select_max_id_receivings) OU HLitPremier(REQ_select_max_id_receivings) = Faux ALORS
+            	Erreur("Erreur récupération ID réception.")
             	RETOUR
             FIN
             
-            SI HLitPremier(REQ_select_max_id_receivings) = Faux ALORS
-            	Erreur("Aucun ID de receiving trouvé.")
-            	RETOUR
-            FIN
+            gnReceivingid									= REQ_select_max_id_receivings.le_maximum_id
             
-            nReceiving_ID est un entier = REQ_select_max_id_receivings.le_maximum_id
-            
-            // --- Insérer dans receiving_items ---
-            // CORRECTION : Utiliser la variable nQuantite (entier) au lieu de Quantitée (chaîne)
-            REQ_Insert_Receiving_Item.pReceivingID			= nReceiving_ID
+            // Ajout dans receiving_items
+            REQ_Insert_Receiving_Item.pReceivingID			= gnReceivingid
             REQ_Insert_Receiving_Item.pItemID				= nItemID
             REQ_Insert_Receiving_Item.pDescription			= Produit_name
-            REQ_Insert_Receiving_Item.pQuantityPurchased	= nQuantite		// CORRECTION
+            REQ_Insert_Receiving_Item.pQuantityPurchased	= nQuantite
             REQ_Insert_Receiving_Item.pItemCostPrice		= prix_produit
             REQ_Insert_Receiving_Item.pItemUnitPrice		= prix_produit
             REQ_Insert_Receiving_Item.pItemLocation			= nLocationID
-            REQ_Insert_Receiving_Item.pReceivingQuantity	= nQuantite		// CORRECTION
-            REQ_Insert_Receiving_Item.pCreatedAt			= DateSys()
+            REQ_Insert_Receiving_Item.pReceivingQuantity	= nQuantite
+            REQ_Insert_Receiving_Item.pCreatedAt			= sDate
             
             SI HExécuteRequête(REQ_Insert_Receiving_Item) = Faux ALORS
-            	Erreur("Erreur lors de l'insertion dans receiving_items : " + HErreurInfo())
+            	Erreur("Erreur insertion receiving_items : " + HErreurInfo())
             	RETOUR
-            SINON
-            	bPaiementEffectue	= Faux
-            	nDernierReceivingID	= nReceiving_ID
-            	Info("Stock ajouté avec succès. Veuillez maintenant effectuer le paiement.")
-            	
             FIN
+            
+            nDernierReceivingID	= gnReceivingid
+            bPaiementEffectue	= Faux
+            
+            Info("Stock ajouté avec succès. Veuillez effectuer le paiement.")
            type : 18
          -
            type : 161
@@ -1598,6 +1530,7 @@ window :
       -
         code : |1+
          nDernierReceivingID	est un entier	= 0
+         gnReceivingid est un entier 
       -
         code : |1-
          
@@ -1650,4 +1583,4 @@ embedded_elements :
  elements :
   -
     name : FI_stocl_location_vf_1$Requête
-    internal_properties : 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
+    internal_properties : HgAAAB4AAABdwD0aRIA/nWs+k4qqd1GwG9XE5bY6KO1/KuO7yJKNKpdFyWrJ/3TJXmwGKq/UkbvZDgFi32lD6LMDgjkVxvOqxBsdi4jP7j/0ss+1bxaYewF3ozh0MQ5UE1clJlNdeowJFZUIr6aAt68AYb6EKAtJCIP6JvyoLC2xRL0MKOhpdEt0HZqBaUZuV0hGAGc7tUleh8KkrraKbF+/8TI9eh6wbFDoOdheEnpgG0KGLAnjrsdycORjF7y5aei1IVOURquXeEQhvlZl7zq4uH3wxCWbmKTG82W3ZgaMuRMVdW3hnXkH/Sx23L8SCktdL81rbNVutiZEAada11cJbDJZ6H9yzS0kN+qNK4uAkmKlH/XKoCU5ttoD3EVS/18Q6Inoz7NCFTBoZz0gavMp+DYDwcyqcuHFDw1xHdN0kge++HYZ5h3QUNambAtonotmwYOBrpcOHpfZl4Vs64rIoLXvxzhj4KNdRPw5iDRn2DeE3ac7nJaE+U792sPBPE5NLgyIAw3zYeXG9zzGfqUez8bTXNsr1iaCF8z3NQuucF9xZ9EJsMlYWvShoCcZC2eqqtIivyte5Yy9ACIpFTsUr6UVoSi4d/aYXU0WmMmr63/LU1HAbvVGalvDat468Jb1/ZBWBUVAmD+J5I4Y02gbjB1U38We3AhEXelWmD9fcq4iJZWpWXjTw9zJdHTh2axcdQHNnzE7fD3vccd5fB49umz2NIBuaz0is8aCSg7QtrSMwRyjkzbkt11drCRuOICh6RFWXgrBJsSgW5c7U9Byzjzfw5s76oMT3G+711A3vHqXvnEhS4tsBqjtmlf/UGcHmfaWhHyVz4nva0zOV8PyuVk0ISO5pufkbW6zk8dL8XTxdTipnQMcGNbrt/JD7Iaf9d+pC6pML/W4AU68cW6bxpta4ozQnglKYKXTnjy4abLnBt60UkpM2bUVxOSRvgxOkCJxHWu8/eS2krFKZZcGAimGtpb6Vo0NN0/qOB3vEO8ArHj4Oa5wn6oSCrzfhNCS3mISSrF2OkG8OmSWT6rJSBC/8QDvjKQrnaIOOjK6NNQqyP8HQsDsgEPulC8ZtXfKHhc4yiCynfDCHrzw+LSP04c9oOCKb5OEI6RSTCYBmhWyLp9EhVsSiQeKZriGtYDyd56xDEnTb0oZ4v1Yqn8EhhVHsq40G+OhOYbuJ+KFtiNr4HStZMCByVVQQzsuGgYpOwwCUXCUQAwOy6eY2OxxEJjozwtMkqpUxZk7e/TNbblxNWMA+tRk9Z6pY5MtnrPrh5WjGa89x8DMQLpWZq0Kjlerk87/1yp1CFXs6XDy7dYfeGtZDeg/MjzX7Z89O5eR9L1HMNERVfe+eRtcdAHTS2Yk2Nh1/lnNl8cXpjwk3zVBUXHOxY/Utc7I1F0QvwwI8Lx4hCg7Gcxpu+kq7MtjxvtnwbxgrQNWmp4bTnXhPg/M2xTyLg18v3gIoJlJdfiV5n7At1uKGWnbqIXPd3xtXgaXgBAsqiVC1BVdwkLzSGbLHbgxIsVaNZPVwKh8bfE44vTUXcBrpnh2ExOmF72tdRveMgB2N3TBizwHOSwH33ZHNWW7g/p/xJbGZhYslPfP9KA/UP28syPqGgJcfjtbtMp3katZbE3iY+kBPthNJVAT2wPr9yCQ/7SKKZIo3XFhv0xHxrlmrc1cYKanEhCHdW17GYH05nPk4zCDvJh9MFrLBjkw3xLfsirD5/fR650Gv/2ppjkHaP7KQbCux7pWcLF3CNFqn2f9KQIGw9LlMZdBd0OdwMlkWstobgR1GbsZFuCH6/KTzuyTkHJdbExlUQYnT+AGs/f9pSnXp1rbMJYsvzoRHai42+Vdy1Ly7Vh2idgMKgQfI4T71OVZNyFm6mA87lYGX48g2MAUgs5vSThPJW/Hck/rKkJ5a77cuBKWVxr6Nbws7wfoYB3MhlZHCfKrJk7+64qURv1jP5QOJTunlSbwSMNysiJkdi1RwnuT6XGgsotd5O+E99UiYu+vC6PcmwqK4aqBLwmKCyMxtuCjQ7AOlnyxqrMoZvU55rZrwaBy6b3xVsu1rHUpnUHQwtySOy04gCT3RmYg84gRedIHrpwnhUi0/j6kDlpfED6EppSssjul/6ERUxh6mJTKzOw21+GA4JV09mFMzbFIaIKLokgkayTSEhVfaJ72S9CmxMxSa5RxCJXw+ROzAs5SnjKwaof0smWL7EYjz4WFHQz82af2c7WWsGvSpNOSG1i2nyVbKZU8MLEIbhDrwE6YTuR6ur6qcJlE3iwCRemGN7y4UuQJSAIa8DFUjuTbKGC3PYgEVJCocyjGnibH8dFqSABG2+CyTtK7lIuqyTfsUuQ9rlB0VoxoOcSKvri4LGRlELu3GhC9hYTYMXn/W+uM7pDSA7W/X8vphqLcKxgM6M5YQhWPLQoRPiUAHJMvfL2nzDAZWxEEa1yjexmW8Q41X2zM4G+3u19MJw==

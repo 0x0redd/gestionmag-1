@@ -655,28 +655,70 @@ window :
       -
         code : |1+
          SI HExécuteRequête(REQ_selection_entr_stock) ALORS
-         
-         // Vider la table visuelle avant de la remplir
-         TableSupprimeTout(TABLE_Liste_Art)
-         
-         // Boucle pour ajouter chaque ligne de la requête à la table
-         POUR TOUT REQ_selection_entr_stock
-         TableAjouteLigne(TABLE_Liste_Art, ...
-         REQ_selection_entr_stock.id,                                     // COL_ID
-         REQ_selection_entr_stock.location_name ?? "",                   // COL_Nom_De_stock
-         REQ_selection_entr_stock.full_name ?? "",                       // COL_Fournisseur
-         REQ_selection_entr_stock.description ?? "",                     // COL_Nom_d_article
-         REQ_selection_entr_stock.quantity_purchased ?? 0,              // COL_Quantitée
-         REQ_selection_entr_stock.receivingPayment_status ?? "Non défini", // COL_Payment_Statut
-         REQ_selection_entr_stock.paiements_concat ?? "Inconnu",
-         REQ_selection_entr_stock.total,     // COL_Paiements (type + montant)
-         REQ_selection_entr_stock.location_id,
-         REQ_selection_entr_stock.item_id
-         )
-         FIN
-         
+         	
+         	// 1. Vider la table visuelle
+         	TableSupprimeTout(TABLE_Liste_Art)
+         	
+         	// 2. Parcourir les résultats
+         	POUR TOUT REQ_selection_entr_stock
+         		// Sécuriser les champs NULL
+         		sLocationName	est une chaîne	= "" 
+         		sFournisseur	est une chaîne	= ""
+         		sArticleDesc	est une chaîne	= ""
+         		sStatutPayement	est une chaîne	= ""
+         		sPaiements		est une chaîne	= ""
+         		nQuantite		est un entier	= 0
+         		nTotalPayement	est un réel		= 0.0
+         		
+         		SI REQ_selection_entr_stock.location_name <> Null ALORS
+         			sLocationName = REQ_selection_entr_stock.location_name
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.full_name <> Null ALORS
+         			sFournisseur = REQ_selection_entr_stock.full_name
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.description <> Null ALORS
+         			sArticleDesc = REQ_selection_entr_stock.description
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.receivingPayment_status <> Null ALORS
+         			sStatutPayement = REQ_selection_entr_stock.receivingPayment_status
+         		SINON
+         			sStatutPayement = "Non défini"
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.paiements_concat <> Null ALORS
+         			sPaiements = REQ_selection_entr_stock.paiements_concat
+         		SINON
+         			sPaiements = "Aucun"
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.quantity_purchased <> Null ALORS
+         			nQuantite = REQ_selection_entr_stock.quantity_purchased
+         		FIN
+         		
+         		SI REQ_selection_entr_stock.total <> Null ALORS
+         			nTotalPayement = REQ_selection_entr_stock.total
+         		FIN
+         		
+         		// Ajout dans la table visuelle
+         		TableAjouteLigne(TABLE_Liste_Art, ...
+         		REQ_selection_entr_stock.id,           // COL_ID
+         		sLocationName,                         // COL_Nom_De_stock
+         		sFournisseur,                          // COL_Fournisseur
+         		sArticleDesc,                          // COL_Nom_d_article
+         		nQuantite,                             // COL_Quantitée
+         		sStatutPayement,                       // COL_Payment_Statut
+         		sPaiements,                            // COL_Paiement_Types
+         		nTotalPayement,                        // COL_Paiements (montant total)
+         		REQ_selection_entr_stock.location_id,  // Pour usage interne
+         		REQ_selection_entr_stock.item_id       // Pour usage interne
+         		)
+         	FIN
+         	
          SINON
-         Info("Erreur lors de l'exécution de la requête SQL : " + HErreurInfo())
+         	Erreur("Erreur lors de l'exécution de la requête SQL : " + HErreurInfo())
          FIN
       -
         code : |1-

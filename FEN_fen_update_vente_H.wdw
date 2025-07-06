@@ -1,0 +1,932 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_fen_update_vente_H
+ major_version : 30
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_fen_update_vente_H
+ identifier : 0x2869cd22cab2f590
+ internal_properties : HgAAAB4AAADkFixHph+X2BgSY9FWP76RFoteNZM5RRy51mVIU6qNM/Fr0x65uRJTPgEPHxRKfE+X/kaMwX9IW5pxBp5GUMwWbDTdhhTSQL9pnrbO6822er7uswlud+2UC4X8kkuaHWBC8RoEFSHaLwK4EMXje5iF3Ol+U6N+gVQvnTJHBzVMsmjMx0fQRaXbe+IHuTUjLz6TV1GWbcuNvao9tGwfWXuC8uMbpmrVydJKJJzhAbE6mFePuDVp3YAAw3n0F0QGg46MX9a0d1QMo2RIzjQ68eKtVn6Yj+eWdTMF3P2qoTbOWpUSYXiiznhbcOseuBia+T5O25LpGJKQDLZ70Dkn6WKeBP/b7XyvOi1YqyyvKD6Lmqj3ygnvmgHnWaXFDgPGZDWqDBYi0t2yuJp7Cl3YCFW0TCf4VMioiYSXOtx5J8v3ycT8Ner0hFeFVcpJ0LwE6ICFW6MSaFuPSJxPzqsjfdPlm9jmxL53dx1inLexwVr+GEq37LqTQ8sm+8DoK49pJJ20ZWOjbU4p4KhDQkcr1eO7XwfU9CP3DTZGBveS/hRS+hiFRPTs3O6movkbrPaUhFjpYZlcapr2DDIyDU7SlmFz+yLS4G66GdeDPHAVl707Dihm6r1sG1OjsMhJ9HAxxE4dW8uBwJKeQVDt4oMvJCoOM2ZNYj5dsMq95Eoagox480/EFCDT1qqceRJhkKvQxr1zXJkqiiNiH4fCTE46W4ha/wwfVakAB33c6zah
+ properties :
+  width : 643
+  height : 464
+  widthClient : 641
+  heightClient : 462
+ style : {}
+ controls :
+  -
+    name : LIB_SansNom1
+    identifier : 0x2869cd53cabcb798
+    internal_properties : HgAAAB4AAAB9V+vK6M6TLbh/jeHr1vB0/vGntwAsoyKVuOkyrT4hASCQT12zR5UpyHQBHuVlSvMSYEaaL1AuxrOvkKKE0JExen97RRisX4HZh6lpIgtOCEdAXS6VN2tZ1myiSSnh/Ni3mjPdisbif62GTWZk18RhO+99YycWw038Wnhj7zaEro4JaL8UvyK5lz+J1cXMbhxuLFxZWDhbXvP+mffe6sMlWbELvDc5J4XskQCIOP6zggwVf7E8EiTFqSAltiGKMzY4EM8BTZaTbeQ9xhaPt+G8aGcepVJjnNkUmu4CjIQ46MXAKSNWPbFkCE0dqCQw0H0i+/RNlYcpWbF+BiOzLfVuTz0o4sRRPwm4QV5MeiEoaFlxhwIxgypiUrRXdLLKOMp8MfP1hT/DGzOtSXhoV4vwVJvgAZmfpAqnfWqgexWKqD3GmiX1NnWdTdaLmHKQel4D58sknOcZuTe6IlUHx4n7lb8H0WwwU8/Ta665G7+M+s7FozOQQYCUzNChOg==
+    properties :
+     x : -5
+     y : 22
+     width : 385
+     height : 30
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_SansNom3
+    identifier : 0x2869cd54cabeb7f6
+    internal_properties : HgAAAB4AAAAhTn2yWsl6DgaFYS2w2rxwfX9EHdVTQps2EABfcNJJ614adZfp0GjAhwW8YQbpgDpm9LJES4o0WaU2PM/0e14P6bj+l1JAsaTRr16pF5Sw9lTcRhsRKTB4ilwPOr3ukCXGHvloQYYRwKXKd51+AHQx7a+mEEA1RJnmrrPjqraDiyIVu/HsD3PgSe37+Bm9RqmExA7hrMdC54nKrJMzSLcdkjnpdw3pjbYKScv1vFvPVeVfKSiXp5h6DT8uZzxDh/++MWHXbBPXwzNKuCXaqormA4pQJ+z94LnouEMlIR+bPtrmXI0mDkAZM1iyLl7+sfPMwn98ChCTj4rmQVZqhMkOjgZG/mfz7EZkUieON3tPVi3HKeW7ICiC11WmINpmc7/SeUqQf2GLtzOnyYpiSdsTQmnQmS2//O4O2b3ylpBSzMTVJSzCDcIjXQI0vF6tPaeZejHSQQzVgAe85ZBRy8jr9sIJfnYsAcOaeLhXbT8xy1cLFNM=
+    properties :
+     x : 48
+     y : 274
+     width : 133
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_SansNom5
+    identifier : 0x2869cd54cac0b863
+    internal_properties : HgAAAB4AAACOx8qhayIB5a1SgJzjbWdLfnxBiGbM3TabLW9IkZEQ2gXTsFFSi5S6PADLepdKOVu5U8W3kNeannepCZ4LshGi5qmjwD0bYtGwdAd4NnPzWYWli7RG+eigQnw3SpUWACVuthkQ2W4BAPXClxV+kOwpbZ++QGAVbKE+PkuDIi5DS2rN+/l0J3Pg+fUbgOm9HsHktGah7Kdq/2HK9NN7AOdNOvHJX5UBbVaKEUsNLOvHrYUPAShnp1BCxd8CY0iPo+sylaXToCfj12dWnAEWZnbyh85k4yCxrP189CcRzUt3yk4asBnKMnwdBwSGKmoKnT8gtmPY7vR/w96y5YKmcOUqUmoqaiu3mPqo7tsqU2fb8kEL/fHPJDTW21Ha7IaS/8vc0xhotStXQ++7Wwa449cfTEPm0ZuJsFp6gbn5ldoaNCqTc1CgfyrLRa7KoIHNaeOmeSDlGPVsF6CRqvX+Pl98ab0Me4vXtnZJ1wcA1qZI3EZ6i2w=
+    properties :
+     x : 45
+     y : 368
+     width : 131
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : COMBO_stock
+    identifier : 0x2869cd54cac4b8c1
+    internal_properties : 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
+    properties :
+     x : 51
+     y : 119
+     width : 183
+     height : 32
+     take_focus : 0
+     accelerator_key : 65535
+     tab_order : 1
+    style : {}
+    dropdown :
+     internal_properties : HgAAAB4AAACH0x09io7NqtnbZbPm4/6Z2gU5I7eRERkLI55OgKHqbMNVv7FHU4tNtfy/2nSH+/tmTmd9lhzWThtzQEvXDbkzLKJWdUQopbMw/hXJuSBXfpxpsgTNTDLGvdaozBYe6WHVj73VE3mcmG2hmkeHiZ0yhvcOEw/9967E5UyMiBwSof503eFezHtxTZCk2DS7/Tah9FYU49b1Dft/VS6cL41BbeyPApUPnTdLBQUMIfNrdGOuoOG6Ay+86ArgGboWgi65NckwxoSkVVn42QUzDFpv/ijnz7VGk01taml8Ha00YBJEWl1Z91LfqQCd7rTgBmr9BKeyuLEpskzo8wHRX3MXqeifUj3js0ZVoetlwLsaeSQEIzbRjavRYxVhrtF+Q38Sbj1zXhQoOiLFAx04MbweWVIILyPG5FjKQsXOcNgTIwRJy/IFkA0fcqMjXbPe5umO3nfQmybu91j5eBBTq7K8v35cmyzixCCIhFQ4l7TED82IkS+0GJnT13JufCkcDVgJvLk1o6XCEiJyjxvXL/Lh6jCUJoo1rP4AOlAB4P1YZu0UkD257BdWMZQT7g8dke77WodTE+hI8xmENYFFhiVj888HpnUOhPIsBdrPVMyzcRUgCnKr22OqtQeEMJo1QIvm9ZRkZu5f4EwHqt/GhVEr3qsCtLzVmtUtBKxb9nfHr82LHPJxJLT0JjKg03Y1mUk5rbNyaHf8Fpc1gV1mWgDTeCQYq+dO+Iq77b6fHNcOz3U/vWrPN2m3nkQbeqwgISjqqsc7UYL/wd7lo46cmEZWDnWvtSzXgtDAr2JPem+TVIaODMevxCtAt6o+YEin/PzPEevM6RqoXcTyG62Svj2S1g3YaKZLH6+1hBY1FJoGLuIr5x9aq8/NyC9rmiFmtkWoO/eTIfMyUgCXBop9MCGYiEtAO+geyuL1nVgF/o/Z4kw4gm23BmREIYnQrPST
+     properties : {}
+     style :
+      scrollbar : {}
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 35
+      -
+        type : 17
+        enabled : false
+  -
+    name : montant_paiement
+    identifier : 0x2869cd54cac6b97d
+    internal_properties : HgAAAB4AAADBeEYZo5qtjSUjHnlJxB0q9KLolUuYE6joTQ7M69YN11UZFQ2VCEeoAKBmweV/u+aWRZJEAZdD/kVceOADklNs3VWmBrfoAl/NstvAB/yR88ENck7NAabN/NS0yiUgH1gbwSCXKMqM2Y8M1LfSLgtUNJzlaTMfFnArvUXQZuf2oJsUV130gDN3bx8JYIeN7qYGap25pVnigMZcw9fxVkH5xGDmK+oitU3/MMuB8PucAa+IHg3E4uVEsLtqjoLDjQdBycPVRwPvEyjTsSqF+EHFt6uYm2nCMXQwPO0Qki6kEkTk8SFB9CSupgbEQHTsogcZYTY6VphQNt5mef8B8kIoxZ/TIJqdZZVg32a7VDk4sSuDYK09qsXZCk1RPoUEAi5LbeOVfKfTPeKxX8NkTokx2kS4dAmvl9jfM9WgOCj5iq7jN3nOGYXctJJkQ4y7tDdlTlxNJb4AzhYPPKFHz1ROi6RuAzn7PwgoxNlRruTJT0SWNpa33nG9odcP+frBaC/WDJttWgg6G4bwFmhBbsxamWjtTylGaMmtxUDKGFqavGu1L1p4LCG6ZNDGiwNgl+iUBDJWBEADb1b3N82pXiIQIoWZ2Kwjv+fq2GYAk+tetgt+r3WlQh4fZKG27V2fsInTne7qnWAqn7+iKN5IH0cBSPh6GKqcFpJz44n0euw8iM84qeXewwAHAVg0/ZjjntjsbqLqh9xKfHfvM034QWx1nbO3Q/njv9A2nSkta+9wwUyKvf+klqFBwcX3R2ZwjTj5SBPoknq9O3zV44YJoyWzRliHcYF9FqCIN/C5WkrwoZaDc/wk58xKN+S8bJhZZ9NuZGvsB4vsAxmK2hRRmsKF5IAWsmIoRLMEtP0mDLUyaBQTJOj9Msd42E+vC35J3Elqwct8l2XUu+016vx6KYrWGpPwZg51Qi3JiYeEl5UH/t7d3l8DzoUgLt20Q2PDOwTDAtYlLVaX1IP9stbryXQQOUAxachC4CBhmJSIhcpga9nH0Ecnbb/2DZ9b4YjSOvAcAXZMuBkwy2sEpvp3r5dezIsCkv/BFEx21yKsr3p3fV1yhWnRzyrtf69SVYAXM0uG3UZF5te6X2GHS/xbPicaITQhtcOZdx6aSZ5cO/RSddIKctkBZ8whGE8GyFp+ELB1SV5eR8kOOZfw7odMuO4f2dTpdcd9FZritjYZtkAQXMleB8wjInjx5baHv4GaoY2Z3l2xP5cTKbIf3pLTUZfr6AgJrtm+DK2u5x8IqVvzOJ748NaJGc2/7sXT7wDTv2d4z29pJRuUnKJrYgQSccoF+WT6/FlAdMcl7s0xvNfSBvaw/CgwoErMnRhVJj5V+P9dxOSZNKM=
+    properties :
+     x : 184
+     y : 367
+     width : 153
+     height : 29
+     state : 1
+     anchor_ratio_size_x : 0
+     accelerator_key : 65535
+     tab_order : 11
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Champ de saisie pour un texte simple sur une ligne
+        type : 14
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : COMBO_Type_Paiement
+    identifier : 0x2869cd54cacabb61
+    internal_properties : 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
+    properties :
+     x : 54
+     y : 206
+     width : 173
+     height : 38
+     accelerator_key : 65535
+     tab_order : 4
+    style : {}
+    dropdown :
+     internal_properties : HgAAAB4AAAA1o7jGVuJtQENCtWjP5gYws+vE6LPkOZ411hlHNB+lFfRH3YzAGrEsa5A7PxHtf6Bsb4qj2CE19fnkmmv0dHfrPlo0yaPB2MrF88jVQ3FKqKbjOwoNjAQKcyq9+K+Qq9ML4fjvzD8ydmAvSQoN5yAAM9QCDXlOFXY6RrPuTcmaioR2F4ky6SKz1IPhE0b1YXhVEU+oleRAyP+vztF+BevBcpqVSV077GHs7zNJWPfHK08V/WdY/WYSRHqfToBfXTIySVsB3bSx2OOxZ10jDwobsDuFrYO8tKbbMNVesB7WcmBFe0JZ5ZGUUQ27Wzxf7GY9E8/y6weMTV3OJMBWDV0s77hXaJZMFAWRyzKvUwkqolY3EgMz9xbfgsFODrybGJbjR3ce1eCpgcLSqvr/1cUXgD/McS6hj+Ut/Z40UVtdFur5sWlAghPY8rBDg9O+OXzpi+GZ+Yjg16aStA6/2hh8/jYw0KyxyN2ns81/fKDWRqDTCcmWoREAuqXtLZiQNUcAqynHjeTmq+UV7C6AYSbs+4nM8FoYunV/2Tv+lxl+ybQT4KNNRV3xeu24UWy3nZkQr4/NpXXgmEqlnELY2sMmbkIRAhuPKvsddv2sO6TzEvoNehTt9tVdNNYZY3OXpiwLWqaUpoP/Tzfyz0qbNQN+/5SKWogyRCCUW7fQTe3L0N7sfGz5oxKfizfXXMHJY7aWAvnaZmQQCRxKxuAbpNJmn4POj/MBnl38DhEse4s0GMTOAyJ5ZPdW593624+AiWud7U3DQ6djyP+WoDn5JGozq8KP04qsUptXZlVsLZ0FfXkxWueX54NZFin/x335RvUg4vuKn7PmtfD313EEBdZQyE6JiDrmk3BCoTXWiuhKmR2vgSlhAkBS29X9pMfhW2EM0eSpQ7AL4B71wJ4CAhjcuMGHQlht5t/QULCKFe7n5lXGLe3gwSQ1
+     properties : {}
+     style :
+      scrollbar : {}
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+         ListeAjoute(COMBO_Type_Paiement, "espèce" )
+         ListeAjoute(COMBO_Type_Paiement, "Carte" )
+         ListeAjoute(COMBO_Type_Paiement, "Chèque" )
+        type : 14
+      -
+        code : |1-
+         
+        type : 35
+      -
+        code : |1-
+         SI COMBO_Type_Paiement.ValeurAffichée = "Chèque" ALORS
+         	SAI_Date.Visible = Vrai
+         SINON
+         	SAI_Date.Visible = Faux
+         FIN
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : LIB_SansNom6
+    identifier : 0x2869cd55caccbc99
+    internal_properties : HgAAAB4AAAA7n87yGzT9eUSchpt4ANnP32U+g2JJa2V6zEcxzgjyXiN1xuOo3hBZmt47vGDn52T6MSTZLLqjppOWL8OnEJEgCIIW/QEHsen1+0Uy8AXRSQ70MKafYBLxIpIieHXaB28B1kWNRX8pdyDvqX/Y8Sv4z809NJ+4Ew+wzob5eXDA7FtVifywuAbSmfIzlA11rOIqr0FDlItmJLFajZauOeMuB0zt9KHR1vatQ32W0FbVMufz9GbTkKiESOlp+zvx+2WGJzsIBSAzUHonscfv0azIyAv3CtCkj7CKO96xBn5STuZUTHr6t872RSN1Y/h8iy5Rm32ASdAv1S5B9VOATwsP7D36gDy33djbwpwpClFZ7oAHjx2GFr62J0E1V3o5lGM0eYTmxzywmljk2biURGRPOvLJZ5iN6rWlSq137XYl9H1tQrPQ7bYlHghERQ9ViALdq9ipbLhogNpCAL3XRRTmzzFC6GZcCxOb0Kn4z/NfRUjSAf+C6MdRCw==
+    properties :
+     x : 54
+     y : 172
+     width : 157
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_SansNom7
+    identifier : 0x2869cd55cacebd07
+    internal_properties : HgAAAB4AAAC43cJ9FJrXe01kXie2aAdVUZjTsu/eFFEp3wY45FNwc1YOx9NRz418L5Gz8P2YlfkV4pR2Z4imDjQ5bKg/ooBO+kl08yj90J7HgA80JluYFH3dvMefPa/2o08cCPhkHQeDsqaNhkvX4zzZw3UMsOLqFxy0uo2sXn4QB3NmsrVtXRAUlfKFHiwMVwp4P4S40DmGjiUy/bVJxeiOpWiNuMJY376U/Wv+ORSQCKGWcKyYdkoJXW/hvwHeK6az/D6sZ/VvfprKvWCW1Hce2NIiQNp+X5gcZABkEjqB2t1ArZ3cmO0FvTq4H3FoOuJ0pqungYTIApwuSX6Yq3fkCIg1DKMh8yAtMN6vzsSAu9W8fXyzwheKSqWYHO0oHlLm0FvKFAWXym1MG4hJ5mPVCr8zb9Kh00uSLRC991n+/XDEwuC9FsRU+kuVPePUf+XoxMJFraSy2M1zoJz+2MEQCPK2SkLcrFIJSf9dNiXK6Qjh9a3H
+    properties :
+     x : 54
+     y : 76
+     width : 117
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Quantite_Stock
+    identifier : 0x2869cd55cad0bd74
+    internal_properties : HgAAAB4AAADnp4B+q9OdYfIf32h7z1AzAOIiz8BpZTn2XlVkPfjAgS4KUkQP4Up01ZO/IaYJUhcaMAKVUdZTWetGhZIm2ioWRgIJV8/AvgW0mCUemrSDND2e7InV55rUjsXLBH7Yhk7xyP0JQgK3dFaVs9oVNyhXkBG1rGrRM5kQUHEqe20SqT28EEJRLixg+xwazoMLsbHd2n7JFqiVAlyUxgez30DatZNsUlkPDQT/8fJ5+uvoIP0UA+OYFPPEW2zd7uE5xQP/MQQ9j0UnYtQbOmMB3WvamzLG/ziz45pljVmnH30x4alcBRMBO7CEFRLvjRH48CVVO6MHfLnTMA/truoCa0j1T0HfxqdASjpD5WAkmYSXFs7NMKP9W8/k+fASp8d/etKDFcI4PGkMYHjCKfaHpeIEn7hN5oObxteeJllHbPovZE7gikd9B/odyCtAB6C2+F0GnWQv290iKca4Yo6azF51V/CpN1/CaVpEm+0vKKAlcgTWlLV1sz2nvTLbVNKv5VYtgyOhwQTS1AOuvgEKE6csz5Wk9oEwgSHthk059cShJdUzlxeb6zgqnO+rrs502vXwa2WhD7DSNpfIvPwyyDXVoRGRfK/6ubSt6snSip4Uv4czsOYbF3OPVgnfa2MuK68xwFug1Ao3+qSRdiudnByR03JzR5ZBf9GHRFvAWiyCT98pr+CyRo4hmBTyqfrPrJDAG0qaW1VQQhn4Eup3fX6hxJwT5CX1HH9H8EA2O4IBt3Tdnk93OBrgcQLT1gKPxxf0KnLQr6Eh9qXN+aVYMAmweZb5NO7v+XaXMDgTtVLYJ7fckG7T+xLQ5WTojYwi3RPlgKMjLK+podWQ/6IwJzHhkdMU/j37obgONT4pwO66KSEmEg3OwmxqtDMSSiW9kyyZYT1lm4HAfnj3BW6yufhlBSeQmdhLhyNsHnbSXc81vK/yRLDR4mooGOEPGpRTWavafrjt6KFtgem9QXrIX5hthOxjCfHm8wQ47mXw9rDfxYi5d4SIwSkA8zusnjmN2w7mBi4htDpaQYJjLz5drC5lHRD0tUyKqLTw+nOVfCgun+l2mury1TOozl43CwaVaG/KPTvQi01vhwzg0o2LrfMgKqNVpzDT9QT66yzOtyHMX9G4dc9QxaVQMvq4Au3NxUg8H3fiF9EWtfc4HxmzZZG2c2l03+aU/R1C5eFB2aCeUa6bTw1ZFzj6a+i56KzLmRzBnI5IBg5DPprhOriP3p0v8IwtGJHlYlMkB7tt/cNs1gN1z0yiwbWMb83yy8MYMidoUZIcr5hswIMyQ3Pi/Ns9HHRs97xNWRoptZvkGF1M/RAo0iizSloxgHjkPPnqWsubqFFpqMSgUDtV3AbVGSUiiyc2GlwaP+OyGy9gm83RBG1C9ppYy6mRdrbgkbr3p5K9uFQ=
+    properties :
+     x : 56
+     y : 321
+     width : 279
+     height : 30
+     state : 1
+     accelerator_key : 65535
+     tab_order : 9
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : Quantitée
+    identifier : 0x2869cd55cad2bf1a
+    internal_properties : HgAAAB4AAAAp4I9/RntLgLL3fgvoIDPaMzfQD1usVMJhPloFqcBOJGkpaCXyB0IsC2YGbI9J/ApRSNhMbCjF7IG7sxGqMwXuEwMkcB4w62w+oCEkQhOKxMyWR6a9pcMPtfPYHwZ42mxAdu7xmWWeG0darUlHv3J3Jv8/CRRvef5c1LygljwCJ9OArdbZoTVbG47GZMJYIKy6EIjBqT4DiovBazYdrjsyneTGueCsWew0htu0i0bVFBRzRfsQjab2y7L5JmGKRMpKmkZ9lE5US6bv0eK7rTwIuhwNLzSb2jgJVFBnxoSwHp+VK1QQ6YboCQF2r64EtZExKEyE1+hIRTHyQPiCp270NuVwBLwtisdZMorarCI76NYfBRff0SXlEw6Z4Hy8ZshrVwBXouU8M/3e1Dxwc2pfCrUZuG3fgy9ReMAVTwytFVQlSTReyWfiypPy+BOjqSvfoox0curusgLvHtRDMnnaLdYZV3/V6Xh0G5LV7H29Ukk4yAZhfSm2bOtQYmZ+ZZ0jYFQUOkiuFCqmlxFjewueD1KGTFKpUeh2/bAVnoF54JmwQmfYBS/hPvWBkG5Nwveo2HmsBPq5r0rgQKHiEcSxG6HqXerPtONxZEj90vfRVLCmzNxKWpn8myMjx2/6SLtm1gr9ahA+R2lwyiJct1Uqj0F+wdFUCCrfugekZgeQ06OctC34LMNoBf7Nvp9K2z5glxwHKPWXzFh2uIt5YK+ctCrzc5StpUOwsKonU6mWyAA7IFoKoJPkWizbZXK++JyiOhKJ4HsOfkIBcokTrl2mngF+yhS+8SUtVaN5xHyY0+4ZtyANUDyzkU+pOQ9OV7doISiZF5ZL4iRehbvgQVvbXJSMUdG60BoISycNJEGsvDcG8Z0VrRvMYGgyofmhkSmSuvJNw6fPFvQPsAYmDkiLjLBBAIl1cxaGfmzdSBPmFJzjEtu9IcgEMJ8VaPC3iY3ItboQlg908K5HY/fLq5GEzgJJJRQdo6OmRWTE53b1qPZw3mxd3l4ZATDnVKsmT1UD/E9SLsHd7vYmek5Gij4fN4y62pMY1uiq0OaT0dt7OJZXTRvDqxCjbOjcraC7iFeyIVyHJiJvXUvx4suc4MDeTRjZTb3sAj0e+XqMi1DzhqgNom1VzD0w1cfDXg7ti7JRhd52QBW2AJ7al1TvEn3Jn59qi49KUOURGeFggLiEBoSY7RRoK48pU4e9Gt+cXIlViDN8IVPP5fjjZ0x9dYq3MApFHPqBYRHN3lLbVNysbrY9+eIeBMEnjsVi8MhYAyHs153iZZmb/5U495gkRoX4fi4qmkRns8SZ4HK7yWzz5o5F/adf3CqXcgItIvzCtVgH2gFU17dR2oDwXMXByyYl
+    properties :
+     x : 195
+     y : 274
+     width : 140
+     height : 30
+     accelerator_key : 65535
+     tab_order : 7
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         // Afficher le total dans un libellé ou champ spécifique
+         montant_paiement = gnTotal_achat_cal
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1+
+         
+         // Fonction qui se déclenche lorsque l'utilisateur saisit la quantité
+         PROCÉDURE CalculerTotal()
+         qte				est un entier	= Val(Quantitée)	// Récupérer la quantité saisie
+         price			est un entier	= prix_produit	// Prix de l'article
+         montant_paiement	= qte * price		// Calcul du total
+         
+        type : 17
+  -
+    name : prix_produit
+    identifier : 0x2869cd56cad4c0c0
+    internal_properties : HgAAAB4AAABRMbsiMHgQeWJ1u+GO78yoPEGw+T28d4YqPPgWqj6Zi9dnHxxARwsvB66fVqi7A43Fer6IlY9guBJ4jfMGFThrVmFa4Q94yUVhNqGNS9AULmGvj5svcjLM4BOD3SuAyuiDGzHmG007/NC9dlydyeEXjuiorrPw5kfT2uItaB71VLMJCqOyK0GWEZKKWRwR+eFpH/YDCqGYSC68WIso7jDWOmgTyq4U6trAKXcRe4zm9Tl8ezhFOowc3nTxBnvHEX8HfzsKsU5YoMhaOSit1/silMU+vq9fKcsl1AezmXYH1gqK4hFNFpMnrcqq2dRvyWsSxdHYn5mBjsNi1Zf3RUOUL8tW5q6wY0l3+nnAnO/zgaHmJROKA510BKZwsUxe/AI1TK9P888uSqY480EPFn4LCemP66CC1C+c23S+5l/EfXOTlTS62lj/DCBc5I3JrsekBL7s5tIAl2gXYFr1bZ/MFTLeOtE0Wr8OWTlqvK1Kp64KBZIPLFgfEqW5EAbBHbN6e+2Xz8xJZI+HCAAsX+jbyld5XWdiInvtOCn+75K3vLp3sCE9uoGjd6JSG6Q8bD1uKxn0XdwUO+iud1CkCxoigbSkuiUTQZvBRS/6AowleLgBY+MgbL08qUjn+ST1+a8Wmfpy6lex8n5Rw3xZimGoyUlClqovphNtAgl5Kf5QMzSJdA+FHrEdaqfemSWZ6Q+51MI7mRVBsY85j6CrSaFTM41j6ZVrD1yTx99m9VpQdYUkOsIdtAvn56VCYsDjoPnbX4rjpV8ukTkMdRp7KanjSRiWlPvylzjApOZSfnOSWk3kP3Lk+uxWlpBaFI3XaaRjCFQPushTf1spaqIqODFcNQmeNXrQwL35mHZ68Jr8/Z6J8yE+Zzslox/nQI0KG3ZpLV73QjsVsbmYRT3CvyLmf1dfIFZ/Y9sFqZGMnoiuE6vmPOPSP1YH685I+TZACYKPclkj/IjzioSJz8c8RTp+4ED42NxE4I3YK7yQnvY48kZsh/U53bFbGTxXYJQ06MeMD0not5i8jIo38vCW0Em8aACB8hHudUrBI3pWx3keZn8Utk/a1E6he0XRTva/M0EfxhGHV8pB5QJmfsr/nLsrRPI+2eEm61ymeVMtIaNDH4m64+pW/lNuQBn2t7EbbRaWF2yg6sJApykl6jCAS9vqeUSN1PiW2f8z20Agr2WZIhwnxLXBm/jhnLxMS0LzvBQOCWnsNx0PRy8gMibwIlrkwtb6Bs5KHHneA4euhVDJZhByxQeGfCKP+pmE34pTGBxDAjXbmnzevA6mbI/Q9cc+3/bWxGSC8jjGxQw1lpkVi6Q9/is1VHs8AY6o+ap4upz//gEScFSdGD1MWXbq3Q==
+    properties :
+     x : 460
+     y : 206
+     width : 167
+     height : 38
+     state : 1
+     anchor_ratio_size_x : 0
+     accelerator_key : 65535
+     tab_order : 6
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Champ de saisie pour un texte simple sur une ligne
+        type : 14
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : COMBO_client
+    identifier : 0x2869cd56cad8c295
+    internal_properties : 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
+    properties :
+     x : 254
+     y : 119
+     width : 173
+     height : 32
+     data_binding : REQ_Select_customrs_peopel_Y.fullName
+     accelerator_key : 65535
+     tab_order : 2
+    style : {}
+    dropdown :
+     internal_properties : HgAAAB4AAACDZJvbm7E8zEDNeyK0AeprE9DnHnSBaFTLD0DcGatFNpk251NETqFgeUz5yzS5vLYrMrpz8i3Cfxeqz+U1e0TKz15Fpjk6nH85r7/7dv3+mavmi1euSJlEERrwPFuunNnO0RaBS81HwKnvAaNX/8Xi1KAqD3nTIRj8FbV3WeMEuB8fdGagWmbJXoOMdOUzNFWKvH2aeM8G1eiJ3Ub5ld4fwGsIocvN+UaNIIc68/eGTSnPbCX1Wt8wNvCeXmfpa0SqTpKTI7rqPAde5QXrp1bJDX5qj8sPlQov00G87CdWkHqqqDfVd+yOEaYzgi8kHw4d8W520IzboKZPzC38/SaFv68dQTAoMA/08VoZmQYe/1xzPbUDqJyI+c5PWzo3s35nCPtExvW8L2GhM2zSQaB0m7Es0jpCfOzFwC0qKKp6xBCWL0TiMhJFMe+AFI9/IquvQMeHIuxLAMCY8fOWbrjsvzQAlD6rdTtnis04ypyBwCb2lGKH1OkLagRGMIZweA/+4PCkNFEwYOFig3NMk7seFxzxP39XlKaxCvTRl3uBO2oSOSYsmpOqbrCDqtqHYK3+LrhwrIKeETTiDf0uWgTyUisoZwQCTOJnTyRZPUga1AKEE5fkY9+eXA2K1q+ZUwaFpQnFA+q7NCefBse9ZSwe+SX9K7lViPt6cnbtYXP4kIa9l13yDqgY7+wCXSH7yiao4SA3oV02eISD69/5FDcGf7zPujBYFPaWl6Qtq51JDvw33htoAan/4WZJoOmwSp0thvSg2Laf+cmPo1qPSA1RTZ3yTAW9BgQj44aX4514ie3G526CQPvAooKWjOvhAzda0WQ11OIsSdMAhe/ruAA5R9wIK8oCLiHt8Z8IUOYrZ6lJL9mRzgVxnmxTVx6RUe4PZHtuhqCoyEesrShgB6LaL4snEMFqbellKbSDSCzf2nQyD30mLJ6vPwDHQj71r9M1GImoiTe4BkHp
+     properties : {}
+     style :
+      scrollbar : {}
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 35
+      -
+        type : 17
+        enabled : false
+  -
+    name : COMBO_article
+    identifier : 0x2869cd56cadcc341
+    internal_properties : HgAAAB4AAABKD6qIdlXdHp5lGHhd2N75nCTTTF76yLvTCUUMdagcFqay4dy20ZFgfe0YzKl069A2Gjg1C1G91VSD2qMrS3XABnyxO9Zm02OD+tfkI0Jj3QpCCWCDn43wyYdQbQLHn6SYZeKSFyKJaCuIsACW9d/IuBu4+wRGovLrAP4n+hns2KloFFSgUNY4FL4cNYMx1uJ+RdTmxjaKm5MWwrSvL3bgF2drZkncZxI7APOao1NCNoLIqwuAHUe7tIBUMWBjxwYG8D6FOHtKSVs55CTwLNcHpOifbOEjZabh4NNoUExlTjDYpirpO7o7OpUPoTc2PKFXboGSznZbDmhc2pFWjcx7xw+Avj399ivd5FPMwRmz5UxLr/Uwd2xeYbJK5a0lxOuZc0snphaA6cuvDi6/6hPyRBQ2tGOCN5/4wa8qUCUkNNh4p0jH+thGjZnlZ42Q7kahyJDS/HcsFEwfjL/xTEAfl7jRFkCWy9xhZvbvsnrlrweTJp9W+UT7KfUf1z0vaScM2Tt5h90KYNQ8nmxDTEPESwJEGnS1F/30yqSeEgjWLyXWoBZNUD0ugGRPwKDYraNSgv1HRP//u/jAum+Rbjw6I/Ce74xVNgutU//taLT9UkNx3P4B3QFFGhT8fmCLpFrUgUE6Pz/dQCOaSaCr4EaPx1pkuRMm3eYsC2QU2SEr7iCCPv3RQGOTTdx60Kc/y1wWix79LvB0MX6Nrj/RfSnqEitCoBjDR1khAUjMwP+3DxNBh81OToc1SQGVvvW2/rCCPqQw06BSh9mPYwpWwPkTZP/dgR2IRBT7+zpNQIlYSHDRirJ7RSyzztcJZYdl/minkUPTxkVT7j87zBvodX5IysepRYE+rzxjihk1ldwPoiYVBYNzQbb+hQW7pjj1kvhdmxB+eSinjtYykJuHS+60dg1kwBkEL4V+t5r6drB9lwIlJ4EUEZ/MQfQj4N6ZB7w1RdBSy270uUu2Nnmv0DmEmLoRBU/v2fq9NAZyiM7DVgc/2U0ISfDqgMHYZ+U25yFWF8i8TWzf+2v/aVFS+7/JwLJOYD1oUdvBkWNeFqM2LWPmAf8sfxzVwiEWVpJovRlNDZW7bFL/kW1gG3XT4QO65NaRIry0j8UfY1zPGsFQg5Fe1wlYnRDHqkm4Nqy0ik2lpuM114TcK/qxUgcgGl41MYI7+dUeRGBMXkvjwCEBZMa8RxW1u949aNcOr3cv5d8mjUP59ORPva1ONPATCSQVtuu/GrOwjUlziDy2ymsoD6S+T4SBSVofkzc3lXMaCmSJud2nLFOsXVtOfIJwr+oDntKJVFt/BJWaBFbeQWGQHi5YtoJo92RRDmzdC9Zr8Yt0gMhFzMjvtqbmupS+1LV/OAxLsjmrMAMbrQYbiDs8LQi5tNHZ2aWoqES1uC9EIcX+fnkyna9M/ARlFKN+WZnVvLPFEmehxXDTmHclHhQFENS8nrjgoGHfqNo8vRbNOt9ygPjArwtMb1/bm7OZzgVM2TmIW3SRPkLmOpM7jDl/w4T1kRlPiM46/em8foAUK7vl/xjnWO9CLIYZHdC+kc30Z3mbpGUyWokFueMl7+ZLBzKJ+zClnacwiFjxFO5sJsjmUbIT3A/B4fpSViFHTbRvBfpa69rZiy26jdX4qMwh6g98wZW7vTf+BRivkHZ/3DfH2zBFuxw0jnAgrt/OmADekV8YY6EbTBVBSVBlqL/ovRJrq2sZQkA7bDPHMKY1PwR0m8T2oofTvk5+4VohqzaLM2MaRXu+i8GuUOtxesXnd/e7zv+cEcEeUClZWHwTSyEi6tFCzOFyVSe3288cP2xfvRKsQ2FF0ipM7evc2tRQ4M0oBHmMnmOjdqHQPoagffHcoi0SVzGNmq9xQy/lyHhBtvJ5dP9NlMz+WyWwANIwYkqJLsTovFcGOTHIWnejb06S5Ffv79W0dP5n94s2Qd7ZXnNNxCaYwwlfEsgnvarFfljXl7Dx/5FvgINukG99BwOtsfjDq3pt9RCDeoIPJlyfGQmWslIrM4bqi45HwjH3TZy/Zj2CWAOnDdd7mdZgka6knfuFrhX+91imZ3hYgDEmZLDMzC0jmev4VGYqkpJxR1rf4ZQLvZ6ihPyoHUBilUDRI0HwhrYzvjSaI+oLmgymm3MEqo7PHn8pMjErAtqmU66O+Uzckr5JCxd6zeKDJZXdRiFcB9VqQYZ9/3iaVrFHxg==
+    properties :
+     x : 457
+     y : 119
+     width : 170
+     height : 32
+     data_binding : REQ_Select_Article_YY.name
+     accelerator_key : 65535
+     tab_order : 3
+    style : {}
+    dropdown :
+     internal_properties : HgAAAB4AAADeJSErGx1GzdY2WaGfamolmAgmEXsI3/He/CGy8bMA/g/hc8VYMVfNbWoo+0MtacxGNXBaP0jr3gr9AOiz0VhlbPVegml1nxvPsXANxkA7/3cT9bSGk4ymFHTihT6uFjX+Mpnr56uZt7bPvLVjnJdcmHDxt0A1yZD0qu+dtF1Ui5oYO1/tHCsKG3C5x+/lueGAg3gPJeHA6YaFju1EtPfmpx6wrLfINJ0jKk9yd09/7bZpPyBD0UodUsB2q7ArX2wm5EphXA+PXjN8kte4ptnnS42w8BaBpG9iGAa11xYyVw0N45GSe2nZgay31awdbXyR1/Phl2qJ2JiUMaYV8BEGc+5z4v6DqdtLR6dkiBC3XlsVCXUbyzZwCuKE0y+Xko5bmTHhf5mfixmb3zV/KbYkqGApAOUxcaLi2rxiw3aLIQlC1rsQeMRbk4nbglNV7zMWmBXX6R80VwMUNHYF1fWUPZ/odIMhxaDHNyf5KQVshoqpLdGhPOFo/BOpVTUhvw2AH3shalVMz2dLQP4LTL4Yq9XS3l074B/rUWPiILJ24WrlcD+WIindHHvmX99iLS+A85vFaFjY/Mb1qEojxTGMstpZvqL2KOl1irWYhEkVxDLR6IK+19m3Xiyxj9zceFI5tMTav7yhN+lA6zp+JNFUk5Sm8jWXxEiIk8P4KipZAnJkIAwWpNQvPx+PuLC8ebT4kF8IMat2wWQmBrQkkVLWc3t2CwIA1h/qEOU8wOgCYupIMQDqGSkm9QcwyYpnu8FP62d1kBCN1C+yGpOAl5I3eXTzs61XjFM7NlEcILA9Me2BDEGc8DuHIEc/iy4Otl+EMheCmvZKCO3f7jb+BT8h481vtLKYMDI/OqJ9F2bj7KSakPiON9EJYlg0CZ8PdGRX76QdmcsWJIyvED05s49TCuqAy9nKQa5N/JFoQhJj20HZzNCfz997Sbe2IhYa0VI=
+     properties : {}
+     style :
+      scrollbar : {}
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 35
+      -
+        code : |1+
+         idArticle est un entier = COMBO_Article
+         
+         // Vérifier que l'ID est valide
+         SI idArticle <> 0 ALORS
+         
+         	// Aller lire l'article correspondant
+         	SI HLitRecherche(items, id, idArticle) ALORS
+         
+         		prix_produit	= items.cost_price
+         
+         	SINON
+         		Info("Article introuvable")
+         	FIN
+         
+         SINON
+         	Info("Aucun article sélectionné")
+         FIN
+         
+         nItemid est un entier 	= COMBO_Article..ValeurMémorisée
+         
+         
+         REQ_quantité_purchased.paramreceivings_id	= SaleId
+         REQ_quantité_purchased.paramitem_id			= nItemid
+         
+         SI HExécuteRequête(REQ_quantité_purchased) ET HLitPremier(REQ_quantité_purchased) ALORS
+         	Quantitée = REQ_quantité_purchased.quantity_purchased
+         SINON
+         	Quantitée = "0"
+         FIN
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : COMBO_etat_paiement
+    identifier : 0x2869cd57cae0c3ec
+    internal_properties : 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
+    properties :
+     x : 266
+     y : 206
+     width : 173
+     height : 38
+     accelerator_key : 65535
+     tab_order : 5
+    style : {}
+    dropdown :
+     internal_properties : HgAAAB4AAAD3oDLNKDjggpPt5vaWPaJQitl1RBNKfrarfOkBKe+AotL8QUb/lMCbbYN2ELzJyM5DmiAIgD+QSz+pHRtzIHtiso+pJhCGWu2CKVuMw7VeiIIvnW1fgHcY3DGJzm129OZIrVQT2io2FHp6sr7oqUSs2S2pbheDq0xSjpNqxCUShSoCEu7V8/TsGViR7OaGHMDEhRBjrfka1Wmxu+lq7g7ZvnV9we9HZILV2Npg919ADj0Pzy14lpMQo7+I3ThKjP8UaXhBWnqEnGyCjt7M3E/rQWt6Fuc15HsKMdaYk4C5VNztg1GttnYSZwSf4BkStnIfSU+T/2BSAo1K/JbtATeNA8AXtaaLe7zu/rA6gbvNJX8yedQPKK9O87C8SBtEw+mqJz080vqVXU1Oj0Uv/BLtXlnzE/93A0PMUL8jcuNsur2PT+YoB3pw4MzBuOEXF9qYKl0HPd4tl/JbLuM+gz15LfASbuIK3n54cN3h22I4lz826mTq6kkXVeQLhWvmHTwLQlT4J8sOsiC0DKxD5155VE4Vq2B34Ma0kuWKmAliUDn0zRrzoqt+yaikf5WB08j1mOLu/yCEW2WUiDgrjDEDI/uwB21O4nTiZwH+MrZLbd9mO2/lx7Pms/GjOx6BkO+2yR2RWCLNKsDXtdba1Yd5UAlr9U57OJfTLtvafN1f410PLa9DCJCsqopbEnrBNcGReXTbXmsQBndBUJT02MbxovohSBEqfOqxLyWuSIeaL3E3UgdLoTnrojzWtTS87aDSRoCM6dBhd1YpIgkMXFhQptmmWCjBVM6W2UeY1v9jUKiUxYiVxFPUVUQNk75viir92wIP1Wza+AP+64c/GzJZ3TiQdlk22MBTJIN2tv5oWCwpZVvfJHwc31LZZtrB61SJcEe90oFDBoy+eT0Gs8n87OgDLKJaCp3Thy9n3Pg9Wi0sEU8Ikw==
+     properties : {}
+     style :
+      scrollbar : {}
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1+
+         
+         
+         ListeAjoute(COMBO_etat_paiement, "payée")
+         ListeAjoute(COMBO_etat_paiement, "non payé")
+        type : 14
+      -
+        code : |1-
+         
+        type : 35
+      -
+        type : 17
+        enabled : false
+  -
+    name : Etat_de_paiement
+    identifier : 0x2869cd57cae2c4f6
+    internal_properties : HgAAAB4AAAD+cVc6YrUu/KntCEByoxgrGUmwLvTiX0f/BZW12f1zwAnz4nSAv+H7lb3Lk1g7JvBWjElbuSxpTYc249Eq8iM6VzZGstfA57I52h75iTRI1xdwF9wnxion+jHodZOuhsKePfVSWmP1gvGcg9Qn3JHoEiCNCWMnctXJIsV+S63Ksg4uTqk78XeRycD8I2NLK5ojNrh30usp1Zt4Pzufd8qJTUuTqDBjR/e9bPa2Qo3oC27pQXv/vqnkhBZ198/z2SGv+T/a7g/UBkk8Ynfwu5BugwcN6Fev/OivmN+pzVAWTl+yTHaPDv9gFiJoR3vwGWjwNdE++O94Wc0ygvdZ0XtXPfW4WMUYrHIWn01h4xO5gvsxX23t4VtMbmpy25uPmI1z0+imum/Nfs9xOj5bBrT/3bitj+uAB4Hy67obzNApPlR/qtkh9CdZz8/fm+5fqMIF+Hc4Y1Gv/gl1LS1TOosEiu4Ta+dGUFkakg8Pv2U57FrZP1ZvEoT0iWO+g+M=
+    properties :
+     x : 266
+     y : 172
+     width : 157
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_SansNom8
+    identifier : 0x2869cd57cae4c573
+    internal_properties : HgAAAB4AAAD4nQI91EWSzL5ls1BhPbRkviXmLIAmcn2YQk0z+XCPKF8FzI5WGB4fehwYrx5njOX0uk6gRksbEBtII0xxJynKEGUIwr8Dr3UBaSPtMXOY+IDVRtv2FX8EMLVMA0+PCAHfe6qphid8bceonp7pDe2XJJeHjQZLIYm7Ch7TF44AZgmrPLmq4Yvnlkn/tP15f+LfMUD1toAMQK+tgxRDlIC+u0Twe7E2zabG/r+idhie5IbDYbUDq9mrpMFuP4ltIszU5bHT6qmzxSzFf3XtlW1trG9TTR0/3wGQuQwJLuQHpeh4YHd1InYHjTXXMwBqZAlPiVMHasX5AlaD9+GGY+oKKt8U2Yfaa14i3o0DjSg6jjG8BM3ZDvFz3bTETWsRn2sglvkMHNkp/k82G5Rx3MwmDuzMpF+O8iGSmXaNzBOqXIr0pg+HZeWcN1u+qA4NBX58OqtJlkUmSLOG9XwwjMpq2ga1FRNH/nMEqUihte0H
+    properties :
+     x : 257
+     y : 76
+     width : 123
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LIB_SansNom2
+    identifier : 0x2869cd57cae6c5f0
+    internal_properties : HgAAAB4AAABVerHapsw02B44PdmeAAxhZjC9/mpdBqZaFC6uMjjmHft62DcTcfhY6cW1KrMdljWPThWWQnE6X3d5Bite/S2ejZPDWuE6G9qalA6p2KDJEA/sD79JylRelBxEvVAEI34Hz9qKcYwFbA4xDXS6NACB8a7oj2+BWDSAw/AKKMNduHB4uEsGv9XsTQDjVlSww6gYzrg34AK/vvGCQ80mSaqRq1I/531CeVoI4Mj7CztE2kmNRtcyTMU6o6UfOmdJchsIpjDHHUNfgnVDSHaRqz16VJRCUcarW3JVW/mw2ND1KG5NMzOUWJT+8GHG2CyUUpLjFHyfZf8nRx+7hM6O5VI74HQv3xZijb4CBPmIOMce5r7gljz4b1JcvvX0vhDXXVdEAK2dl59avo/+gPGmno9H+nHalNBQbEHCdjycm3ymLsfmnSAO+oLnqahXYP37+2yfRvrf0R6OPhVzKl0Xkdhs94PKsUQOgS0YquNGRp6BGwO/QCc=
+    properties :
+     x : 457
+     y : 76
+     width : 117
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Etat_de_paiement1
+    identifier : 0x2869cd57cae8c6cb
+    internal_properties : HgAAAB4AAACC5bPGPhKVC9TIb4Xd4KXoQEqxq/Z40U1DlMXFkybVsvRJdOqsC7yZvL89dSHlmOqQbptpSyL7/xGx30P8tDFe+Trw+p1UlUjrhiKbI6rSQ/1gxQifjGrz7hsSJTPOpkQW642oAh2ZnqVmjWjLuN3qikbdFydtGm3xuE/i30EK2GIgLofj/6PhDQoGC1Nffxy3gIBdduFBPfMOaTMXt8pLCRWLVgw9s0etaqTCRvHsCXbn6WH3rJH87Fw7l3/zHuaajBap+0zPEXQRH3btvJFviv4sz2ScpxOasbjQ6nF3L7ZJmxnY59aXSWsB7sCZdsWv5JAdDSTrAFQLs8aOanBECLj/Az7Bk/mJiE6sHGhSG9KYgkjuevLz8RdncgBoUdZ6iuclH8wYacrio9FgI6HgNJf0Pjw1+vQRTEv+OYVym0sGqds76hnrTXVNHVil8sDqhbrJcTvIQQQWGO4PMpPLS61GTTMOGB3eUE3NT9fPfMqpE2RXaN5Q1T+a7xc=
+    properties :
+     x : 460
+     y : 172
+     width : 157
+     height : 26
+     tab_stop : 0
+     take_focus : 0
+    style : {}
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : EDT_Nouvelle_Quantite
+    identifier : 0x2869cd58caeac757
+    internal_properties : HgAAAB4AAAA1yaw1gEjOqLOWlYmY1BAIQkceN4cZTuVfuDiAMXfE5d19PIIMLT4apYMt4eO1SccurW4r49UVc6T8NfNwzOV/44eT2m9oKqtGa20PlZZAyz9Wn3bQDp+9KAHJL0G76XpHGOd5Ing/JzwyNgYUfvEaSl7cS0UCvplSjBG79MkLqvMWQbdRKYB6wKGwGOc6f1YRzWfgvr3jnThGQ7iJs4/9FZMKR6vj+efS1gzgTrWUN/6n47DYGWvdJDrT+iZha//ox1sHU867NA12cXdCbtTu0TaBZv1v5oTq4zfc/d8qTZX0OteTw3EGstr4DG0qWrdEwCLW3Ra5PlbIZuJHxMIf2Ly+fszG5zTT+UfdeLqhTkJlirE+5hwfAAncxAp/RJMFnrUJWtktDROTLOCZ/Rkh6YYy7Wma6ubN25cC0/aVzb3/PqSX9tNf8sISnCwFTXI07zdhHkuKrko1OAzy7d8zYz4eR1onp6KljUtZSlAONt4NQSfR3iU3wTYX2bqD1cWIplZpDwYZUCqkIFfMWv6QKOFypXSf3rC9A8yxhVzcx4nZNXSRetjT49Dgjy9CyQplkHWemTFjO9Qv46FDe6p2xDii8pViGY5HjHFmuObugIzRh8UjcjMExdVEKHi8TKnH3rmHAGHwP5W11kooCiJbQnxiW66L4wniWDFhp686OOuP901ezG5oGfEPL432ky1U2kNxpiuPyGXy4cLVE7vwPczy1YpjFS2nWLdSkdzSktn/3fTQhuNUEzAmEowV0Mi/Xkn5LMOejAGnt/xhhyuACRWrfFKsO5PyM5aOttnW138vwrSV2FxXluOG1KUPc7f5Ma0lD757toOQaNgMnKm9TerfJwNQ+CiRYyAEcrw2ODr2cL+z42laYfDpKpeMRWfFerOjzbnFTmsrf0csz1LR5X52/Mntz/ZNEOlIelJ8gpvxl+WjQ16+z4+qI7TMO4PtXWfKbBG0+oUbuFqf0I+mP3xc+VSRT4fB89PlH73RqGV0Xwr3WBhzFqxmlSUzsXm8uizWTpW5git8xSvs1Vg5nMjv/LkGWLAZ/iNuC9jD5le1rhkdNcATnSzLHnZMRumxIc2/im7HN8jbCwKUp5Z4csqEOzdi/DMBtS/naRFHxlufs7UBbCnk2H+OqwZsIarUA9NoLmO8LqsM3g1vQ72bXjNledFATP3wh6TFWi1cWgmUZkzEswNXpplcqzMZOL/+QuTi493N5ceRzhWRKKJXJfIuxL7hS1kcwNduxpFYsOP3vNhI8mmrs1lRkcK1T/ER4RQc239DCbJgNIik73XUxeoiA746ajsrz3TAce3NQw5JhOgi0R7GSl7QJqfa9TaMzPyt1BpvMkrFqOg9LhXcHpgxUEixFfTCZnPpWVa8g4dcPFaX/GesgxnzUYtulFLI/f2glQmO
+    properties :
+     x : 352
+     y : 321
+     width : 277
+     height : 30
+     accelerator_key : 65535
+     tab_order : 10
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : SAI_Date
+    identifier : 0x2869cd58caedc97a
+    internal_properties : HgAAAB4AAAA5SkimSjhmyV9xKj+IO0OFSnwaF/JVs9iVi1+dcdellVUD0i+XcgCQUl/gRNuasFxscfjIaTwQQ5z0jX6Hl6lWk+nKIR/e89dhgwXXNb8P1XmPZvggnB9SRFKYTgMCgP71QQRWO9RCoEj+gYnp6lRykt0AT3N8YeMpzOWi/MHJakxnZFxpmtlboaKczVGEtIz4TtoXp3XNC68J5iTAMtx1OgdVruKk3CJ0ZFx6GCf1NFNGWrdRe4YKXsAeKUZvV91Ru/0JM5/1SBzrIrfMpIW/gSTksLpCwOanCzmt4M/bTemnTXh5BE0nw3DRwAC1GyMiOkHj2QxZMvMvmscZFHbfSDFGuVswxKYJNimbYg7qBK69k2GujUTN6UidC2aoSefTO5TR1M8x60dcriul6pGOIUZH0+NixOeEhDN3EtqRgVLhVUMaCPlOyOxQ7Jo0GG4czoUMNhe+PsAnBT4WgkNkk87tokrMrSDBwMp+Ena7zVrr5YUCF96J9FS6nIEK+/qgPUx11tHukz/EV670CVvyeub/rN9XIubKmSw3fCYvub8VdSZAsGwdRi/F2vAvGOXK97hMMLxQVBcp3PyMxMqDiBwYcoEaw7MOeOtxkPnkhlDNkm3cRtIj/HrfnAPuthyruO+Fg63unhsa8lnzaG0d+aolPHa9xLLBi9yYdN8PvvQWC7kBG9Pcapx0z/NDXqE6QNnFvlLhzIHYgwJ111qgffwew72iNvJNQ5g1QTIG5sJjYxnmutCslF+jRsJ0lq3QLr2rD4VhoMq1cwqwDFT+h9OfgpuDey5gVoItwod90jqa/0dBHiyrYsPZHzyHGoTP1SIqcqFJjDrP+EGLtmLzdIKcgTCZYuqdSNgMlpdNd8X1BIyczYXaFN40xDm0/dgOKXjXCxKabfid3GA2Xvg4/On3R3KaB9uboguJfSlWYol1Qe6AGyyVsFyZP8rHzUXa1HQDzL5xPKAn7a3yqhFTQcxEdV8lkrnzjAVH5Ci2g8F2MObKoNTxUDpZ2K/9U2wQ56KZBXEB0Nj7E16yevflgrrG22W1EoNDAVc2Qvwg8lXLcHgRzjMSslsxR66nv4QzF5vSTAVryW8sIcmF2VGgwpSDDTIdTqjFkz9ffpsW+OSUw9Zl/JAenQ46rhiK+HQ01qAk2tUC87kMkGc/x5CarKA5fdwX+c/HJtnzlOX9QYpewtl5Tho+oB8uLdmLcTliFlRP49oKkzsZeWUfPPm7Hxx/ef4mv2oAxVs2KcXBOd/DCQ9trK5yCRJqn+/Ri4SxyOP64JY83fBL1Uox6uiYKNP/XZSubyfP3gQCz0GqoGcHfkbmI4u3e4OFYsF9bMFsCtLmlp5Vsc6PS1EA2P5aRxnLdzhiMPlb1gvQPHBl/ir3hODApm8rzjWUj8LGlI3gdnKk9d7RU2rETZvnHAoIPsh1j5t7cwVu9VPgCs6XvyQFx4EuEkn678/U2YMZ82X+h4CiyGeJFeRenEL9sZyykan1R49abfZVkd1U74bfYTNDEjIGUG+MYDecQhJbON6JgrHV1m0/8Nsz
+    properties :
+     x : 371
+     y : 274
+     width : 144
+     height : 30
+     visible : 0
+     accelerator_key : 65535
+     tab_order : 8
+    style : {}
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Saisie d'une date
+         MoiMême=DateSys()
+        type : 14
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : BTN_Valider
+    identifier : 0x2869cd59caefcbfb
+    internal_properties : HgAAAB4AAABmBwIXMvfjLE+1ar3OAVajCGCKGZ62BDsAdTzZ7VHyPtKEMTfMV+Us/iYsi5utDm0Zfa/U/FH/GmPujfLfLJymnETga4yNzVLSqgtQlNmwUBC2C3czgz30KwtJ11ZmV1qASDMYlBdBkF82hTqn0AQ83gZjGog+UKO74oeNjzkQh98KAtukYgyrUV0Ov2yr9vJpqefJukvZHsgwCnjp4AGEBYIc3wUgCLBaBpCwNTf/C10vLqQ5qU97J5zwFiQVnjV5umInhdO7plbbXvTzVta4JCEYSVUzIwO/rpxByrdfP0L/sj5FGJ3xHHwd19BzCXHQOWJkpeuWWF5WqWdSIG/D+obzAATR/N9McScjwJtFxr9tt+VX6tu6iPtYsQUz9Iba5LgNueGAwowdGhfXs/hQv+0CFNNrxuD9iIGIwpLrzGBp9WANpGXmDZa4EgswwdFPrvGfnbVxjI53NHKmkdY8PcDTgDGr7NoceF8Um6Jblw5tzTdoutqoq+l6h0rS1MQwir4p9WM+gEzuHQveUuxnDGInbmV3a2XapMrDoduCtGH3xinnxb1xGKZngaQaFzJOErZq+nU0GBcZqjpTpYFSx00dP7pNtdWOs3ko1KFh8iQyOusbWJmfxUesJPLv+eJb3029WBjnrVt4UG4IKp7AUjDmHQW6XmlAOx3Bckwq9aNt58o0VX1e52+iKx//pMQjFfGkBD6xFQGF6ApCZHveI1FtdGiq/NGNyMq2JVYfKxL9riaKuqbLkW83/VhIUTIPGu3XrLAefjtvbQINDGJejk7A3oRQ1zxXvQLXfoIuI7ZYAEcy2wdXi/D7+Ym2rVqqAnU11F2SybdusWOPq53wSeyKGl5ktoDkyCGD3UIKus4UnXDbMfWbinZ9IrklrW3OsgqNEJysy/Q5oDK4ciJgYqTgwx9AHNOA9kbxcStTzwACy1WMDLeehNsgXf2SZTWohYtmOQ/FKaSM
+    properties :
+     x : 523
+     y : 406
+     width : 109
+     height : 32
+     accelerator_key : 65535
+     tab_order : 12
+    style : {}
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         // Récupération des valeurs depuis les champs/interfaces
+         nSaleID				est un entier	= SaleId
+         nClientID			est un entier	= COMBO_client..Valeur
+         nArticleID			est un entier	= COMBO_article..Valeur
+         nStockID			est un entier	= COMBO_stock..Valeur
+         nQuantiteVendue		est un entier	= Val(Quantitée)
+         rPrixUnitaire		est un réel		= Val(prix_produit)
+         nNouvelleQuantite	est un entier	= Val(EDT_Nouvelle_Quantite)
+         sStatutPaiement		est une chaîne	= COMBO_etat_paiement..ValeurAffichée
+         sTypePaiement		est une chaîne	= COMBO_Type_Paiement..ValeurAffichée
+         rMontantPaiement	est un réel		= Val(montant_paiement)
+         dDateCheque			est une Date	= SAI_Date
+         
+         // Validation des champs
+         SI nSaleID = 0 OU nClientID = 0 OU nArticleID = 0 OU nStockID = 0 ALORS
+         	Erreur("Tous les champs obligatoires doivent être remplis.")
+         	RETOUR
+         FIN
+         
+         SI nQuantiteVendue <= 0 ALORS
+         	Erreur("La quantité vendue doit être supérieure à zéro.")
+         	RETOUR
+         FIN
+         
+         SI nNouvelleQuantite < 0 ALORS
+         	Erreur("La quantité réelle en stock ne peut pas être négative.")
+         	RETOUR
+         FIN
+         
+         // Confirmation utilisateur
+         SI OuiNon("Confirmer la modification de la vente ?") = Faux ALORS
+         	RETOUR
+         FIN
+         
+         // Démarrage de la transaction
+         HTransactionDébut()
+         
+         // 1. Mise à jour de la ligne de vente (sales_items)
+         REQ_update_sales_items.paramsales_id				= nSaleID
+         REQ_update_sales_items.paramitem_id					= nArticleID
+         REQ_update_sales_items.paramitem_location_id		= nStockID
+         REQ_update_sales_items.paramquantity_purchased		= nQuantiteVendue
+         REQ_update_sales_items.paramunit_price				= rPrixUnitaire
+         
+         SI PAS HExécuteRequête(REQ_update_sales_items) ALORS
+         	HTransactionAnnule()
+         	Erreur("Erreur lors de la mise à jour des articles vendus : " + HErreurInfo())
+         	RETOUR
+         FIN
+         
+         // 2. Mise à jour de la vente (sales)
+         REQ_update_sales.paramid				= nSaleID
+         REQ_update_sales.paramcustomer_id		= nClientID
+         REQ_update_sales.parampayment_status	= sStatutPaiement
+         
+         SI PAS HExécuteRequête(REQ_update_sales) ALORS
+         	HTransactionAnnule()
+         	Erreur("Erreur lors de la mise à jour de la vente : " + HErreurInfo())
+         	RETOUR
+         FIN
+         
+         // 3. Mise à jour du paiement (sales_payment)
+         REQ_update_sales_payment.paramsale_id			= nSaleID
+         REQ_update_sales_payment.parampayment_type		= sTypePaiement
+         REQ_update_sales_payment.parampayment_amount	= rMontantPaiement
+         REQ_update_sales_payment.paramdate_cheque		= dDateCheque
+         
+         SI PAS HExécuteRequête(REQ_update_sales_payment) ALORS
+         	HTransactionAnnule()
+         	Erreur("Erreur lors de la mise à jour du paiement : " + HErreurInfo())
+         	RETOUR
+         FIN
+         
+         // 4. Mise à jour du stock (item_quantities)
+         REQ_update_quantities.Paramitem_id		= nArticleID
+         REQ_update_quantities.Paramlocation_id	= nStockID
+         REQ_update_quantities.Paramquantity		= nNouvelleQuantite
+         
+         SI PAS HExécuteRequête(REQ_update_quantities) ALORS
+         	HTransactionAnnule()
+         	Erreur("Erreur lors de la mise à jour de la quantité en stock : " + HErreurInfo())
+         	RETOUR
+         FIN
+         
+         // 5. Mise à jour du statut de la vente (sales_status)
+         REQ_update_sales_status.Paramid				= nSaleID
+         REQ_update_sales_status.Paramsales_status	= sStatutPaiement
+         
+         SI PAS HExécuteRequête(REQ_update_sales_status) ALORS
+         	HTransactionAnnule()
+         	Erreur("Erreur lors de la mise à jour du statut de la vente : " + HErreurInfo())
+         	RETOUR
+         FIN
+         
+         // Validation finale
+         HTransactionFin()
+         Info("Vente modifiée avec succès.")
+         Ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SansNom1
+    identifier : 0x2869cd84cb3f75a8
+    internal_properties : HgAAAB4AAADvOltRls1PQ7NTrxlNSeevGuCKFF7xg0aC2bUydqcQ4+S9pKORrmXjzx1cLJeglmhb62Ho6QKxMN8+g1Ydog2g2huVrRLGa7i2r4mUA7MQ4ax4WtMeSkmKjv8/aZFJdBzNa/CTeEmhCyZFY84LNv/V4U7dG/2XrO5T98z1TGK4g5yoi7Lh8I8ViV7zRH2ns6J4fY/kW3/oQ9cP6dOcvx1GIu3fRVTZSQEvJXXgHao5JUvOMhCVV9RYmCmH3Ik52sraE4nm0uz2kHXya6u7FHjjumrQWYuEwU78B422cKX91d0FMwubxxDAp9HQfBJ9ORFg7AK7aZVzly1x/3N4fFTNcFV7r7Y3d+VBdmd0QGir3uca6Gu+VOPTReMyOJ8isu/WimxPSP0yyEFZeKABfuOYzttnfHOWLdY6O/YUepzVEQ8Owey2rFT0WXaKGqYzgAC/JmUSsQoLZ/zj2mqswYyL3glyZSuu1kekGEUgrS7cH+Uv25APx48bBBmZpFp2EkrUuS/JUCn4ji7DZAGa+0ldyaFjby+1tsPFLXk1oYDF/XWDgWiS9g6LyHgdpnl/0wdd40pDXWYnjpS2E1UsB4ebY1I2Lwd/V/MvZ5dP1b2/6G1G6QQnpnM4EPeK3Znk7KoMd5FiV3UslAfd5kZDYe04/05khyAUF2V5UTQjB2ydiFaWNHeLDvW5dng8sLQEUXMm5UV9V9w/7+Br7j3LaN6PSwi7zVfnKbjDbbiP80z9u3FLP3r4GJrjsTLzUode6HIEIUNGmzNuWT4nmw0vWJdR4wik08uzQlz0i9TzqOVQ5BWhTJjVfN7A7R4vP0Nv6eaRHZcDUyJ+VcVxn/4SH6+5ei9/4TnRXqR/LxPjn7sda7xqaZjG0lGpf7oPaTwux+FqVjDXzosq9ZkvpvuxlG0RDsuZMePqGneP1LgJzYUMyapeGZ2/4zGuLhs5pg==
+    properties :
+     x : 617
+     y : 6
+     width : 20
+     height : 23
+     accelerator_key : 65535
+     tab_order : 0
+    style : {}
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MaFenêtre.Ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : HgAAAB4AAAA08WG3XyQFKJxzCLWea0/+HxJGgu+shggPCQNObIN6GqReYy6HZxEndzPFMO/bqd98H6TmSFM21mFd1Zf908Yde8muSQZCvbPrb4JHJ0NaphUT9kXMiuCv5swbftatm0uLuaglR3NgLd+LnWSVqa3z1mGCuYqBbkkhajgSyx7cVdQ0Je2KlU8ezPuonp83DpwGJhi9n+K8Id8XGucthpj2daNzgfqWh4eqNMZ/PWoNCfOnCzSKrXgZBX+Bow1M3pqSx2yeBNGF78aADhfQKl+VO2HnjfFJGYv7YxdGw/Q=
+  properties : {}
+  style : {}
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : HgAAAB4AAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCÉDURE MaFenêtre(SaleId, location_id, gArticles_id)
+      
+      // Variables locales
+      gnTotal_achat_cal			est un réel		= 0
+      bRequetePrincipaleExecutee	est un booléen	= Faux
+      nIndice						est un entier
+      
+      // 1. Récupération des données de la vente
+      REQ_selection_vente_modif.paramid = SaleId
+      SI HExécuteRequête(REQ_selection_vente_modif) ALORS
+      	SI HLitPremier(REQ_selection_vente_modif) ALORS
+      		// Assignation des valeurs aux champs
+      		COMBO_client		= REQ_selection_vente_modif.person_id
+      		COMBO_etat_paiement	= REQ_selection_vente_modif.sale_status
+      		montant_paiement	= REQ_selection_vente_modif.payment_amount
+      		SAI_Date			= REQ_selection_vente_modif.date_cheque
+      		
+      		// Vérification et assignation conditionnelle des valeurs
+      		SI REQ_selection_vente_modif.item_location_id <> Null ET REQ_selection_vente_modif.item_location_id <> "" ALORS
+      			COMBO_stock = REQ_selection_vente_modif.item_location_id
+      		FIN
+      		
+      		SI REQ_selection_vente_modif.item_id <> Null ET REQ_selection_vente_modif.item_id <> "" ALORS
+      			COMBO_article = REQ_selection_vente_modif.item_id
+      		FIN
+      		
+      		SI REQ_selection_vente_modif.quantity_purchased <> Null ET REQ_selection_vente_modif.quantity_purchased <> "" ALORS
+      			Quantitée = REQ_selection_vente_modif.quantity_purchased
+      		FIN
+      		
+      		SI REQ_selection_vente_modif.item_unit_price <> Null ET REQ_selection_vente_modif.item_unit_price <> "" ALORS
+      			prix_produit = REQ_selection_vente_modif.item_unit_price
+      		FIN
+      		
+      		// Recherche dans la combo Type_Paiement par libellé
+      		SI REQ_selection_vente_modif.payment_type <> Null ET REQ_selection_vente_modif.payment_type <> "" ALORS
+      			nIndice = ListeCherche(COMBO_Type_Paiement, REQ_selection_vente_modif.payment_type)
+      			SI nIndice > 0 ALORS
+      				COMBO_Type_Paiement = nIndice
+      			SINON
+      				COMBO_Type_Paiement = 1 // Valeur par défaut
+      			FIN
+      		FIN
+      		
+      		bRequetePrincipaleExecutee = Vrai
+      	SINON
+      		Info("Aucun enregistrement trouvé pour l'ID de vente : " + SaleId)
+      		Ferme()
+      		RETOUR
+      	FIN
+      SINON
+      	Erreur("Erreur lors de l'exécution de REQ_selection_vente_modif : " + HErreurInfo())
+      	Ferme()
+      	RETOUR
+      FIN
+      
+      // 2. Récupération du stock si manquant
+      SI COMBO_stock = "" OU COMBO_stock = 0 ALORS
+      	REQ_select_stocklocation_modification.Paramid = location_id
+      	SI HExécuteRequête(REQ_select_stocklocation_modification) ALORS
+      		SI HLitPremier(REQ_select_stocklocation_modification) ALORS
+      			COMBO_stock = REQ_select_stocklocation_modification.id
+      		SINON
+      			Info("Stock introuvable pour l'emplacement ID : " + location_id)
+      		FIN
+      	SINON
+      		Erreur("Erreur lors de l'exécution de REQ_select_stocklocation_modification : " + HErreurInfo())
+      		RETOUR
+      	FIN
+      FIN
+      
+      // 3. Récupération article/quantité si manquants
+      SI COMBO_article = "" OU COMBO_article = 0 OU Quantitée = "" OU Quantitée = 0 ALORS
+      	REQ_selection_salesItems.Paramsale_id = SaleId
+      	SI HExécuteRequête(REQ_selection_salesItems) ALORS
+      		SI HLitPremier(REQ_selection_salesItems) ALORS
+      			SI COMBO_article = "" OU COMBO_article = 0 ALORS
+      				COMBO_article = REQ_selection_salesItems.item_id
+      			FIN
+      			SI Quantitée = "" OU Quantitée = 0 ALORS
+      				Quantitée = REQ_selection_salesItems.quantity_purchased
+      			FIN
+      			SI prix_produit = "" OU prix_produit = 0 ALORS
+      				prix_produit = REQ_selection_salesItems.item_unit_price
+      			FIN
+      		SINON
+      			Info("Aucun article trouvé dans la vente ID : " + SaleId)
+      		FIN
+      	SINON
+      		Erreur("Erreur lors de l'exécution de REQ_selection_salesItems : " + HErreurInfo())
+      		RETOUR
+      	FIN
+      FIN
+      
+      // 4. Affichage de la quantité disponible en stock
+      REQ_total_quantity.param_item_id		= gArticles_id
+      REQ_total_quantity.patam_location_id	= location_id // Correction de la faute de frappe
+      SI HExécuteRequête(REQ_total_quantity) ALORS
+      	SI HLitPremier(REQ_total_quantity) ALORS
+      		STC_Quantite_Stock = REQ_total_quantity.quantity
+      	SINON
+      		STC_Quantite_Stock = 0
+      		Info("Aucune quantité en stock trouvée pour l'article ID : " + gArticles_id)
+      	FIN
+      SINON
+      	Erreur("Erreur lors du chargement de la quantité réelle : " + HErreurInfo())
+      	RETOUR
+      FIN
+      
+      // 5. Calcul du total de l'achat
+      SI EstNumérique(Quantitée) ET EstNumérique(prix_produit) ALORS
+      	gnTotal_achat_cal	= Val(Quantitée) * Val(prix_produit)
+      	rTotal_achat est un réel			= gnTotal_achat_cal
+      SINON
+      	gnTotal_achat_cal	= 0
+      	rTotal_achat			= 0
+      	Info("Attention : Quantité ou prix non numérique. Total mis à 0.")
+      FIN
+      
+      // Optionnel : Affichage du total calculé dans un champ
+      SI gnTotal_achat_cal > 0 ALORS
+      	// Supposons qu'il y ait un champ pour afficher le total
+      	// total_achat_champ = NumériqueVersChaîne(gnTotal_achat_cal, "0.00")
+      FIN
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1-
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1-
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+ code_parameters :
+  internal_properties : HgAAAB4AAACoLZs0mW4lq5aP9aNErAlUOSHZ7X4ZrJFFT1JWjhhvitD/xL/r2Etbr+oKxbieVf7YoEoO7HUdc4CD59271o8AU+x7o881eemR/sfDJwMvJH35
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1869cd160ab8c808
+  internal_properties : HgAAAB4AAAAEBvz4BdTt90ISSptwDJCphvKgZdUR2e2WGWtmgJlonsrIZP01S5+UbwYBB2sFt7MTEw==
+custom_note :
+ internal_properties : HgAAAB4AAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : HgAAAB4AAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
