@@ -3772,6 +3772,36 @@ project :
      internal_properties : HgAAAB4AAACjn5uPPGlBWnkZR2syShOAl8AyMhmhFp6vQR8df7ndc0lHmb6mqHyERvzm0lKOal6mrg==
      physical_name : .\ETAT_rapport.wde
      type : 3
+   -
+     name : REQ_nb_customers
+     identifier : 0x486c854d09d3577d
+     internal_properties : HgAAAB4AAAAvKwcbqNVdDt3NTIS7uO8jyWYcXOd3XkRPzLTJhwGda4W/3ItJgC1oeqAa5q4i3tI6Og==
+     physical_name : .\REQ_nb_customers.WDR
+     type : 5
+   -
+     name : REQ_nb_items
+     identifier : 0x486c85bd09e40ccf
+     internal_properties : HgAAAB4AAABPy6f7SHU9bn0trFTbCRAtgcJ87Fs7v/Ojlz4HUUdXkb9NoGx5UA1IGgD6xk6CfnJa2g==
+     physical_name : .\REQ_nb_items.WDR
+     type : 5
+   -
+     name : REQ_nb_fournisseurs
+     identifier : 0x486c860209e61ad4
+     internal_properties : HgAAAB4AAADGTC5yse7G6crWJg5ehh/XBEFz6+oSdu1TC863pxH7fYOPASm4EZHRk4lzTdUL9+nTUw==
+     physical_name : .\REQ_nb_fournisseurs.WDR
+     type : 5
+   -
+     name : REQ_nb_sales
+     identifier : 0x486c866a0a06b104
+     internal_properties : HgAAAB4AAABGzK7yMW5GaUpWpjafjoBVMhN5YdxUZ/hLDaMjz/mTVbd/ZcxJ+RFREwnzzVWLd2lT0w==
+     physical_name : .\REQ_nb_sales.WDR
+     type : 5
+   -
+     name : REQ_select_nb_customers
+     identifier : 0x486c8c080ab3a030
+     internal_properties : HgAAAB4AAAA9GRUJtuPL1OeT7XlgJD5sZQAsjMnxXEOjJzRQmOAqznKebLT81mIS0HZgWNgI8OAoKA==
+     physical_name : .\REQ_select_nb_customers.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -

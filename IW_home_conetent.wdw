@@ -623,37 +623,82 @@ window :
         type_code : 4
         p_codes :
          -
-           code : |1+
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            // Déclaration des variables
+            nB_items		EST UN entier
+            nB_sales		EST UN entier
+            nB_fournisseurs	EST UN entier
+            nB_clients		EST UN entier
+            
+            // Exécution et traitement de la requête nombre d'articles
+            SI HExécuteRequête(REQ_nb_items) ALORS
+            	SI HLitPremier(REQ_nb_items) ALORS
+            		nB_items = REQ_nb_items.Comptage_1        // Nombre d'articles
+            	SINON
+            		Info("Aucun enregistrement trouvé dans REQ_nb_items")
+            		nB_items = 0
+            	FIN
+            SINON
+            	Erreur("Erreur lors de l'exécution de REQ_nb_items : " + HErreurInfo())
+            	RETOUR
+            FIN
+            
+            // Exécution et traitement de la requête nombre de clients
+            SI HExécuteRequête(REQ_select_nb_customers) ALORS
+            	SI HLitPremier(REQ_select_nb_customers) ALORS
+            		nB_clients = REQ_select_nb_customers.Expr1   // Nombre de clients
+            	SINON
+            		nB_clients = 0
+            	FIN
+            SINON
+            	Erreur("Erreur lors de l'exécution de REQ_select_nb_customers : " + HErreurInfo())
+            	RETOUR
+            FIN
+            
+            // Exécution et traitement de la requête nombre de ventes
+            SI HExécuteRequête(REQ_nb_sales) ALORS
+            	SI HLitPremier(REQ_nb_sales) ALORS
+            		nB_sales = REQ_nb_sales.Comptage_1        // Nombre de ventes
+            	SINON
+            		Info("Aucun enregistrement trouvé dans REQ_nb_sales")
+            		nB_sales = 0
+            	FIN
+            SINON
+            	Erreur("Erreur lors de l'exécution de REQ_nb_sales : " + HErreurInfo())
+            	RETOUR
+            FIN
+            
+            // Exécution et traitement de la requête nombre de fournisseurs
+            SI HExécuteRequête(REQ_nb_fournisseurs) ALORS
+            	SI HLitPremier(REQ_nb_fournisseurs) ALORS
+            		nB_fournisseurs = REQ_nb_fournisseurs.Comptage_1 // Nombre de fournisseurs
+            	SINON
+            		Info("Aucun enregistrement trouvé dans REQ_nb_fournisseurs")
+            		nB_fournisseurs = 0
+            	FIN
+            SINON
+            	Erreur("Erreur lors de l'exécution de REQ_nb_fournisseurs : " + HErreurInfo())
+            	RETOUR
+            FIN
             
             
-            // Nom du fichier PDF avec date/heure
-            sNomFichier		est une chaîne	= "Facture_" + DateVersChaîne(DateSys(), "AAAAMMJJ_HHMMSS") + "_" + Hasard(1000, 9999) + ".pdf"
+            // Définir la destination : Aperçu (affichage direct)
+            iAperçu()
             
-            
-            sCheminFichier	est une chaîne	= fRepDonnées() + "\" + sNomFichier
-            
-            // Définir la destination : PDF
-            iDestination(iPDF, sCheminFichier)
-            
-            // Bloc d’exception pour capturer les erreurs d’impression
+            // Bloc d'exception pour capturer les erreurs d'impression
             QUAND EXCEPTION DANS
-            	iImprimeEtat("ETAT_rapport") // mets le nom exact de ton état
+            	iImprimeEtat("ETAT_rapport", nB_clients, nB_fournisseurs, nB_items, nB_sales)
             FAIRE
             	Info("Erreur lors de l'impression de l'état : " + ExceptionInfo())
             	RETOUR
             FIN
             
-            // Attendre un peu (pour laisser le temps au fichier de se générer)
-            Temporisation(200)
-            
-            // Vérifier si le fichier a bien été généré
-            SI fFichierExiste(sCheminFichier) ALORS
-            	Info("Facture générée : " + sCheminFichier)
-            	fOuvre(sCheminFichier)
-            SINON
-            	Info("La facture n'a pas pu être générée.")
-            FIN
-            
+            // Message de confirmation
+            Info("Rapport affiché dans le lecteur PDF")
            type : 18
          -
            type : 161
