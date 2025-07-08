@@ -3760,6 +3760,18 @@ project :
      internal_properties : HgAAAB4AAABCOLru3YqivR76pSyt2W3wILEvJ4KyyDWjN/ixveupJ5FRRryifORlZ93HMfHvi31Hzw==
      physical_name : .\REQ_Rapport_Analytique.WDR
      type : 5
+   -
+     name : ETAT_rapport_analytique
+     identifier : 0x486c73a116714e07
+     internal_properties : HgAAAB4AAABO1Kb6SXY+cXIum2lFs5saTn017dYe6lujxNWmNMTIaOgKGaXfP8JJGwH7xU2Df3Fb2w==
+     physical_name : .\ETAT_rapport_analytique.wde
+     type : 3
+   -
+     name : ETAT_rapport
+     identifier : 0x486c7464167347fe
+     internal_properties : HgAAAB4AAACjn5uPPGlBWnkZR2syShOAl8AyMhmhFp6vQR8df7ndc0lHmb6mqHyERvzm0lKOal6mrg==
+     physical_name : .\ETAT_rapport.wde
+     type : 3
   other_elements : []
   array_of_analysis :
    -

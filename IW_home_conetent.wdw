@@ -408,7 +408,7 @@ window :
         height : 90
         state : 1
         accelerator_key : 65535
-        tab_order : 2
+        tab_order : 3
        style :
         scrollbar : {}
        controls :
@@ -606,6 +606,58 @@ window :
             // Description 
             // Libellé simple
            type : 14
+     -
+       name : BTN_SansNom1
+       identifier : 0x286c77915140b11d
+       internal_properties : HgAAAB4AAAC4I+L4sYYPWit3KXDLiJjdO28/w9FroVS/B8qGNXlHCL/sE6jvoaIQyTphoJmoRzoV0T2TJoNmD2S9bm3IzVoIhAMD40wZwgsHqN1YOy9Er9+LrTPjwL/EQ/8aUCwBSq8q5EG8RdbOnaXN1fahBusi6P44xHhpU0L1Aw5kQWcUJb20p2TxRDzYk02fe16/MXW42eRhY/EwtBM7LFcnSMLk/B9V+akC2zqx/JLhrq1r/mrTbP/VnpyiX91sbAVmIi74hTWzAEQet1t8F9g3vHUODJLKv6pxak470+z4kR+x9qp6EYM0Xka0oSu1ajWdniT68kAGs16ghx2vr7JfUM+beVKB7RI6N3KaRTwzbQ11DZhvyxyfK8UG2KtT+ZYoH0syZwfhs11/CcHM3YhXFknZy6pmyP8BKUGmffBajUCFTDWuuxS8YKkGR/LcRvIehBfj94wdRYw7N7lldH18HZEIBjxq7nJrDsgEwNU5Tun0j6B7D+AJMQKRFgRQ3nVAc0oI1XAWnLtXMNtQFfkKZzp92FgGOXQsGsbrsnHSLiic0ajValvuN++T8dzHl41LsBrwPhJHTvgygjg0zgrawRjrPJI5tVqk/Tc4BK5LW3cZ2orWWaD4S78BjnlUuZn0KHc6t+p+v2lElGAFZNI/oSGTxzUMd03dGqY4r7SfQOgi4Ran1PTK6icITxa9tBHqVj6V/ZDyPVJE387Zm/JF4GWfMnBI98mmUJw7Cypa6+4n+4Ht5HnuZr7yiaP8T2dARfEA+HDFEbHIs8k6/cVJJdGpjLCGs+J1zlQsJKEYkQ7HaoIDw+FIVzLpxMXg6aA2o7/lG/0HymHC5YO02PpHuAMsM9UfUHtMItNOQTl8Hr+CZWSM7m8Z0xJ5b79quJ1MVRg156nD/lpwRsRMXgV/6B7uVf3viv5r9Vzdh8PcpRiJ+oeGFqUE1gTMet2Se2R7/ITNnotgdaclDfqguzc0JpcL893zZR9EkWXKjrtrCpzZTZw=
+       properties :
+        x : 815
+        y : 721
+        width : 386
+        height : 31
+        accelerator_key : 65535
+        tab_order : 2
+       style : {}
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            
+            
+            // Nom du fichier PDF avec date/heure
+            sNomFichier		est une chaîne	= "Facture_" + DateVersChaîne(DateSys(), "AAAAMMJJ_HHMMSS") + "_" + Hasard(1000, 9999) + ".pdf"
+            
+            
+            sCheminFichier	est une chaîne	= fRepDonnées() + "\" + sNomFichier
+            
+            // Définir la destination : PDF
+            iDestination(iPDF, sCheminFichier)
+            
+            // Bloc d’exception pour capturer les erreurs d’impression
+            QUAND EXCEPTION DANS
+            	iImprimeEtat("ETAT_rapport") // mets le nom exact de ton état
+            FAIRE
+            	Info("Erreur lors de l'impression de l'état : " + ExceptionInfo())
+            	RETOUR
+            FIN
+            
+            // Attendre un peu (pour laisser le temps au fichier de se générer)
+            Temporisation(200)
+            
+            // Vérifier si le fichier a bien été généré
+            SI fFichierExiste(sCheminFichier) ALORS
+            	Info("Facture générée : " + sCheminFichier)
+            	fOuvre(sCheminFichier)
+            SINON
+            	Info("La facture n'a pas pu être générée.")
+            FIN
+            
+           type : 18
+         -
+           type : 161
+           enabled : false
     type : 32
     code_elements :
      type_code : 70
