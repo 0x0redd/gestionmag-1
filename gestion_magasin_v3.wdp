@@ -3802,6 +3802,18 @@ project :
      internal_properties : HgAAAB4AAAA9GRUJtuPL1OeT7XlgJD5sZQAsjMnxXEOjJzRQmOAqznKebLT81mIS0HZgWNgI8OAoKA==
      physical_name : .\REQ_select_nb_customers.WDR
      type : 5
+   -
+     name : REQ_select_stock_id
+     identifier : 0x486c9d220b2d7254
+     internal_properties : HgAAAB4AAAArJxN3tPG54uGR6O3x/mRA2VgQCDF5qa6nbk8O0qZsjIy0gvA6yRn8znRuSsoG8uYuNg==
+     physical_name : .\REQ_select_stock_id.WDR
+     type : 5
+   -
+     name : REQ_update_stock_quantity
+     identifier : 0x486c9e4f0b320932
+     internal_properties : HgAAAB4AAABUMrz4x7z090Q0kCFmcO6FOEX3Lx5WYGO/8Cuzu81H6W+TQ0bvJMszMReBfwf5gXdBwQ==
+     physical_name : .\REQ_update_stock_quantity.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -

@@ -155,17 +155,6 @@ window :
         type_code : 3
         p_codes :
          -
-           code : |1+
-            
-            // Fonction qui se déclenche lorsque l'utilisateur saisit la quantité
-            PROCEDURE CalculerTotal()
-            qte				est un entier	= Val(Quantitée)	// Récupérer la quantité saisie
-            price			est un entier	= prix_produit		// Prix de l'article
-            total_achat_cal	= qte * price
-            total_achat		= total_achat_cal
-            
-           type : 14
-         -
            type : 276
            enabled : false
          -
@@ -181,9 +170,16 @@ window :
            type : 339
            enabled : false
          -
-           code : |1+
-            total_achat = Val(Quantitée) * val(prix_produit)
+           code : |1-
+            // Fonction qui se déclenche lorsque l'utilisateur saisit la quantité
+            PROCÉDURE CalculerTotal()
+            qte				est un entier	= Val(Quantitée)	// Récupérer la quantité saisie
+            price			est un entier	= prix_produit		// Prix de l'article
+            total_achat_cal	est un entier	= qte * price		// Calcul du total
             
+            // Afficher le total dans un libellé ou champ spécifique
+            total_achat		= total_achat_cal
+            LIB_total_achat	= total_achat_cal
            type : 17
      -
        name : STC_Quantité
@@ -449,7 +445,7 @@ window :
             
            type : 14
          -
-           code : |1-
+           code : |1+
             // 1. Récupérer les valeurs des combos
             nItemID		est un entier	= COMBO_article1
             nLocationID	est un entier	= COMBO_stock1
@@ -549,8 +545,6 @@ window :
             	RETOUR
             FIN
             
-            // 10. Calcul du total pour information
-            LIB_total_achat								= nQuantite * nUnitPrice
             
             // 11. Mise à jour du stock - Vérifier l'existence de l'article dans le stock
             REQ_Verifier_Item_Stock.Paramitem_id		= nItemID
@@ -572,19 +566,16 @@ window :
             
             	// Calcul de la nouvelle quantité (soustraction pour la vente)
             	nNouvelleQuantite	est un entier	= Val(SAI_QteTotal) - nQuantite
-            	
-            	// Mise à jour de la quantité dans le stock
-            	REQ_modifier_items_quantities.Paramitem_id		= idQuantiteStock
-            	REQ_modifier_items_quantities.Paramquantity	= nNouvelleQuantite
             
-            	SI PAS HExécuteRequête(REQ_modifier_items_quantities) ALORS
+            	// Mise à jour de la quantité dans le stock
+            	REQ_update_stock_quantity.Paramid		= nItemID
+            	REQ_update_stock_quantity.paramlocationid = nLocationID
+            	REQ_update_stock_quantity.Paramquantity	= nNouvelleQuantite
+            
+            	SI PAS HExécuteRequête(REQ_update_stock_quantity) ALORS
             		Erreur("Erreur lors de la mise à jour du stock : " + HErreurInfo())
             		RETOUR
             	FIN
-            
-            	// Mise à jour de l'affichage
-            	SAI_QteTotal = nNouvelleQuantite
-            
             SINON
             	Erreur("Article non trouvé dans le stock spécifié.")
             	RETOUR
@@ -956,22 +947,6 @@ window :
         type_code : 32
         p_codes : []
      -
-       name : LIB_total_achat
-       identifier : 0x285f0103614c6471
-       internal_properties : HgAAAB4AAAAeRpFB926c2pxAfiB+i6RfSCwiBEopCmiULjvyd/i472A9WbbGerLb+NXkx60wXBz9oj0Ck+muZYEQBl3tEIUkCTjVkdtfOAl+x1xb1VanZamDriKdzLopMfh6UrU8HM63drWSOyL7ne7xPlj/hzskIInY8/bzBhwJFbbH03iHa4cqaL2ponk7UQU0ZWrjihKdMq/4EvMpCa2RQFTrVqk/nqqcQmWhCNNt+q3tbmgN1Ruh4Q9RsV57OOgWH244JF6AMOI1NdWxu3tIly0fDbf1z37GBJ6lXDDC8lR1qdij0TdIdWmKmdHCsxd4kCcomXznqffZ+xzHvvrqAV/1myQ/AH+sTwOmG+huxAnmC2TFv8vsuQ8M4CANnOiX02KuoprAK0AwfUZC51ARhZCgbNXEQmhl0YOGbCT3hJozHjRoer0VKAUVpZldNHDbYEKon89VvTMmQoRsPE+Ca8BInYol7MhyDVMfsXrzN/8=
-       properties :
-        x : 1010
-        y : 139
-        width : 176
-        height : 60
-        tab_stop : 0
-        take_focus : 0
-       style : {}
-       type : 3
-       code_elements :
-        type_code : 2
-        p_codes : []
-     -
        name : BTN_cheque
        identifier : 0x285f0289629757c2
        internal_properties : HgAAAB4AAAA+xTZfxm0Cmna1Cnkf2N2hnWt4IWQM6rWim5akorlWYwk8CDqjroJbAUopaEkAu5wtqaNtLMGfs7hF4VBGM5C+c7VKBGDCyPYeDgz18ooXqD376UlIOOzyHT5yev7G67y3V7j4WDqKf8LI+mVAsTje5k6V3EetUIKtclBTigBdEZzg98S2QABI9gyy6D7cqpRyfSZrKRZwou30+6eYb3iUKj2j8PWovbDNOFCi/KtSppTF7IW+D0R0Hiv4jSh3Qu9NHPz0pEOj7w4tXzEB5FmfXogf2pJNuDbF3WaiA4mneLq8LGh45UvDKW1xWL4LoVNdoWIdig6i561BKl9/TSmBgbMAuxUEHtCAdJQuPSXRYpA08prZNDYjQ0u6UiiM1SUn+HfxHCowAKvzIErQ5diDCe3BJ3u2wUL/smIQet8fIYmEkSJQcE7fxKHB9If+B/Bef3eDG0r1kD8TrIGx/W5gJwFeysJ89BcLFwcYN3cUujySjYiqnubGFofZ6kJf0sVuBVDjfTFEbnMcUylotf9XXKz8gIZV8IdnJQVk5fYZFbwxXx5QnRKUrWjT254r7aCyK8nNhAlTeNNyJla2OW+uxciXaL4xGmBeWqC/ERLAGhDLnpivoXxtMfCAXGB5mSGIfrJKAVj7Et9jooC0TdWDht4yETvDJP45s86SB/QeV104Ewh/Z43nP2qfGbuGJF0ZGMdLPaEboD57r2omZloBKbhSrPOEaz9vdoG6oXinEFtkcBnPcdGxW7R4MTBfGzmtQHC6AFyAO2OaktouJddYFYPCOB167GA6CeQLEqyJA6hDdZtfNqHOsQkB9rZfdQTYtEQPWMVkVqD/Vx5LB2C2oTDeQISs17+t/NrmDdgK2guA25YSVrkIN5pKA7FPoWV5mOatWLgED7O+4zCAC/MQHb+9mRv15b2yziBj3Ac3G18ZfiTgYhfK/DCanNa5uIPmZTVZx3P91Gzqgga7fWKotdy1H9HJbmlk31xVrCM2a/VRYF7cPAxz+9Zw+KsI
@@ -1216,13 +1191,33 @@ window :
          -
            type : 339
            enabled : false
+     -
+       name : LIB_total_achat
+       identifier : 0x285f0103614c6471
+       internal_properties : HgAAAB4AAAAeRpFB926c2pxAfiB+i6RfSCwiBEopCmiULjvyd/i472A9WbbGerLb+NXkx60wXBz9oj0Ck+muZYEQBl3tEIUkCTjVkdtfOAl+x1xb1VanZamDriKdzLopMfh6UrU8HM63drWSOyL7ne7xPlj/hzskIInY8/bzBhwJFbbH03iHa4cqaL2ponk7UQU0ZWrjihKdMq/4EvMpCa2RQFTrVqk/nqqcQmWhCNNt+q3tbmgN1Ruh4Q9RsV57OOgWH244JF6AMOI1NdWxu3tIly0fDbf1z37GBJ6lXDDC8lR1qdij0TdIdWmKmdHCsxd4kCcomXznqffZ+xzHvvrqAV/1myQ/AH+sTwOmG+huxAnmC2TFv8vsuQ8M4CANnOiX02KuoprAK0AwfUZC51ARhZCgbNXEQmhl0YOGbCT3hJozHjRoer0VKAUVpZldNHDbYEKon89VvTMmQoRsPE+Ca8BInYol7MhyDVMfsXrzN/8=
+       properties :
+        x : 1010
+        y : 139
+        width : 176
+        height : 60
+        tab_stop : 0
+        take_focus : 0
+       style : {}
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
     type : 32
     code_elements :
      type_code : 70
      p_codes :
       -
         code : |1-
-         total_achat_cal	est un reel
+         
          nItemID			est un entier
          nLocationID		est un entier
          nSupplierID		est un entier
